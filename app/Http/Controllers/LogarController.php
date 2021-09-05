@@ -18,6 +18,6 @@ class LogarController extends Controller
             return redirect()->back()->withErrors("Falha");
         };
 
-        dd("Logou!");
+        return redirect()->route('teste');
     }
 }
