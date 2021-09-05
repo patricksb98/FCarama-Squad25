@@ -9,6 +9,9 @@ class LogarController extends Controller
 {
     public function index()
     {
+        if(Auth::check()){
+            return redirect()->route('teste');
+        };
         return view('login.login');
     }
 
@@ -21,3 +24,4 @@ class LogarController extends Controller
         return redirect()->route('teste');
     }
 }
+
