@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<input type="text" value="<?=auth()->user()->name?>" disabled>
+<input type="text" value="<?=auth()->user()->email?>" disabled>
+
 <a href="/sair">Sair</a>
 
 </body>
