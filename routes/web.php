@@ -21,6 +21,11 @@ Route::get('login', 'App\Http\Controllers\LogarController@index');
 Route::post('login', 'App\Http\Controllers\LogarController@logar')->name('login');
 Route::get('teste', 'App\Http\Controllers\TestarController@index')->name('teste')->middleware('auth');
 
+Route::get('/sair', function (){
+    \Illuminate\Support\Facades\Auth::logout();
+    return redirect('/login');
+});
+
 //Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
