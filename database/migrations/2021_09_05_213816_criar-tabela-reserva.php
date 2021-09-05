@@ -13,7 +13,16 @@ class CriarTabelaReserva extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('reservas', function (Blueprint $table){
+            $table->increments('id');
+            $table->foreignId('consultor_id')->constrained();
+            $table->string('local');
+            $table->date('dia');
+            $table->integer('estacao');
+            $table->rememberToken();
+            $table->timestamps();
+    });
+
     }
 
     /**
