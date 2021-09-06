@@ -33,4 +33,9 @@ class Consultor extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public function reservas(){
+        return $this->hasMany(Reserva::class);
+    }
+
 }
