@@ -19,9 +19,11 @@ Route::get('/', function () {
 
 Route::get('login', 'App\Http\Controllers\LogarController@index');
 Route::post('login', 'App\Http\Controllers\LogarController@logar')->name('login');
-Route::get('teste', 'App\Http\Controllers\TestarController@index')->name('teste')->middleware('auth');
+Route::get('reserva', 'App\Http\Controllers\ReservaController@index')->name('reserva')->middleware('auth');
+Route::post('reserva', 'App\Http\Controllers\ReservaController@store')->name('reserva')->middleware('auth');
+Route::get('reserva2', 'App\Http\Controllers\Reserva2Controller@index')->name('reserva2')->middleware('auth');
 
-Route::get('/sair', function (){
+Route::get('sair', function (){
     \Illuminate\Support\Facades\Auth::logout();
     return redirect('/login');
 });

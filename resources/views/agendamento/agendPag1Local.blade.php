@@ -17,11 +17,13 @@
 
             <section>
                 <form action="" method="post">
-                    <label for="">Qaul sede você deseja utilizar?</label>
-                    <input type="button" value="São Paulo">
+                    @csrf
+                    <label for="">Qual sede você deseja utilizar?</label>
+                    <input type="text" name="local" value="São Paulo">
                     <label for="">Qaundo você vem ao escritório?</label>
                     <input type="date" name="data" id="data">
-                    <button type="submit"> <a href="agendPag2Mesa.html"> Continuar</a></button>
+                    <button type="submit">Continuar</button>
+                    <a href="/sair">Sair</a>
                 </form>
             </section>
         </article>
