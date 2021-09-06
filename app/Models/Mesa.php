@@ -11,6 +11,8 @@ class Mesa extends Model
 
     protected $table = 'mesas';
 
+    protected $fillable = 'id';
+
     public function cadeiras()
     {
         return $this->hasMany(Cadeira::class);
