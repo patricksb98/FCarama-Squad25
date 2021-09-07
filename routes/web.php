@@ -22,6 +22,9 @@ Route::post('login', 'App\Http\Controllers\LogarController@logar')->name('login'
 Route::get('reserva', 'App\Http\Controllers\ReservaController@index')->name('reserva')->middleware('auth');
 Route::post('reserva', 'App\Http\Controllers\ReservaController@store')->name('reserva')->middleware('auth');
 Route::get('reserva2', 'App\Http\Controllers\Reserva2Controller@index')->name('reserva2')->middleware('auth');
+Route::post('reserva2', 'App\Http\Controllers\Reserva2Controller@store')->name('reserva2')->middleware('auth');
+Route::get('reserva3', 'App\Http\Controllers\Reserva3Controller@index')->name('reserva3')->middleware('auth');
+Route::post('reserva3', 'App\Http\Controllers\Reserva3Controller@store')->name('reserva3')->middleware('auth');
 
 Route::get('sair', function (){
     \Illuminate\Support\Facades\Auth::logout();

@@ -13,4 +13,14 @@ class Reserva2Controller extends Controller
 
         return view('agendamento.agendPag2Mesa', compact('local'));
     }
+
+    public function store(Request $request)
+    {
+        $mesa = $request->id_mesa;
+
+        $request->session()->put('id_mesa', $mesa);
+
+        return redirect()->route('reserva3');
+
+    }
 }
