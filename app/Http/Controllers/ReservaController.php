@@ -19,10 +19,10 @@ class ReservaController extends Controller
 
     public function store(Request $request)
     {
-        $teste = $request->local;
+        $local = $request->local;
         $data = $request->data;
 
-        $request->session()->put('local', $teste);
+        $request->session()->put('local', $local);
         $request->session()->put('data', $data);
 
         return redirect()->route('reserva2');

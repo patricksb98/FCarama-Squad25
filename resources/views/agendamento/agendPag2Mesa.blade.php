@@ -17,6 +17,7 @@
         <article>
             <section>
                 <form action="" method="POST">
+                    @csrf
                     <label for="">Qaul mesa você deseja reservar?</label>
                     <section>
                         <p>Area de lazer</p>
@@ -26,18 +27,10 @@
                         </div>
                         <p>Entrada Principal></p>
 
-                        @if($local == 'São Paulo')
-                            @for($i = 1; $i <= 48; $i++)
-                                <h1>{{$i}}</h1>
-                            @endfor
-                        @elseif($local == 'Santos')
-                            @for($i = 1; $i <= 4; $i++)
-                                <h1>{{$i}}</h1>
-                            @endfor
-                        @endif
+                        <input type="text" name="id_mesa">
 
                     </section>
-                    <button type="submit"><a href="agendPag3Cadeira.html">Continuar</a></button>
+                    <button type="submit">Continuar</button>
                     <a href="/sair">Sair</a>
                 </form>
             </section>
