@@ -18,18 +18,27 @@
     <main>
         <article>
 
-            <form action="" method="POST">
+            <form method="POST">
                 @csrf
                 <section class="mainBase">
                     <div class="containerForm">
                         <div class="box1"><label for="">Qual mesa você deseja reservar?</label></div>
                         <div class="containerBox">
-                            <div class="box2"><p>Area de lazer</p></div>
+                            <div class="box2"><p>Area de lazer></p></div>
                             <div class="boxMesa">
+                                @for($i = 1; $i <= 30; $i++)
+                                    @if(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
                                 <label class="containerMesa">
-                                    <input type="radio" name="radio" class="radioButton" value="1">
-                                    <span class="checkmark">01</span>
+                                    <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
+                                    <span class="checkmark">{{$i}}</span>
                                 </label>
+                                    @else
+                                        <label class="containerMesa">
+                                            <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
+                                            <span class="checkmark">{{$i}}</span>
+                                        </label>
+                                    @endif
+                                @endfor
                             </div>
                             <div class="box3"><p>Entrada Principal</p></div>
                         </div>

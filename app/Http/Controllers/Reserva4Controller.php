@@ -35,10 +35,10 @@ class Reserva4Controller extends Controller
         $reserva = new Reserva();
 
         $reserva->id_consultor = $id_consultor;
+        $reserva->id_mesa = $mesa;
         $reserva->id_cadeira = $cadeira;
         $reserva->local = $local;
         $reserva->dia = $data;
-        $reserva->status = 1;
 
         $reserva->save();
 

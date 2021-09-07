@@ -61,7 +61,14 @@
 
 
 .radioButton {
+<<<<<<< HEAD
   
     width: 10px;
     height: 10px;
 }
+=======
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+}
+>>>>>>> 415b1376f1703ce0766b353771a5eb4b1f0d0fbc
