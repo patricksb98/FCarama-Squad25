@@ -18,7 +18,7 @@
     <main>
         <article>
 
-            <form action="" method="POST">
+            <form method="POST">
                 @csrf
                 <section class="mainBase">
                     <div class="containerForm">
@@ -26,10 +26,12 @@
                         <div class="containerBox">
                             <div class="box2"><p>Area de lazer</p></div>
                             <div class="boxMesa">
+                                @for($i = 1; $i <= 30; $i++)
                                 <label class="containerMesa">
-                                    <input type="radio" name="radio" class="radioButton" value="1">
-                                    <span class="checkmark">01</span>
+                                    <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
+                                    <span class="checkmark">{{$i}}</span>
                                 </label>
+                                @endfor
                             </div>
                             <div class="box3"><p>Entrada Principal</p></div>
                         </div>

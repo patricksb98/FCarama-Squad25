@@ -61,7 +61,7 @@
 
 
 .radioButton {
-    display: none;
-    width: 1px;
-    height: 1px;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
 }
