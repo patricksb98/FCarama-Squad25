@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\Confirmacao;
 use App\Models\Reserva;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -22,10 +23,14 @@ class Reserva4Controller extends Controller
 
     public function store()
     {
+        $user = Auth::user();
+        $name_consultor = $user->name;
+        $email_consultor = $user->email;
         $id_consultor = Auth::id();
         $local = session(('local'));
         $cadeira = session(('id_cadeira'));
         $data = session(('data'));
+        $mesa = session(('id_mesa'));
 
         $reserva = new Reserva();
 
@@ -37,6 +42,9 @@ class Reserva4Controller extends Controller
 
         $reserva->save();
 
-        print_r($reserva);
+        $email =  new \App\Mail\Confirmacao($name_consultor, $data, $local , $mesa, $cadeira);
+        $email->subject = 'Confirmação de Reserva!';
+        \Illuminate\Support\Facades\Mail::to($email_consultor)->send($email);
+
     }
 }

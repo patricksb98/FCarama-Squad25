@@ -17,6 +17,8 @@
             <section>
                 <form action="" method="POST">
                     @csrf
+
+                    <h1>ALOHA</h1>
                     <label for="">Qaul cadeira você deseja reservar?</label>
                     <fieldset>
                         <div class="legendaMesa">

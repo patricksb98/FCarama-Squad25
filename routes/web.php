@@ -28,6 +28,10 @@ Route::post('reserva3', 'App\Http\Controllers\Reserva3Controller@store')->name('
 Route::get('reserva4', 'App\Http\Controllers\Reserva4Controller@index')->name('reserva4')->middleware('auth');
 Route::post('reserva4', 'App\Http\Controllers\Reserva4Controller@store')->name('reserva4')->middleware('auth');
 
+Route::get('/visualizando-email', function (){
+    return new \App\Mail\Confirmacao('Patrick', '2021-09-08', 'São Paulo', '3', '14');
+});
+
 Route::get('sair', function (){
     \Illuminate\Support\Facades\Auth::logout();
     return redirect('/login');
