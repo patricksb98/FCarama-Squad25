@@ -49,8 +49,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
+ .containerMesa:hover{
+    background-color: #FE662E;
+ }
 
+ .containerMesa:active {
+     background-color: blue;
+ }
 .radioButton {
     display: none;
     width: 1px;
