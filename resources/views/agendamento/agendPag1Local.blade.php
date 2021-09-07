@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="{{ asset('css/agendBase.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
     <title>Agendamento</title>
 </head>
 <body>
     <header>
-        <a href="#" class="as"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <a href="#"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_2.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
     <main>
         <article>
-
-            <section>
                 <form action="" method="post">
                     @csrf
                     <section class="mainBase">
@@ -30,7 +28,6 @@
                         <button type="submit">Continuar <i class="fas fa-long-arrow-alt-right"></i></button>
                     </section>
                 </form>
-            </section>
         </article>
     </main>
     <footer></footer>
