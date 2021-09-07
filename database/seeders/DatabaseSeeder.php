@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
 
         $this->call(ConsultorSeeder::class);
-        //$this->call(MesaSeeder::class);
-        //$this->call(CadeiraSeeder::class);
+        $this->call(MesaSeeder::class);
+        $this->call(CadeiraSeeder::class);
     }
 }
