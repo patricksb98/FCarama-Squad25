@@ -19,7 +19,6 @@ class CriarTabelaReserva extends Migration
             $table->unsignedBigInteger('id_cadeira');
             $table->string('local');
             $table->date('dia');
-            $table->integer('status');
             $table->rememberToken();
             $table->timestamps();
         });

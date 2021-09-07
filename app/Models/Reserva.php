@@ -16,7 +16,6 @@ class Reserva extends Model
         'id_cadeira',
         'local',
         'dia',
-        'status'
     ];
 
     public function consultor(){
