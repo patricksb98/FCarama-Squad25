@@ -32,7 +32,7 @@ Route::get('/visualizando-email', function (){
     return new \App\Mail\Confirmacao('Patrick', '2021-09-08', 'São Paulo', '3', '14');
 });
 
-Route::get('sair', function (){
+Route::get('/sair', function (){
     \Illuminate\Support\Facades\Auth::logout();
     return redirect('/login');
 });

@@ -28,7 +28,7 @@
                             <div class="boxMesa">
                                 @for($i = 1; $i <= 30; $i++)
                                     @if(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
-                                <label class="containerMesa">
+                                <label class="containerMesa" style="background: #FEBBA2">
                                     <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
                                     <span class="checkmark">{{$i}}</span>
                                 </label>
