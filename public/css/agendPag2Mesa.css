@@ -44,12 +44,13 @@
 .containerMesa {
     width: 15.5%;
     height: 14%;
-    border: solid 1px black;
+    border: solid 1px #FE662E;
     border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-color: #F3F1F0;
 }
  .containerMesa:hover{
     background-color: #FE662E;
@@ -61,14 +62,7 @@
 
 
 .radioButton {
-<<<<<<< HEAD
-  
-    width: 10px;
-    height: 10px;
+    display: none;
+    width: 1px;
+    height: 1px;
 }
-=======
-    opacity: 1;
-    width: 10px;
-    height: 10px;
-}
->>>>>>> 415b1376f1703ce0766b353771a5eb4b1f0d0fbc

@@ -24,7 +24,7 @@
                     <div class="containerForm">
                         <div class="box1"><label for="">Qual mesa você deseja reservar?</label></div>
                         <div class="containerBox">
-                            <div class="box2"><p>Area de lazer></p></div>
+                            <div class="box2"><p>ÁREA DE LAZER</p></div>
                             <div class="boxMesa">
                                 @for($i = 1; $i <= 30; $i++)
                                     @if(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
@@ -40,7 +40,7 @@
                                     @endif
                                 @endfor
                             </div>
-                            <div class="box3"><p>Entrada Principal</p></div>
+                            <div class="box3"><p>ENTRADA PRINCIPAL</p></div>
                         </div>
                     </div>
                     <!--<input type="text" name="id_mesa">-->
@@ -48,7 +48,7 @@
                 </section>
                 <section class="footerBase">
                     <button class="btnSair"><a href="/sair">Sair</a></button>
-                    <button type="submit" class="btnCont">Continuar <i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button type="submit" class="btnCont">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
                 </section>
             </form>
         </article>
