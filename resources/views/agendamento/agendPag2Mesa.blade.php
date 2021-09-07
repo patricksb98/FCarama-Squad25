@@ -15,25 +15,26 @@
 
     <main>
         <article>
-            <section>
-                <form action="" method="POST">
-                    @csrf
-                    <label for="">Qaul mesa você deseja reservar?</label>
-                    <section>
-                        <p>Area de lazer</p>
-                        <div>
-                        <!-- Nessa div entra as mesas para a reserva-->
 
-                        </div>
-                        <p>Entrada Principal></p>
+            <form action="" method="POST">
+                @csrf
+                <label for="">Qaul mesa você deseja reservar?</label>
+                <section>
+                    <p>Area de lazer</p>
+                    <div>
+                    <!-- Nessa div entra as mesas para a reserva-->
 
-                        <input type="text" name="id_mesa">
+                    </div>
+                    <p>Entrada Principal></p>
 
-                    </section>
+                    <input type="text" name="id_mesa">
+
+                </section>
+                <section class="footerBase">
                     <button type="submit">Continuar</button>
                     <a href="/sair">Sair</a>
-                </form>
-            </section>
+                </section>
+            </form>
         </article>
     </main>
     <footer></footer>

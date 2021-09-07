@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a href="#">Voltar</a>
+        <a href="#" class="as"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="" alt="">
         <img src="" alt="">
     </header>
@@ -18,16 +18,22 @@
             <section>
                 <form action="" method="post">
                     @csrf
-                    <label for="">Qual sede você deseja utilizar?</label>
-                    <input type="text" name="local" value="São Paulo">
-                    <label for="">Qaundo você vem ao escritório?</label>
-                    <input type="date" name="data" id="data">
-                    <button type="submit">Continuar</button>
-                    <a href="/sair">Sair</a>
+                    <section class="mainBase">
+                        <label for="">Qual sede você deseja utilizar?</label>
+                        <input type="text" name="local" value="São Paulo">
+                        <label for="">Quando você vem ao escritório?</label>
+                        <input type="date" name="data" id="data">
+                    </section>
+                    <section class="footerBase">
+                        <button class="btnSair"><a href="/sair">Sair</a></button>
+                        <button type="submit">Continuar <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </section>
                 </form>
             </section>
         </article>
     </main>
     <footer></footer>
+
+    <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
 </html>
