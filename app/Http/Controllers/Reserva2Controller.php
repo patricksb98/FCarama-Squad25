@@ -13,11 +13,11 @@ class Reserva2Controller extends Controller
     {
         $data = session('data');
         $reservas = Reserva::all();
-        $numero = count($reservas->where('dia', $data));
+        $numero = count($reservas->where('dia', $data)->where('id_mesa', 1));
 
         $local = session('local');
 
-        return view('agendamento.agendPag2Mesa', compact('local', 'numero'));
+        return view('agendamento.agendPag2Mesa', compact('local', 'numero', 'reservas', 'data'));
     }
 
     public function store(Request $request)
