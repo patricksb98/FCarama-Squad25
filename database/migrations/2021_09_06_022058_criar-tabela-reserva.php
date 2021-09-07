@@ -16,6 +16,7 @@ class CriarTabelaReserva extends Migration
         Schema::create('reservas', function (Blueprint $table){
             $table->increments('id')->unsigned();
             $table->unsignedBigInteger('id_consultor');
+            $table->unsignedBigInteger('id_mesa');
             $table->unsignedBigInteger('id_cadeira');
             $table->string('local');
             $table->date('dia');
@@ -25,6 +26,7 @@ class CriarTabelaReserva extends Migration
 
         Schema::table('reservas', function (Blueprint $table){
             $table->foreign('id_consultor')->references('id')->on('consultores');
+            $table->foreign('id_mesa')->references('id')->on('mesas');
             $table->foreign('id_cadeira')->references('id')->on('cadeiras');
         });
 
