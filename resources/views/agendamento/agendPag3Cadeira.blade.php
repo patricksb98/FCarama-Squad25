@@ -20,43 +20,64 @@
                 <form action="" method="POST">
                     @csrf
 
-                    <h1>ALOHA</h1>
-                    <label for="">Qaul cadeira você deseja reservar?</label>
-                    <fieldset>
+                    <section class="mainBase">
+                    <div class="texto1">Qual cadeira você deseja reservar?</div>
+                    <div class="containerMaster">
                         <div class="legendaMesa">
+                            <div class="legenda"> <p>LEGENDA:</p> </div>
+                            <div class="legenda">
+                                <div class="legenda1"></div> <p>Disponivel</p>
+                            </div>
+                            <div class="legenda">
+                                <div class="legenda2"></div><p>Reservada</p>
+                            </div>
+                            <div class="legenda">
+                                <div class="legenda3"></div><p>Desativada</p>
+                            </div>
                             <!--Aqui entra a legenda da mesa-->
                         </div>
-                        <div class="mesa">
-                            <div class="cadeirasModal" id="workstation">
-                                <div class="cadeiras c1">
-                                    <input type="radio" name="cadeira" id="ws1" value="<?=$cadeira[0]?>">
+                        <fieldset class="containerMesa">
+
+                            <div class="mesa">
+                                <div class="cadeirasModal cm1" id="workstation">
+                                    <label class="cadeiras c1">
+                                        <input type="radio" name="cadeira" class="btnc" id="ws1" value="<?=$cadeira[0]?>">
+                                        <span class="checkmark">01</span>
+                                    </label>
+                                    <div class="cadeiras c0"></div>
+                                    <label class="cadeiras c1" id="we2">
+                                        <input type="radio" name="cadeira" class="btnc" id="ws2" value="<?=$cadeira[1]?>">
+                                        <span class="checkmark">02</span>
+                                    </label>
+                                    <div class="cadeiras c0"></div>
+                                    <label class="cadeiras c1">
+                                        <input type="radio" name="cadeira" class="btnc" id="ws3" value="<?=$cadeira[2]?>">
+                                        <span class="checkmark">03</span>
+                                    </label>
                                 </div>
-                                <div class="cadeiras c0"></div>
-                                <div class="cadeiras c2" id="we2">
-                                    <input type="radio" name="cadeira" id="ws2" value="<?=$cadeira[1]?>">
-                                </div>
-                                <div class="cadeiras c0"></div>
-                                <div class="cadeiras c3">
-                                    <input type="radio" name="cadeira" id="ws3" value="<?=$cadeira[2]?>">
+                                <div class="mesaCentro">MESA</div>
+                                <div class="cadeirasModal cm2" id="weModal2">
+                                    <div class="cadeiras c0"></div>
+                                    <label class="cadeiras c1">
+                                        <input type="radio" name="cadeira" class="btnc" id="ws4" value="<?=$cadeira[3]?>">
+                                        <span class="checkmark">04</span>
+                                    </label>
+                                    <div class="cadeiras c0"></div>
+                                    <label class="cadeiras c1">
+                                        <input type="radio" name="cadeira" class="btnc" id="ws5" value="<?=$cadeira[4]?>">
+                                        <span class="checkmark">05</span>
+                                    </label>
+                                    <div class="cadeiras c0"></div>
                                 </div>
                             </div>
-                            <div class="mesaCentro">MESA </div>
-                            <div class="cadeirasModal" id="weModal2">
-                                <div class="cadeiras c0"></div>
-                                <div class="cadeiras c4">
-                                    <input type="radio" name="cadeira" id="ws4" value="<?=$cadeira[3]?>">
-                                </div>
-                                <div class="cadeiras c0"></div>
-                                <div class="cadeiras c5">
-                                    <input type="radio" name="cadeira" id="ws5" value="<?=$cadeira[4]?>">
-                                </div>
-                                <div class="cadeiras c0"></div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <button type="submit">Continuar</button>
-                    <a href="/sair">Sair</a>
-                </form>
+                        </fieldset>
+                    </div>
+                </section>
+                <section class="footerBase">
+                    <button class="btnSair"><a href="/sair">Sair</a></button>
+                    <button type="submit" class="btnCont">Continuar <i class="fas fa-long-arrow-alt-right"></i></button>
+                </section>
+            </form>
 
             </section>
         </article>
