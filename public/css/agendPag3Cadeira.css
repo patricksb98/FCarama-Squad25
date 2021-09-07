@@ -1,0 +1,122 @@
+.mainBase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto1 {
+    width: 80%;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.containerMaster {
+
+    height: 86%;
+    width: 80%;
+    display: flex;
+}
+
+.legendaMesa {
+
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.legenda {
+
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.legenda1, .legenda2, .legenda3 {
+    border: solid 1px #FEBBA2;
+    width: 3.7rem;
+    height: 2rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+}
+
+.legenda1 {
+    background-color: #D03800;
+}
+
+.legenda2 {
+    background-color: #FEBBA2;
+}
+
+.legenda3 {
+    background-color: #F3F1F0;
+}
+
+.containerMesa {
+    width: 78%;
+    display: flex;
+    align-items: center;
+}
+
+.mesa {
+
+    width: 85%;
+    height: 85%;
+}
+
+.cadeirasModal {
+    width: 100%;
+    height:15% ;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0.8rem;
+}
+
+.cm1 {
+    align-items: flex-end;
+}
+
+.cm2 {
+    align-items: flex-start;
+}
+.cadeiras {
+    border: solid 1px #FEBBA2;
+    border-radius: 4px;
+    width:15% ;
+    height: 100%;
+}
+
+.c0 {
+    background-color:#F3F1F0 ;
+}
+
+.c1 {
+    background-color: #D03800;
+    cursor: pointer;
+}
+
+.checkmark {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+}
+
+.btnc {
+    display: none;
+}
+
+.mesaCentro {
+    background-color: #FE885C;
+    height: 70%;
+    border-radius: 6px;
+}
+
+fieldset {
+    border: none;
+}
