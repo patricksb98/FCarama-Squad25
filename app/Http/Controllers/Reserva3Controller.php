@@ -22,7 +22,7 @@ class Reserva3Controller extends Controller
 
         $request->session()->put('id_cadeira', $cadeira);
 
-        
+        return redirect()->route('reserva4');
 
     }
 }

@@ -15,25 +15,31 @@
     <main>
         <article>
             <p>Revise e confirme os dados da sua reserva:</p>
+            <form method="post">
+                @csrf
             <section>
                 <div class="container">
                     <div class="local">
                         <!-- Nessa div entra o local da reserva-->
+                        <p>Local: <?=$local?></p>
                     </div>
                     <div class="mesaCadeira">
                         <!-- Aqui entra o numnero da mesa e cadeira-->
+                        <p>Mesa: <?=$mesa?> Cadeira: <?=$cadeira?></p>
                     </div>
                 </div>
                 <div class="data">
                     <!--Aqui aparece a data reservada-->
+                    <p>Data: <?=$data?></p>
                 </div>
             </section>
             <section>
                 <a href="agendPag1Local.html">Alterar dados da reserva</a>
-                <button type="submit"><a href="agendPag5Parabens.html">Confirmar</a></button>
+                <button type="submit">Confirmar</button>
             </section>
+            </form>
 
-        
+
         </article>
     </main>
     <footer>

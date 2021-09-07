@@ -25,6 +25,8 @@ Route::get('reserva2', 'App\Http\Controllers\Reserva2Controller@index')->name('r
 Route::post('reserva2', 'App\Http\Controllers\Reserva2Controller@store')->name('reserva2')->middleware('auth');
 Route::get('reserva3', 'App\Http\Controllers\Reserva3Controller@index')->name('reserva3')->middleware('auth');
 Route::post('reserva3', 'App\Http\Controllers\Reserva3Controller@store')->name('reserva3')->middleware('auth');
+Route::get('reserva4', 'App\Http\Controllers\Reserva4Controller@index')->name('reserva4')->middleware('auth');
+Route::post('reserva4', 'App\Http\Controllers\Reserva4Controller@store')->name('reserva4')->middleware('auth');
 
 Route::get('sair', function (){
     \Illuminate\Support\Facades\Auth::logout();
