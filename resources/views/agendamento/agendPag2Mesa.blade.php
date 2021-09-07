@@ -27,7 +27,7 @@
                             <div class="box2"><p>Area de lazer</p></div>
                             <div class="boxMesa">
                                 <label class="containerMesa">
-                                    <input type="radio" name="radio" class="radioButton">
+                                    <input type="radio" name="radio" class="radioButton" value="1">
                                     <span class="checkmark">01</span>
                                 </label>
                             </div>
