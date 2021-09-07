@@ -38,7 +38,7 @@
                                     <input type="radio" name="cadeira" id="ws3" value="<?=$cadeira[2]?>">
                                 </div>
                             </div>
-                            <div class="mesaCentro"></div>
+                            <div class="mesaCentro">MESA </div>
                             <div class="cadeirasModal" id="weModal2">
                                 <div class="cadeiras c0"></div>
                                 <div class="cadeiras c4">
