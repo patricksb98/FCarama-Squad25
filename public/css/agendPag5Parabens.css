@@ -1,0 +1,46 @@
+header {
+    justify-content: flex-end;
+    padding: 0 10rem;
+}
+
+.mainBase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBase h1 {
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+.mainBase div {
+    width: 25%;
+    height: 55%;
+    background: url(../img/Ilustra_Congrats.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem 0;
+}
+
+.mainBase h2:last-child {
+    margin-bottom: 2rem;
+}
+
+.footerBase a {
+    color: #FE4400;
+}
+
+.box {
+    width: auto;
+    height: fit-content;
+    padding: .3rem .7rem;
+    border-radius: 3px;
+    background: #FE662E;
+    cursor: pointer;
+}
+
+.box a {
+    color: white;
+}

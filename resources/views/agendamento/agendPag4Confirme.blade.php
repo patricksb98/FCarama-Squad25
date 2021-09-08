@@ -19,22 +19,27 @@
 
             <form method="post">
                 @csrf
-            <section class="mainBase">
-            <p>Revise e confirme os dados da sua reserva:</p>
-                <div class="container">
-                    <div class="local">
-                        <!-- Nessa div entra o local da reserva-->
-                        <p>Local: <?=$local?></p>
+                <section class="mainBase">
+                <div class="containerMaster">
+                    <p class="subTitulo">Revise e confirme os dados da sua reserva:</p>
+                    <div class="container">
+                        <div class="box">
+                            <div class="local">
+                                <!-- Nessa div entra o local da reserva-->
+                                <p>Local: <?=$local?></p>
+                            </div>
+                            <div class="mesaCadeira">
+                                <!-- Aqui entra o numnero da mesa e cadeira-->
+                                <p>Mesa: <?=$mesa?> </p>
+                                <p>Cadeira: <?=$cadeira?></p>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <!--Aqui aparece a data reservada-->
+                            <p>Data: <?=$data?></p>
+                        </div>
                     </div>
-                    <div class="mesaCadeira">
-                        <!-- Aqui entra o numnero da mesa e cadeira-->
-                        <p>Mesa: <?=$mesa?> Cadeira: <?=$cadeira?></p>
-                    </div>
-                </div>
-                <div class="data">
-                    <!--Aqui aparece a data reservada-->
-                    <p>Data: <?=$data?></p>
-                </div>
+                </div>  
             </section>
             <section class="footerBase">
                 <a href="agendPag1Local.html">Alterar dados da reserva</a>
