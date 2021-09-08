@@ -40,33 +40,68 @@
 
                             <div class="mesa">
                                 <div class="cadeirasModal cm1" id="workstation">
-                                    <label class="cadeiras c1">
-                                        <input type="radio" name="cadeira" class="btnc" id="ws1" value="<?=$cadeira[0]?>">
-                                        <span class="checkmark">01</span>
-                                    </label>
+                                    @if(count($reservas->where('dia', $data)->where('id_cadeira', $cadeira[0])) == 1)
+                                        <label class="cadeiras c1" style="background: #FEBBA2">
+                                            <input type="radio" name="cadeira" class="btnc" id="ws1" value="<?=$cadeira[0]?>" disabled>
+                                            <span class="checkmark"><?=$cadeira[0]?></span>
+                                        </label>
+                                    @else
+                                        <label class="cadeiras c1">
+                                            <input type="radio" name="cadeira" class="btnc" id="ws1" value="<?=$cadeira[0]?>">
+                                            <span class="checkmark"><?=$cadeira[0]?></span>
+                                        </label>
+                                    @endif
                                     <div class="cadeiras c0"></div>
-                                    <label class="cadeiras c1" id="we2">
-                                        <input type="radio" name="cadeira" class="btnc" id="ws2" value="<?=$cadeira[1]?>">
-                                        <span class="checkmark">02</span>
-                                    </label>
+                                        @if(count($reservas->where('dia', $data)->where('id_cadeira', $cadeira[1])) == 1)
+                                            <label class="cadeiras c1" id="we2" style="background: #FEBBA2">
+                                                <input type="radio" name="cadeira" class="btnc" id="ws2" value="<?=$cadeira[1]?>" disabled>
+                                                <span class="checkmark"><?=$cadeira[1]?></span>
+                                            </label>
+                                        @else
+                                            <label class="cadeiras c1" id="we2">
+                                                <input type="radio" name="cadeira" class="btnc" id="ws2" value="<?=$cadeira[1]?>">
+                                                <span class="checkmark"><?=$cadeira[1]?></span>
+                                            </label>
+                                        @endif
                                     <div class="cadeiras c0"></div>
-                                    <label class="cadeiras c1">
-                                        <input type="radio" name="cadeira" class="btnc" id="ws3" value="<?=$cadeira[2]?>">
-                                        <span class="checkmark">03</span>
-                                    </label>
+                                        @if(count($reservas->where('dia', $data)->where('id_cadeira', $cadeira[2])) == 1)
+                                            <label class="cadeiras c1" style="background: #FEBBA2">
+                                                <input type="radio" name="cadeira" class="btnc" id="ws3" value="<?=$cadeira[2]?>" disabled>
+                                                <span class="checkmark"><?=$cadeira[2]?></span>
+                                            </label>
+                                        @else
+                                            <label class="cadeiras c1">
+                                                <input type="radio" name="cadeira" class="btnc" id="ws3" value="<?=$cadeira[2]?>">
+                                                <span class="checkmark"><?=$cadeira[2]?></span>
+                                            </label>
+                                        @endif
                                 </div>
-                                <div class="mesaCentro">MESA</div>
+                                <div class="mesaCentro">MESA {{session('id_mesa')}}</div>
                                 <div class="cadeirasModal cm2" id="weModal2">
                                     <div class="cadeiras c0"></div>
-                                    <label class="cadeiras c1">
-                                        <input type="radio" name="cadeira" class="btnc" id="ws4" value="<?=$cadeira[3]?>">
-                                        <span class="checkmark">04</span>
-                                    </label>
+                                    @if(count($reservas->where('dia', $data)->where('id_cadeira', $cadeira[3])) == 1)
+                                        <label class="cadeiras c1" style="background: #FEBBA2">
+                                            <input type="radio" name="cadeira" class="btnc" id="ws4" value="<?=$cadeira[3]?>" disabled>
+                                            <span class="checkmark"><?=$cadeira[3]?></span>
+                                        </label>
+                                    @else
+                                        <label class="cadeiras c1">
+                                            <input type="radio" name="cadeira" class="btnc" id="ws4" value="<?=$cadeira[3]?>">
+                                            <span class="checkmark"><?=$cadeira[3]?></span>
+                                        </label>
+                                    @endif
                                     <div class="cadeiras c0"></div>
-                                    <label class="cadeiras c1">
-                                        <input type="radio" name="cadeira" class="btnc" id="ws5" value="<?=$cadeira[4]?>">
-                                        <span class="checkmark">05</span>
-                                    </label>
+                                    @if(count($reservas->where('dia', $data)->where('id_cadeira', $cadeira[4])) == 1)
+                                        <label class="cadeiras c1" style="background: #FEBBA2">
+                                            <input type="radio" name="cadeira" class="btnc" id="ws5" value="<?=$cadeira[4]?>" disabled>
+                                            <span class="checkmark"><?=$cadeira[4]?></span>
+                                        </label>
+                                    @else
+                                        <label class="cadeiras c1">
+                                            <input type="radio" name="cadeira" class="btnc" id="ws5" value="<?=$cadeira[4]?>">
+                                            <span class="checkmark"><?=$cadeira[4]?></span>
+                                        </label>
+                                    @endif
                                     <div class="cadeiras c0"></div>
                                 </div>
                             </div>

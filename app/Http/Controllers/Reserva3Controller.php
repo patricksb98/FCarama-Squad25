@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Reserva;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -10,10 +11,12 @@ class Reserva3Controller extends Controller
     public function index()
     {
         $mesa = session('id_mesa');
-
+        $data = session('data');
         $cadeira = (DB::table('cadeiras')->where('id_mesa', $mesa)->pluck('id'));
 
-        return view('agendamento.agendPag3Cadeira', compact('cadeira'));
+        $reservas = Reserva::all();
+
+        return view('agendamento.agendPag3Cadeira', compact('cadeira', 'reservas', 'data'));
     }
 
     public function store(Request $request)
