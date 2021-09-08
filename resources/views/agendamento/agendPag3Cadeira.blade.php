@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a href="agendPag2Mesa.html">Voltar</a>
+        <a href="agendPag2Mesa.html"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_4.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
@@ -109,7 +109,7 @@
                     </div>
                 </section>
                 <section class="footerBase">
-                    <button class="btnSair"><a href="/sair">Sair</a></button>
+                    <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
                     <button type="submit" class="btnCont">Continuar <i class="fas fa-long-arrow-alt-right"></i></button>
                 </section>
             </form>

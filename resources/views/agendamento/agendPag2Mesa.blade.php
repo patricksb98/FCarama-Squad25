@@ -11,7 +11,7 @@
 <body>
     <header>
         <a href="agendPag1Local.html"><i class="far fa-arrow-alt-circle-left"></i></a>
-        <img src="{{ asset('img/Barra_de_progresso_2.svg') }}" alt="">
+        <img src="{{ asset('img/Barra_de_progresso_3.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
 
@@ -95,7 +95,7 @@
 
                 </section>
                 <section class="footerBase">
-                    <button class="btnSair"><a href="/sair">Sair</a></button>
+                    <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
                     <button type="submit" class="btnCont">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
                 </section>
             </form>

@@ -24,7 +24,7 @@
                         <input type="date" name="data" id="data">
                     </section>
                     <section class="footerBase">
-                        <button class="btnSair"><a href="/sair">Sair</a></button>
+                        <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
                         <button type="submit">Continuar <i class="fas fa-long-arrow-alt-right"></i></button>
                     </section>
                 </form>

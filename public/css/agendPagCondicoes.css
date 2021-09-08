@@ -1,0 +1,63 @@
+
+.mainBase {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    text-align: center;
+    font: 1.8rem bold;
+    height: fit-content;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.b1 {
+ width: 17%;
+}
+
+.b2{
+    width: 17%;
+}
+
+.b3{
+    width: 25%;
+}
+
+.b4{
+    width: 25%;
+}
+
+.boxImg {
+    height: 70%;
+}
+
+.boxText {
+    height: 30%;
+    text-align: center;
+    padding-top: .8rem;
+}
+
+.btnCont {
+    width: fit-content;
+    height: fit-content;
+    padding: .5rem;
+    font-size: .8rem;
+}
+
+.btnCont i {
+    font-size: .8rem;
+}
+
+.btnDisc, .btnDisc i {
+    font-size: .8rem;
+    color: #FE662E;
+    font-weight: bold;
+    height: fit-content;
+}

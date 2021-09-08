@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <a href="agendPag3Cadeira.html">Voltar</a>
-        <img src="" alt="">
-        <img src="" alt="">
+        <a href="agendPag3Cadeira.html"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
+        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
     <main>
         <article>
@@ -44,6 +44,7 @@
             <section class="footerBase">
                 <a href="agendPag1Local.html">Alterar dados da reserva</a>
                 <button type="submit" class="btnCont">Confirmar <i class="fas fa-long-arrow-alt-right"></i></button>
+                <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
             </section>
             </form>
 

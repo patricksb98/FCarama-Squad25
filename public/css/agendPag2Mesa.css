@@ -66,3 +66,7 @@
     width: 1px;
     height: 1px;
 }
+
+.footerBase {
+    justify-content: flex-end;
+}

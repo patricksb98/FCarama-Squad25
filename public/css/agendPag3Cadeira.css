@@ -125,3 +125,7 @@
 fieldset {
     border: none;
 }
+
+.footerBase {
+    justify-content: flex-end;
+}

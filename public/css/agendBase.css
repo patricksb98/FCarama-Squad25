@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; font-weight: 400; text-decoration: none;}
 
+body {
+    position: relative;
+}
+
 header {
     width: 100wh;
     height: 15vh;
@@ -24,32 +28,29 @@ header {
     width: 100vw;
     height: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 10%;
 
 }
 
-.btnCont, .btnSair {
+.btnCont {
     background-color: #FE662E;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    height: 50%;
+    width: fit-content;
+    color: white;
+    padding: .5rem;
 }
 
 .btnSair {
-    height: 50%;
-    width: 7rem;
-}
-
-.btnSair a {
-    color: white;
-    font-weight: bold;
-}
-
-.btnCont {
-    height: 50%;
-    width: 13rem;
-    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    color: #FE662E;
+    font-size: 1.2rem;
 }
 
 .fa-long-arrow-alt-right {
