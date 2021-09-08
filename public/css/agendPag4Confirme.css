@@ -1,0 +1,55 @@
+
+.mainBase, .container, .box {
+    display: flex;
+    justify-content: center;
+}
+
+.containerMaster {
+    width: 80%;
+}
+
+.subTitulo {
+    font-size: 1.8rem;
+    font-weight: 500;
+    height: 13%;
+}
+
+.container{
+    width: 45%;
+    height: 40%;
+    border: solid 1px #FE885C;
+    border-radius: 8px;
+    background-color: #F3F1F0;
+}
+
+.box {
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+
+}
+
+.mesaCadeira, .local, .data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.local {
+    height: 34%;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.mesaCadeira {
+    flex-direction: column;
+    height: 66%;
+    font-size: 1.5rem;
+}
+.data {
+    width: 35%;
+    font-weight: 500;
+}
+
+.footerBase a {
+    color: #FE4400;
+}

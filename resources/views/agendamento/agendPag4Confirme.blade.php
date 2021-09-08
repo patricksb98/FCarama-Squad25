@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/agendPag3Cadeira.css') }}">
     <title>Document</title>
 </head>
 <body>
@@ -14,10 +16,11 @@
     </header>
     <main>
         <article>
-            <p>Revise e confirme os dados da sua reserva:</p>
+
             <form method="post">
                 @csrf
-            <section>
+            <section class="mainBase">
+            <p>Revise e confirme os dados da sua reserva:</p>
                 <div class="container">
                     <div class="local">
                         <!-- Nessa div entra o local da reserva-->
@@ -33,9 +36,9 @@
                     <p>Data: <?=$data?></p>
                 </div>
             </section>
-            <section>
+            <section class="footerBase">
                 <a href="agendPag1Local.html">Alterar dados da reserva</a>
-                <button type="submit">Confirmar</button>
+                <button type="submit" class="btnCont">Confirmar <i class="fas fa-long-arrow-alt-right"></i></button>
             </section>
             </form>
 

@@ -11,8 +11,8 @@
 <body>
     <header>
         <a href="agendPag2Mesa.html">Voltar</a>
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="{{ asset('img/Barra_de_progresso_4.svg') }}" alt="">
+        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
     <main>
         <article>
