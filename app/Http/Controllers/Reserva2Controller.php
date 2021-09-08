@@ -11,7 +11,7 @@ class Reserva2Controller extends Controller
 {
     public function index()
     {
-        if(!session('local') AND !session('data')){
+        if(!session('local') || !session('data')){
             return redirect()->route('reserva');
         }
 
