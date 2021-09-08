@@ -12,11 +12,12 @@ class Reserva3Controller extends Controller
     {
         $mesa = session('id_mesa');
         $data = session('data');
+        $local = session(('local'));
         $cadeira = (DB::table('cadeiras')->where('id_mesa', $mesa)->pluck('id'));
 
         $reservas = Reserva::all();
 
-        return view('agendamento.agendPag3Cadeira', compact('cadeira', 'reservas', 'data'));
+        return view('agendamento.agendPag3Cadeira', compact('cadeira', 'reservas', 'data', 'local'));
     }
 
     public function store(Request $request)
