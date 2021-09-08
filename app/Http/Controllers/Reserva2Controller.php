@@ -11,6 +11,10 @@ class Reserva2Controller extends Controller
 {
     public function index()
     {
+        if(!session('local') AND !session('data')){
+            return redirect()->route('reserva');
+        }
+
         $data = session('data');
         $reservas = Reserva::all();
         $numero = count($reservas->where('dia', $data)->where('id_mesa', 1));

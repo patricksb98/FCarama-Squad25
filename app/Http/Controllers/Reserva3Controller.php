@@ -10,6 +10,10 @@ class Reserva3Controller extends Controller
 {
     public function index()
     {
+        if(!session('id_mesa')){
+            return redirect()->route('reserva2');
+        }
+
         $mesa = session('id_mesa');
         $data = session('data');
         $local = session(('local'));

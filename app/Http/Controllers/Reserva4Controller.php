@@ -13,6 +13,10 @@ class Reserva4Controller extends Controller
 {
     public function index()
     {
+        if(!session('id_cadeira')){
+            return redirect()->route('reserva3');
+        }
+
         $local = session(('local'));
         $mesa = session(('id_mesa'));
         $cadeira = session(('id_cadeira'));
@@ -41,6 +45,8 @@ class Reserva4Controller extends Controller
         $reserva->dia = $data;
 
         $reserva->save();
+
+        session()->forget(['local', 'data', 'id_mesa', 'id_cadeira']);
 
         $email =  new \App\Mail\Confirmacao($name_consultor, $data, $local , $mesa, $cadeira);
         $email->subject = 'Confirmação de Reserva!';
