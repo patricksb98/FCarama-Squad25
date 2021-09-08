@@ -26,19 +26,67 @@
                         <div class="containerBox">
                             <div class="box2"><p>ÁREA DE LAZER</p></div>
                             <div class="boxMesa">
-                                @for($i = 1; $i <= 30; $i++)
-                                    @if(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
-                                <label class="containerMesa">
-                                    <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                    <span class="checkmark">{{$i}}</span>
-                                </label>
-                                    @else
-                                        <label class="containerMesa">
-                                            <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
-                                            <span class="checkmark">{{$i}}</span>
-                                        </label>
+                                @if($local == "São Paulo 1º Andar")
+                                    @for($i = 1; $i <= 30; $i++)
+                                        @if(count($reservas->where('dia', $data)->where('local', $local)) >= 240)
+                                    <label class="containerMesa" style="background: #FEBBA2">
+                                        <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
+                                        <span class="checkmark">{{$i}}</span>
+                                    </label>
+                                        @elseif(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
+                                            <label class="containerMesa" style="background: #FEBBA2">
+                                                <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
+                                                <span class="checkmark">{{$i}}</span>
+                                            </label>
+                                        @else
+                                            <label class="containerMesa">
+                                                <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
+                                                <span class="checkmark">{{$i}}</span>
+                                            </label>
+                                        @endif
+                                    @endfor
+
+                                @elseif($local == "São Paulo 2º Andar")
+                                        @for($i = 31; $i <= 60; $i++)
+                                            @if(count($reservas->where('dia', $data)->where('local', $local)) >= 240)
+                                                <label class="containerMesa" style="background: #FEBBA2">
+                                                    <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
+                                                    <span class="checkmark">{{$i}}</span>
+                                                </label>
+                                            @elseif(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
+                                                <label class="containerMesa" style="background: #FEBBA2">
+                                                    <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
+                                                    <span class="checkmark">{{$i}}</span>
+                                                </label>
+                                            @else
+                                                <label class="containerMesa">
+                                                    <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
+                                                    <span class="checkmark">{{$i}}</span>
+                                                </label>
+                                            @endif
+                                        @endfor
+
+                                @elseif($local == "Santos")
+                                        @for($i = 1; $i <= 10; $i++)
+                                            @if(count($reservas->where('dia', $data)) >= 40)
+                                                <label class="containerMesa" style="background: #FEBBA2">
+                                                    <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
+                                                    <span class="checkmark">{{$i}}</span>
+                                                </label>
+                                            @elseif(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
+                                                <label class="containerMesa" style="background: #FEBBA2">
+                                                    <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
+                                                    <span class="checkmark">{{$i}}</span>
+                                                </label>
+                                            @else
+                                                <label class="containerMesa">
+                                                    <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
+                                                    <span class="checkmark">{{$i}}</span>
+                                                </label>
+                                            @endif
+                                        @endfor
                                     @endif
-                                @endfor
+
                             </div>
                             <div class="box3"><p>ENTRADA PRINCIPAL</p></div>
                         </div>
