@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/agendPag3Cadeira.css') }}">
+    <link rel="stylesheet" href="css/agendBase.css">
+    <link rel="stylesheet" href="css/agendPag4Confirme.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <a href="agendPag3Cadeira.html"><i class="far fa-arrow-alt-circle-left"></i></a>
-        <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
-        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
-    </header>
-    <main>
-        <article>
+<header>
+    <a href="agendPag3Cadeira.html"><i class="far fa-arrow-alt-circle-left"></i></a>
+    <img src="../img/Barra_de_progresso_5.svg" alt="">
+    <img src="../img/Logo_-_Paginas_internas.svg" alt="">
+</header>
+<main>
+    <article>
 
-            <form method="post">
-                @csrf
-                <section class="mainBase">
+        <form method="post">
+            <section class="mainBase">
                 <div class="containerMaster">
                     <p class="subTitulo">Revise e confirme os dados da sua reserva:</p>
                     <div class="container">
@@ -39,20 +38,20 @@
                             <p>Data: <?=$data?></p>
                         </div>
                     </div>
-                </div>  
+                </div>
             </section>
             <section class="footerBase">
                 <a href="agendPag1Local.html">Alterar dados da reserva</a>
-                <button type="submit" class="btnCont">Confirmar <i class="fas fa-long-arrow-alt-right"></i></button>
-                <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
+                <button type="submit" class="btnCont">  Confirmar  <i class="fas fa-long-arrow-alt-right"></i></button>
             </section>
-            </form>
+        </form>
 
 
-        </article>
-    </main>
-    <footer>
+    </article>
+</main>
+<footer>
 
-    </footer>
+</footer>
+<script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
 </html>

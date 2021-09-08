@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/agendBase.css">
-    <link rel="stylesheet" href="../public/css/agendPag5Parabens.css">
-    
+    <link rel="stylesheet" href="css/agendBase.css">
+    <link rel="stylesheet" href="css/agendPag5Parabens.css">
+
     <title>Document</title>
 </head>
 <body>
     <header>
-        <img src="../public/img/Logo_-_Paginas_internas.svg" alt="">
+        <img src="img/Logo_-_Paginas_internas.svg" alt="">
     </header>
     <main class="mainBase">
         <h1>Parabéns!</h1>
