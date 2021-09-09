@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
     <link rel="stylesheet" href="{{ asset('css/agendPag3Cadeira.css') }}">
     <title>Agendamento</title>
+    
 </head>
 <body>
     <header>
