@@ -12,8 +12,8 @@
     <header class="headerBase">
 
         <a href="agendPag2Mesa.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
-        <img src="../public/img/Barra_de_progresso_1.svg" alt="">
-        <img src="../public/img/Logo_-_Paginas_internas.svg" alt="">
+        <img src="img/Barra_de_progresso_1.svg" alt="">
+        <img src="img/Logo_-_Paginas_internas.svg" alt="">
 
     </header>
     <main>
@@ -44,7 +44,7 @@
     <footer class="footerBase">
 
         <a href="/sair" class="btnDisc t1">DISCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
-        <a href="#" class="btnCont t1">CONCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
+        <a href="/reserva" class="btnCont t1">CONCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
         <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
 
 
