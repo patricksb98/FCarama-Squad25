@@ -10,6 +10,7 @@
 </head>
 <body>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <header>
         <a href="agendPag3Cadeira.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
@@ -17,8 +18,18 @@
     </header>
     <main>
         <article>
+=======
+<header>
+    <a href="/reserva3"><i class="far fa-arrow-alt-circle-left"></i></a>
+    <img src="../img/Barra_de_progresso_5.svg" alt="">
+    <img src="../img/Logo_-_Paginas_internas.svg" alt="">
+</header>
+<main>
+    <article>
+>>>>>>> 6df36278217d106e9ad87dd7810bbc80b709c8eb
 
         <form method="post">
+            @csrf
             <section class="mainBase">
                 <div class="containerMaster">
                     <p class="subTitulo">Revise e confirme os dados da sua reserva:</p>

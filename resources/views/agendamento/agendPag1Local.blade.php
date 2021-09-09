@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="#"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <a href="/reserva"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_2.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>

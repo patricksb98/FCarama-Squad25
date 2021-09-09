@@ -9,6 +9,17 @@ use Illuminate\Support\Facades\DB;
 
 class ReservaController extends Controller
 {
+    public function verTermos()
+    {
+        return view('agendamento.agendPagCondicoes');
+    }
+
+    public function concordarTermos()
+    {
+        return redirect()->route('reserva');
+    }
+
+
     public function index()
     {
         if(!Auth::check()){
@@ -122,6 +133,18 @@ class ReservaController extends Controller
         $email->subject = 'Confirmação de Reserva!';
         \Illuminate\Support\Facades\Mail::to($email_consultor)->send($email);
 
+        return redirect()->route('confirmada');
+
+    }
+
+    public function reservaConfirmada()
+    {
+        return view('agendamento.agendPag5Parabens');
+    }
+
+    public function reservarNovamente()
+    {
+        return redirect()->route('reserva');
     }
 
 }
