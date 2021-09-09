@@ -9,6 +9,16 @@
     <title>Document</title>
 </head>
 <body>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <header>
+        <a href="agendPag3Cadeira.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
+        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
+    </header>
+    <main>
+        <article>
+=======
 <header>
     <a href="/reserva3"><i class="far fa-arrow-alt-circle-left"></i></a>
     <img src="../img/Barra_de_progresso_5.svg" alt="">
@@ -16,6 +26,7 @@
 </header>
 <main>
     <article>
+>>>>>>> 6df36278217d106e9ad87dd7810bbc80b709c8eb
 
         <form method="post">
             @csrf
@@ -26,7 +37,7 @@
                         <div class="box">
                             <div class="local">
                                 <!-- Nessa div entra o local da reserva-->
-                                <p>Local: <?=$local?></p>
+                                <p> <?=$local?></p>
                             </div>
                             <div class="mesaCadeira">
                                 <!-- Aqui entra o numnero da mesa e cadeira-->
@@ -42,8 +53,14 @@
                 </div>
             </section>
             <section class="footerBase">
+<<<<<<< HEAD
+                <a href="agendPag1Local.html" class="t1">Alterar dados da reserva</a>
+                <button type="submit" class="btnCont t1">CONFIRMAR <i class="fas fa-long-arrow-alt-right"></i></button>
+                <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
+=======
                 <a href="agendPag1Local.html">Alterar dados da reserva</a>
                 <button type="submit" class="btnCont">  Confirmar  <i class="fas fa-long-arrow-alt-right"></i></button>
+>>>>>>> 9fb3dc1d3731953e87e776550a8ed2189f1cebd5
             </section>
         </form>
 
@@ -52,7 +69,12 @@
 </main>
 <footer>
 
+<<<<<<< HEAD
+    </footer>
+    <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
+=======
 </footer>
 <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
+>>>>>>> 9fb3dc1d3731953e87e776550a8ed2189f1cebd5
 </body>
 </html>

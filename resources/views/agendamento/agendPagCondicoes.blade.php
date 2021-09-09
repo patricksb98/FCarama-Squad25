@@ -10,9 +10,10 @@
 </head>
 <body>
     <header class="headerBase">
-        <a href="agendPag2Mesa.html"><i class="far fa-arrow-alt-circle-left"></i></a>
-        <img src="img/Barra_de_progresso_1.svg" alt="">
-        <img src="img/Logo_-_Paginas_internas.svg" alt="">
+
+        <a href="agendPag2Mesa.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <img src="../public/img/Barra_de_progresso_1.svg" alt="">
+        <img src="../public/img/Logo_-_Paginas_internas.svg" alt="">
 
     </header>
     <main>
@@ -41,9 +42,15 @@
     </article>
     </main>
     <footer class="footerBase">
+<<<<<<< HEAD
+        <a href="/sair" class="btnDisc t1">DISCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
+        <a href="#" class="btnCont t1">CONCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
+        <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
+=======
         <a href="/sair" class="btnDisc">DISCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
         <a href="reserva" class="btnCont">CONCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
         <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
+>>>>>>> 6df36278217d106e9ad87dd7810bbc80b709c8eb
     </footer>
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>

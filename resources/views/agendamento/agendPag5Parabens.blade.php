@@ -20,8 +20,14 @@
         <h2>Aguardamos você para o Encontro dos Laranjas!</h2>
     </main>
     <footer class="footerBase">
+<<<<<<< HEAD
+        <a href="#" class="t1">SAIR <i class="fas fa-long-arrow-alt-right"></i></a>
+        <div class="box t1"><a href="agendPag1Local.html">FAZER OUTRA RESERVA <i class="fas fa-long-arrow-alt-right"></i> </a></div>
+=======
         <a href="/sair">Sair</a>
         <div class="box"><a href="/reserva">Fazer outra reserva</a></div>
+>>>>>>> 6df36278217d106e9ad87dd7810bbc80b709c8eb
     </footer>
+    <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
 </html>

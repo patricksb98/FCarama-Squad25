@@ -10,7 +10,11 @@
 </head>
 <body>
     <header>
+<<<<<<< HEAD
+        <a href="agendPag2Mesa.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+=======
         <a href="/reserva2"><i class="far fa-arrow-alt-circle-left"></i></a>
+>>>>>>> 6df36278217d106e9ad87dd7810bbc80b709c8eb
         <img src="{{ asset('img/Barra_de_progresso_4.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
@@ -46,7 +50,7 @@
                                             <span class="checkmark"><?=$cadeira[0]?></span>
                                         </label>
                                     @else
-                                        <label class="cadeiras c1">
+                                        <label class="cadeiras c1 t1">
                                             <input type="radio" name="cadeira" class="btnc" id="ws1" value="<?=$cadeira[0]?>">
                                             <span class="checkmark"><?=$cadeira[0]?></span>
                                         </label>
@@ -58,7 +62,7 @@
                                                 <span class="checkmark"><?=$cadeira[1]?></span>
                                             </label>
                                         @else
-                                            <label class="cadeiras c1" id="we2">
+                                            <label class="cadeiras c1 t1" id="we2">
                                                 <input type="radio" name="cadeira" class="btnc" id="ws2" value="<?=$cadeira[1]?>">
                                                 <span class="checkmark"><?=$cadeira[1]?></span>
                                             </label>
@@ -70,7 +74,7 @@
                                                 <span class="checkmark"><?=$cadeira[2]?></span>
                                             </label>
                                         @else
-                                            <label class="cadeiras c1">
+                                            <label class="cadeiras c1 t1">
                                                 <input type="radio" name="cadeira" class="btnc" id="ws3" value="<?=$cadeira[2]?>">
                                                 <span class="checkmark"><?=$cadeira[2]?></span>
                                             </label>
@@ -85,7 +89,7 @@
                                             <span class="checkmark"><?=$cadeira[3]?></span>
                                         </label>
                                     @else
-                                        <label class="cadeiras c1">
+                                        <label class="cadeiras c1 t1">
                                             <input type="radio" name="cadeira" class="btnc" id="ws4" value="<?=$cadeira[3]?>">
                                             <span class="checkmark"><?=$cadeira[3]?></span>
                                         </label>
@@ -97,7 +101,7 @@
                                             <span class="checkmark"><?=$cadeira[4]?></span>
                                         </label>
                                     @else
-                                        <label class="cadeiras c1">
+                                        <label class="cadeiras c1 t1">
                                             <input type="radio" name="cadeira" class="btnc" id="ws5" value="<?=$cadeira[4]?>">
                                             <span class="checkmark"><?=$cadeira[4]?></span>
                                         </label>
@@ -109,8 +113,8 @@
                     </div>
                 </section>
                 <section class="footerBase">
-                    <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
-                    <button type="submit" class="btnCont">Continuar <i class="fas fa-long-arrow-alt-right"></i></button>
+                    <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
+                    <button type="submit" class="btnCont t1">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
                 </section>
             </form>
 
@@ -118,5 +122,6 @@
         </article>
     </main>
     <footer></footer>
+    <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
 </html>

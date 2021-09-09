@@ -56,10 +56,6 @@
     background-color: #FE662E;
  }
 
- .containerMesa:active {
-     background-color: blue;
- }
-
 
 .radioButton {
     display: none;

@@ -36,10 +36,12 @@
 }
 .local {
     height: 34%;
-    font-size: 1.2rem;
-    font-weight: 700;
 }
 
+.local p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 .mesaCadeira {
     flex-direction: column;
     height: 66%;

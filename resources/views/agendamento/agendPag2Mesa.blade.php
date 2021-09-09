@@ -10,7 +10,11 @@
 </head>
 <body>
     <header>
+<<<<<<< HEAD
+        <a href="agendPag1Local.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+=======
         <a href="/reserva"><i class="far fa-arrow-alt-circle-left"></i></a>
+>>>>>>> 6df36278217d106e9ad87dd7810bbc80b709c8eb
         <img src="{{ asset('img/Barra_de_progresso_3.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
@@ -39,7 +43,7 @@
                                                 <span class="checkmark">{{$i}}</span>
                                             </label>
                                         @else
-                                            <label class="containerMesa">
+                                            <label class="containerMesa t1">
                                                 <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
                                                 <span class="checkmark">{{$i}}</span>
                                             </label>
@@ -59,7 +63,7 @@
                                                     <span class="checkmark">{{$i}}</span>
                                                 </label>
                                             @else
-                                                <label class="containerMesa">
+                                                <label class="containerMesa t1">
                                                     <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
                                                     <span class="checkmark">{{$i}}</span>
                                                 </label>
@@ -79,7 +83,7 @@
                                                     <span class="checkmark">{{$i}}</span>
                                                 </label>
                                             @else
-                                                <label class="containerMesa">
+                                                <label class="containerMesa t1">
                                                     <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
                                                     <span class="checkmark">{{$i}}</span>
                                                 </label>
@@ -95,8 +99,8 @@
 
                 </section>
                 <section class="footerBase">
-                    <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
-                    <button type="submit" class="btnCont">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
+                    <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
+                    <button type="submit" class="btnCont t1">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
                 </section>
             </form>
         </article>
