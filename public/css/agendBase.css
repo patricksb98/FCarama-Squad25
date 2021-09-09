@@ -63,3 +63,9 @@ header {
     transition: .1s;
     opacity: .9;
 }
+
+.radioButton {
+    display: none;
+    width: 1px;
+    height: 1px;
+}

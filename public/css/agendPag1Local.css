@@ -1,0 +1,46 @@
+.mainBase {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.local, .data {
+    width: 80%;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+ 
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10rem;
+    height: 2.7rem;
+    background: #F3F1F0 ;
+    margin: 2rem 1rem 0 0;
+}
+
+.btn span {
+    font-weight: 500;
+}
+
+.data p {
+    margin: 1.5rem 0;
+}
+#andar {
+    display: none;
+}
