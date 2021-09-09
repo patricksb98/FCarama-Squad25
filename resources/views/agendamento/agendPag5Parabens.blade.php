@@ -20,8 +20,8 @@
         <h2>Aguardamos você para o Encontro dos Laranjas!</h2>
     </main>
     <footer class="footerBase">
-        <a href="#">Sair</a>
-        <div class="box"><a href="agendPag1Local.html">Fazer outra reserva</a></div>
+        <a href="/sair">Sair</a>
+        <div class="box"><a href="/reserva">Fazer outra reserva</a></div>
     </footer>
 </body>
 </html>

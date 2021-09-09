@@ -42,7 +42,7 @@
     </main>
     <footer class="footerBase">
         <a href="/sair" class="btnDisc">DISCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
-        <a href="#" class="btnCont">CONCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
+        <a href="reserva" class="btnCont">CONCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
         <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
     </footer>
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>

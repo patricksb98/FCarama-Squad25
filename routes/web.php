@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 Route::get('login', 'App\Http\Controllers\LogarController@index');
 Route::post('login', 'App\Http\Controllers\LogarController@logar')->name('login');
+Route::get('termos', 'App\Http\Controllers\ReservaController@verTermos')->name('termos');
+Route::post('termos', 'App\Http\Controllers\ReservaController@concordarTermos')->name('termos');
 Route::get('reserva', 'App\Http\Controllers\ReservaController@index')->name('reserva')->middleware('auth');
 Route::post('reserva', 'App\Http\Controllers\ReservaController@store')->name('reserva')->middleware('auth');
 Route::get('reserva2', 'App\Http\Controllers\ReservaController@mostrarMesas')->name('reserva2')->middleware('auth');
@@ -27,6 +29,9 @@ Route::get('reserva3', 'App\Http\Controllers\ReservaController@mostrarCadeiras')
 Route::post('reserva3', 'App\Http\Controllers\ReservaController@escolherCadeira')->name('reserva3')->middleware('auth');
 Route::get('reserva4', 'App\Http\Controllers\ReservaController@revisarReserva')->name('reserva4')->middleware('auth');
 Route::post('reserva4', 'App\Http\Controllers\ReservaController@confirmarReserva')->name('reserva4')->middleware('auth');
+Route::get('confirmada', 'App\Http\Controllers\ReservaController@reservaConfirmada')->name('confirmada')->middleware('auth');
+Route::post('confirmada', 'App\Http\Controllers\ReservaController@confirmarReserva')->name('confirmada')->middleware('auth');
+
 
 Route::get('/visualizando-email', function (){
     return new \App\Mail\Confirmacao('Patrick', '2021-09-08', 'São Paulo', '3', '14');

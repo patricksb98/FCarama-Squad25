@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <a href="agendPag3Cadeira.html"><i class="far fa-arrow-alt-circle-left"></i></a>
+    <a href="/reserva3"><i class="far fa-arrow-alt-circle-left"></i></a>
     <img src="../img/Barra_de_progresso_5.svg" alt="">
     <img src="../img/Logo_-_Paginas_internas.svg" alt="">
 </header>
@@ -18,6 +18,7 @@
     <article>
 
         <form method="post">
+            @csrf
             <section class="mainBase">
                 <div class="containerMaster">
                     <p class="subTitulo">Revise e confirme os dados da sua reserva:</p>
