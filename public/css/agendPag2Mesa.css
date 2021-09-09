@@ -10,8 +10,52 @@
     flex-direction: column;
 }
 
+.master {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLegenda {
+    width: 25%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.legenda {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.legenda1, .legenda2, .legenda3 {
+    border: solid 1px #FEBBA2;
+    width: 3.7rem;
+    height: 2rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+}
+
+.legenda1 {
+    background-color: #D03800;
+}
+
+.legenda2 {
+    background-color: #FEBBA2;
+}
+
+.legenda3 {
+    background-color: #F3F1F0;
+}
+
+
 .containerBox {
-    width: 90%;
+    width: 75%;
     height: 90%;
     display: flex;
     justify-content: center;
@@ -55,25 +99,27 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #F3F1F0;
+    background-color: #D03800;
     border: solid 1px #FE662E;
     border-radius: 3px;
 }
 
-.containerMesa:hover{
-    background-color: #FE662E;
+.checkmark:hover{
+    background-color: #FEBBA2;
     transition: .3s;
+    border-radius: 3px;
  }
 
 .containerMesa input:checked  ~ .checkmark{
-    background-color: #FE662E;
+    background-color: #FEBBA2;
+    border: solid 3px #FE662E;
 }
 
 .containerMesa strong {
     position: absolute;
 	z-index: 4;
     font-weight: 700;
-    color: white;
+
 }
 
 .footerBase {
