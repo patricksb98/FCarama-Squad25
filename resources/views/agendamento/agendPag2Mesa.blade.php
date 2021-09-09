@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a href="agendPag1Local.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <a href="/reserva" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_3.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>

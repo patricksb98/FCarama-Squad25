@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <a href="agendPag3Cadeira.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <a href="/reserva3" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
@@ -43,7 +43,7 @@
                 </div>
             </section>
             <section class="footerBase">
-                <a href="agendPag1Local.html" class="t1">Alterar dados da reserva</a>
+                <a href="/reserva" class="t1">Alterar dados da reserva</a>
                 <button type="submit" class="btnCont t1">CONFIRMAR <i class="fas fa-long-arrow-alt-right"></i></button>
                 <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
 

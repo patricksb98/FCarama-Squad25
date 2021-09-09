@@ -21,8 +21,8 @@
     </main>
     <footer class="footerBase">
 
-        <a href="#" class="t1">SAIR <i class="fas fa-long-arrow-alt-right"></i></a>
-        <div class="box t1"><a href="agendPag1Local.html">FAZER OUTRA RESERVA <i class="fas fa-long-arrow-alt-right"></i> </a></div>
+        <a href="/sair" class="t1">SAIR <i class="fas fa-long-arrow-alt-right"></i></a>
+        <div class="box t1"><a href="/reserva">FAZER OUTRA RESERVA <i class="fas fa-long-arrow-alt-right"></i> </a></div>
 
     </footer>
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
