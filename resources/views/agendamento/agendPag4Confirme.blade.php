@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a href="agendPag3Cadeira.html"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <a href="agendPag3Cadeira.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
@@ -26,7 +26,7 @@
                         <div class="box">
                             <div class="local">
                                 <!-- Nessa div entra o local da reserva-->
-                                <p>Local: <?=$local?></p>
+                                <p> <?=$local?></p>
                             </div>
                             <div class="mesaCadeira">
                                 <!-- Aqui entra o numnero da mesa e cadeira-->
@@ -42,9 +42,9 @@
                 </div>  
             </section>
             <section class="footerBase">
-                <a href="agendPag1Local.html">Alterar dados da reserva</a>
-                <button type="submit" class="btnCont">Confirmar <i class="fas fa-long-arrow-alt-right"></i></button>
-                <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
+                <a href="agendPag1Local.html" class="t1">Alterar dados da reserva</a>
+                <button type="submit" class="btnCont t1">CONFIRMAR <i class="fas fa-long-arrow-alt-right"></i></button>
+                <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
             </section>
             </form>
 
@@ -54,5 +54,6 @@
     <footer>
 
     </footer>
+    <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
 </html>

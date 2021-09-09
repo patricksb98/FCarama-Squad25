@@ -25,7 +25,7 @@
                     </section>
                     <section class="footerBase">
                         <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
-                        <button type="submit">Continuar <i class="fas fa-long-arrow-alt-right"></i></button>
+                        <button type="submit">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
                     </section>
                 </form>
         </article>
