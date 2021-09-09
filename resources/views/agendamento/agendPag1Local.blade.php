@@ -18,10 +18,34 @@
                 <form action="" method="post">
                     @csrf
                     <section class="mainBase">
-                        <label for="">Qual sede você deseja utilizar?</label>
-                        <input type="text" name="local" value="São Paulo">
-                        <label for="">Quando você vem ao escritório?</label>
-                        <input type="date" name="data" id="data">
+                        <div class="local">
+                            <p>Qual sede você deseja utilizar?</p>
+                            <div class="container">
+                                <label class="btn t1" id="saoPaulo">                                
+                                    <input type="radio" name="local" class="radioButton" value="São Paulo">
+                                    <span class="checkmark">SÃO PAULO</span>
+                                </label>
+                                <label class="btn t1" id="santos">
+                                    <input type="radio" name="local" class="radioButton" value="Santos">
+                                    <span class="checkmark">SANTOS</span>
+                                </label>
+                                
+                            </div>
+                            <div class="container" id="andar">
+                                <label class="btn t1">                                
+                                    <input type="radio" name="andar" class="radioButton" value="1º Andar">
+                                    <span class="checkmark">1º ANDAR</span>
+                                </label>
+                                <label class="btn t1" id="andar2">
+                                    <input type="radio" name="andar" class="radioButton" value="2º Andar">
+                                    <span class="checkmark">2º ANDAR</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <p>Quando você vem ao escritório?</p>
+                            <input type="date" name="data" id="data">
+                        </div>
                     </section>
                     <section class="footerBase">
                         <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
