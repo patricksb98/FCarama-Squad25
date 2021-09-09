@@ -79,7 +79,13 @@ class ReservaController extends Controller
 
         $reservas = Reserva::all();
 
-        return view('agendamento.agendPag3Cadeira', compact('cadeira', 'reservas', 'data', 'local'));
+        $reservada1 = count($reservas->where('dia', $data)->where('local', $local)->where('id_cadeira', $cadeira[0]));
+        $reservada2 = count($reservas->where('dia', $data)->where('local', $local)->where('id_cadeira', $cadeira[1]));
+        $reservada3 = count($reservas->where('dia', $data)->where('local', $local)->where('id_cadeira', $cadeira[2]));
+        $reservada4 = count($reservas->where('dia', $data)->where('local', $local)->where('id_cadeira', $cadeira[3]));
+        $reservada5 = count($reservas->where('dia', $data)->where('local', $local)->where('id_cadeira', $cadeira[4]));
+
+        return view('agendamento.agendPag3Cadeira', compact('cadeira', 'reservas', 'data', 'local', 'reservada1', 'reservada2', 'reservada3','reservada4', 'reservada5'));
     }
 
     public function escolherCadeira(Request $request)
@@ -127,7 +133,9 @@ class ReservaController extends Controller
 
         $reservas = Reserva::all();
 
-        if(count($reservas->where('dia', $data)->where('local', $local)->where('id_cadeira', $cadeira)) == 0){
+        $reservada = count($reservas->where('dia', $data)->where('local', $local)->where('id_cadeira', $cadeira));
+
+        if($reservada == 0){
             $reserva->save();
             session()->forget(['local', 'data', 'id_mesa', 'id_cadeira']);
 
