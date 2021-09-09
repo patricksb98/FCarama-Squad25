@@ -10,7 +10,11 @@
 </head>
 <body>
     <header>
+<<<<<<< HEAD
         <a href="/reserva2"><i class="far fa-arrow-alt-circle-left"></i></a>
+=======
+        <a href="agendPag2Mesa.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+>>>>>>> 54a5915408a5bfe0c2a10ef2bfc9a258dbe3611a
         <img src="{{ asset('img/Barra_de_progresso_4.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
