@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/agendPag3Cadeira.css') }}">
+    <link rel="stylesheet" href="css/agendBase.css">
+    <link rel="stylesheet" href="css/agendPag4Confirme.css">
     <title>Document</title>
 </head>
 <body>
+<<<<<<< HEAD
     <header>
         <a href="agendPag3Cadeira.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
@@ -17,9 +18,8 @@
     <main>
         <article>
 
-            <form method="post">
-                @csrf
-                <section class="mainBase">
+        <form method="post">
+            <section class="mainBase">
                 <div class="containerMaster">
                     <p class="subTitulo">Revise e confirme os dados da sua reserva:</p>
                     <div class="container">
@@ -39,21 +39,31 @@
                             <p>Data: <?=$data?></p>
                         </div>
                     </div>
-                </div>  
+                </div>
             </section>
             <section class="footerBase">
+<<<<<<< HEAD
                 <a href="agendPag1Local.html" class="t1">Alterar dados da reserva</a>
                 <button type="submit" class="btnCont t1">CONFIRMAR <i class="fas fa-long-arrow-alt-right"></i></button>
                 <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
+=======
+                <a href="agendPag1Local.html">Alterar dados da reserva</a>
+                <button type="submit" class="btnCont">  Confirmar  <i class="fas fa-long-arrow-alt-right"></i></button>
+>>>>>>> 9fb3dc1d3731953e87e776550a8ed2189f1cebd5
             </section>
-            </form>
+        </form>
 
 
-        </article>
-    </main>
-    <footer>
+    </article>
+</main>
+<footer>
 
+<<<<<<< HEAD
     </footer>
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
+=======
+</footer>
+<script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
+>>>>>>> 9fb3dc1d3731953e87e776550a8ed2189f1cebd5
 </body>
 </html>
