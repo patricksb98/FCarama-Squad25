@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="/reserva"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <a href="/reserva" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_2.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
@@ -24,8 +24,8 @@
                         <input type="date" name="data" id="data">
                     </section>
                     <section class="footerBase">
-                        <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
-                        <button type="submit">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
+                        <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
+                        <button type="submit t1">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
                     </section>
                 </form>
         </article>

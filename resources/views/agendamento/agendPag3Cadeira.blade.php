@@ -7,15 +7,11 @@
     <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
     <link rel="stylesheet" href="{{ asset('css/agendPag3Cadeira.css') }}">
     <title>Agendamento</title>
-    
+
 </head>
 <body>
     <header>
-<<<<<<< HEAD
-        <a href="/reserva2"><i class="far fa-arrow-alt-circle-left"></i></a>
-=======
-        <a href="agendPag2Mesa.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
->>>>>>> 54a5915408a5bfe0c2a10ef2bfc9a258dbe3611a
+        <a href="/reserva2" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_4.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
@@ -51,7 +47,7 @@
                                             <span class="checkmark"><?=$cadeira[0]?></span>
                                         </label>
                                     @else
-                                        <label class="cadeiras c1">
+                                        <label class="cadeiras c1 t1">
                                             <input type="radio" name="cadeira" class="btnc" id="ws1" value="<?=$cadeira[0]?>">
                                             <span class="checkmark"><?=$cadeira[0]?></span>
                                         </label>
@@ -63,7 +59,7 @@
                                                 <span class="checkmark"><?=$cadeira[1]?></span>
                                             </label>
                                         @else
-                                            <label class="cadeiras c1" id="we2">
+                                            <label class="cadeiras c1 t1" id="we2">
                                                 <input type="radio" name="cadeira" class="btnc" id="ws2" value="<?=$cadeira[1]?>">
                                                 <span class="checkmark"><?=$cadeira[1]?></span>
                                             </label>
@@ -75,7 +71,7 @@
                                                 <span class="checkmark"><?=$cadeira[2]?></span>
                                             </label>
                                         @else
-                                            <label class="cadeiras c1">
+                                            <label class="cadeiras c1 t1">
                                                 <input type="radio" name="cadeira" class="btnc" id="ws3" value="<?=$cadeira[2]?>">
                                                 <span class="checkmark"><?=$cadeira[2]?></span>
                                             </label>
@@ -90,7 +86,7 @@
                                             <span class="checkmark"><?=$cadeira[3]?></span>
                                         </label>
                                     @else
-                                        <label class="cadeiras c1">
+                                        <label class="cadeiras c1 t1">
                                             <input type="radio" name="cadeira" class="btnc" id="ws4" value="<?=$cadeira[3]?>">
                                             <span class="checkmark"><?=$cadeira[3]?></span>
                                         </label>
@@ -102,7 +98,7 @@
                                             <span class="checkmark"><?=$cadeira[4]?></span>
                                         </label>
                                     @else
-                                        <label class="cadeiras c1">
+                                        <label class="cadeiras c1 t1">
                                             <input type="radio" name="cadeira" class="btnc" id="ws5" value="<?=$cadeira[4]?>">
                                             <span class="checkmark"><?=$cadeira[4]?></span>
                                         </label>
@@ -114,8 +110,8 @@
                     </div>
                 </section>
                 <section class="footerBase">
-                    <a href="/sair" class="btnSair"><i class="fas fa-sign-out-alt"></i></a>
-                    <button type="submit" class="btnCont">Continuar <i class="fas fa-long-arrow-alt-right"></i></button>
+                    <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
+                    <button type="submit" class="btnCont t1">Continuar <i class="fas fa-long-arrow-alt-right"></i></button>
                 </section>
             </form>
 
