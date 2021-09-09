@@ -34,9 +34,9 @@
                     <label for="senhaLogin">Senha</label>
                     <input type="password" name="password" id="senhaLogin" class="senhaLogin" placeholder=" Digite sua senha">
                 </div>
-                <button type="submit" class="bntLogin">VAMOS COMEÇAR</button>
+                <button type="submit t1" class="bntLogin">VAMOS COMEÇAR</button>
             </form>
-            <a href="#">Esqueci minha senha</a>
+            <a href="#" class="t1">Esqueci minha senha</a>
         </section>
     </article>
 </body>
