@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
     <link rel="stylesheet" href="{{ asset('css/agendPag3Cadeira.css') }}">
-    <title>Document</title>
+    <title>Agendamento</title>
 </head>
 <body>
     <header>
