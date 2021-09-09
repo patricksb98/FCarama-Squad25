@@ -55,7 +55,7 @@
         </article>
     </main>
     <footer></footer>
-
+    <script src="{{ asset('js/agendPag1Local.js') }}"></script>
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
 </html>
