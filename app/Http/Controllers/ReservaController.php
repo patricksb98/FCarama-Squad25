@@ -125,15 +125,20 @@ class ReservaController extends Controller
         $reserva->local = $local;
         $reserva->dia = $data;
 
-        $reserva->save();
+        $reservas = Reserva::all();
 
-        session()->forget(['local', 'data', 'id_mesa', 'id_cadeira']);
+        if(count($reservas->where('dia', $data)->where('local', $local)->where('id_cadeira', $cadeira)) == 0){
+            $reserva->save();
+            session()->forget(['local', 'data', 'id_mesa', 'id_cadeira']);
 
-        $email =  new \App\Mail\Confirmacao($name_consultor, $data, $local , $mesa, $cadeira);
-        $email->subject = 'Confirmação de Reserva!';
-        \Illuminate\Support\Facades\Mail::to($email_consultor)->send($email);
+            $email =  new \App\Mail\Confirmacao($name_consultor, $data, $local , $mesa, $cadeira);
+            $email->subject = 'Confirmação de Reserva!';
+            \Illuminate\Support\Facades\Mail::to($email_consultor)->send($email);
 
-        return redirect()->route('confirmada');
+            return redirect()->route('confirmada');
+        }else{
+             echo "Deu certo!";
+        }
 
     }
 
