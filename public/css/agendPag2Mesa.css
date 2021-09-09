@@ -44,17 +44,37 @@
 .containerMesa {
     width: 15.5%;
     height: 14%;
-    border: solid 1px #FE662E;
-    border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: #F3F1F0;
+    position: relative;
 }
- .containerMesa:hover{
+
+.checkmark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #F3F1F0;
+    border: solid 1px #FE662E;
+    border-radius: 3px;
+}
+
+.containerMesa:hover{
     background-color: #FE662E;
+    transition: .3s;
  }
+
+.containerMesa input:checked  ~ .checkmark{
+    background-color: #FE662E;
+}
+
+.containerMesa strong {
+    position: absolute;
+	z-index: 4;
+    font-weight: 700;
+    color: white;
+}
 
 .footerBase {
     justify-content: flex-end;

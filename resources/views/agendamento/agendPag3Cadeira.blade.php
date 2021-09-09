@@ -35,7 +35,7 @@
                             <div class="legenda">
                                 <div class="legenda3"></div><p>Desativada</p>
                             </div>
-                            <!--Aqui entra a legenda da mesa-->
+                           
                         </div>
                         <fieldset class="containerMesa">
 
@@ -43,37 +43,43 @@
                                 <div class="cadeirasModal cm1" id="workstation">
                                     @if($reservada1 == 1)
                                         <label class="cadeiras c1" style="background: #FEBBA2">
+                                            <strong><?=$cadeira[0]?></strong>
                                             <input type="radio" name="cadeira" class="btnc" id="ws1" value="<?=$cadeira[0]?>" disabled>
-                                            <span class="checkmark"><?=$cadeira[0]?></span>
+                                            <span class="checkmark"></span>
                                         </label>
                                     @else
                                         <label class="cadeiras c1 t1">
+                                            <strong><?=$cadeira[0]?></strong>
                                             <input type="radio" name="cadeira" class="btnc" id="ws1" value="<?=$cadeira[0]?>">
-                                            <span class="checkmark"><?=$cadeira[0]?></span>
+                                            <span class="checkmark"></span>
                                         </label>
                                     @endif
                                     <div class="cadeiras c0"></div>
                                         @if($reservada2 == 1)
                                             <label class="cadeiras c1" id="we2" style="background: #FEBBA2">
+                                                <strong><?=$cadeira[1]?></strong>
                                                 <input type="radio" name="cadeira" class="btnc" id="ws2" value="<?=$cadeira[1]?>" disabled>
-                                                <span class="checkmark"><?=$cadeira[1]?></span>
+                                                <span class="checkmark"></span>
                                             </label>
                                         @else
                                             <label class="cadeiras c1 t1" id="we2">
+                                                <strong><?=$cadeira[1]?></strong>
                                                 <input type="radio" name="cadeira" class="btnc" id="ws2" value="<?=$cadeira[1]?>">
-                                                <span class="checkmark"><?=$cadeira[1]?></span>
+                                                <span class="checkmark"></span>
                                             </label>
                                         @endif
                                     <div class="cadeiras c0"></div>
                                         @if($reservada3 == 1)
                                             <label class="cadeiras c1" style="background: #FEBBA2">
+                                                <strong><?=$cadeira[2]?></strong>
                                                 <input type="radio" name="cadeira" class="btnc" id="ws3" value="<?=$cadeira[2]?>" disabled>
-                                                <span class="checkmark"><?=$cadeira[2]?></span>
+                                                <span class="checkmark"></span>
                                             </label>
                                         @else
                                             <label class="cadeiras c1 t1">
+                                                <strong><?=$cadeira[2]?></strong>
                                                 <input type="radio" name="cadeira" class="btnc" id="ws3" value="<?=$cadeira[2]?>">
-                                                <span class="checkmark"><?=$cadeira[2]?></span>
+                                                <span class="checkmark"></span>
                                             </label>
                                         @endif
                                 </div>
@@ -82,25 +88,29 @@
                                     <div class="cadeiras c0"></div>
                                     @if($reservada4 == 1)
                                         <label class="cadeiras c1" style="background: #FEBBA2">
+                                            <strong><?=$cadeira[3]?></strong>
                                             <input type="radio" name="cadeira" class="btnc" id="ws4" value="<?=$cadeira[3]?>" disabled>
-                                            <span class="checkmark"><?=$cadeira[3]?></span>
+                                            <span class="checkmark"></span>
                                         </label>
                                     @else
                                         <label class="cadeiras c1 t1">
+                                        <strong><?=$cadeira[3]?></strong>
                                             <input type="radio" name="cadeira" class="btnc" id="ws4" value="<?=$cadeira[3]?>">
-                                            <span class="checkmark"><?=$cadeira[3]?></span>
+                                            <span class="checkmark"></span>
                                         </label>
                                     @endif
                                     <div class="cadeiras c0"></div>
                                     @if($reservada5 == 1)
                                         <label class="cadeiras c1" style="background: #FEBBA2">
+                                            <strong><?=$cadeira[4]?></strong>
                                             <input type="radio" name="cadeira" class="btnc" id="ws5" value="<?=$cadeira[4]?>" disabled>
-                                            <span class="checkmark"><?=$cadeira[4]?></span>
+                                            <span class="checkmark"></span>
                                         </label>
                                     @else
                                         <label class="cadeiras c1 t1">
+                                            <strong><?=$cadeira[4]?></strong>
                                             <input type="radio" name="cadeira" class="btnc" id="ws5" value="<?=$cadeira[4]?>">
-                                            <span class="checkmark"><?=$cadeira[4]?></span>
+                                            <span class="checkmark"></span>
                                         </label>
                                     @endif
                                     <div class="cadeiras c0"></div>

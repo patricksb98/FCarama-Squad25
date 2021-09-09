@@ -25,16 +25,32 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px #FE662E;
-    border-radius: 5px;
+    position: relative;
     cursor: pointer;
     width: 10rem;
     height: 2.7rem;
-    background: #F3F1F0 ;
     margin: 2rem 1rem 0 0;
 }
 
-.btn span {
+.checkmark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #F3F1F0;
+    border: solid 1px #FE662E;
+    border-radius: 5px;
+}
+
+
+
+.container input:checked  ~ .checkmark{
+    background-color: #FEBBA2;
+    border: solid 3px #FE662E;
+}
+
+strong {
+	position: absolute;
+	z-index: 4;
     font-weight: 500;
 }
 
@@ -43,4 +59,8 @@ p {
 }
 #andar {
     display: none;
+}
+
+.footerBase {
+    justify-content: flex-end;
 }

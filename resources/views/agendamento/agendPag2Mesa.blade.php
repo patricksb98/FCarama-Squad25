@@ -30,18 +30,21 @@
                                     @for($i = 1; $i <= 30; $i++)
                                         @if(count($reservas->where('dia', $data)->where('local', $local)) >= 240)
                                     <label class="containerMesa" style="background: #FEBBA2">
+                                        <strong>{{$i}}</strong>
                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                        <span class="checkmark">{{$i}}</span>
+                                        <span class="checkmark"></span>
                                     </label>
                                         @elseif(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
                                             <label class="containerMesa" style="background: #FEBBA2">
+                                                <strong>{{$i}}</strong>
                                                 <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                                <span class="checkmark">{{$i}}</span>
+                                                <span class="checkmark"></span>
                                             </label>
                                         @else
                                             <label class="containerMesa t1">
+                                                <strong>{{$i}}</strong>
                                                 <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
-                                                <span class="checkmark">{{$i}}</span>
+                                                <span class="checkmark"></span>
                                             </label>
                                         @endif
                                     @endfor
@@ -50,18 +53,21 @@
                                         @for($i = 31; $i <= 60; $i++)
                                             @if(count($reservas->where('dia', $data)->where('local', $local)) >= 240)
                                                 <label class="containerMesa" style="background: #FEBBA2">
+                                                    <strong>{{$i}}</strong>
                                                     <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                                    <span class="checkmark">{{$i}}</span>
+                                                    <span class="checkmark"></span>
                                                 </label>
                                             @elseif(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
                                                 <label class="containerMesa" style="background: #FEBBA2">
+                                                    <strong>{{$i}}</strong>
                                                     <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                                    <span class="checkmark">{{$i}}</span>
+                                                    <span class="checkmark"></span>
                                                 </label>
                                             @else
                                                 <label class="containerMesa t1">
+                                                    <strong>{{$i}}</strong>
                                                     <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
-                                                    <span class="checkmark">{{$i}}</span>
+                                                    <span class="checkmark"></span>
                                                 </label>
                                             @endif
                                         @endfor
@@ -70,18 +76,21 @@
                                         @for($i = 1; $i <= 10; $i++)
                                             @if(count($reservas->where('dia', $data)) >= 40)
                                                 <label class="containerMesa" style="background: #FEBBA2">
+                                                <strong>{{$i}}</strong>
                                                     <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                                    <span class="checkmark">{{$i}}</span>
+                                                    <span class="checkmark"></span>
                                                 </label>
                                             @elseif(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
                                                 <label class="containerMesa" style="background: #FEBBA2">
+                                                <strong>{{$i}}</strong>
                                                     <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                                    <span class="checkmark">{{$i}}</span>
+                                                    <span class="checkmark"></span>
                                                 </label>
                                             @else
                                                 <label class="containerMesa t1">
+                                                    <strong>{{$i}}</strong>
                                                     <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
-                                                    <span class="checkmark">{{$i}}</span>
+                                                    <span class="checkmark"></span>
                                                 </label>
                                             @endif
                                         @endfor

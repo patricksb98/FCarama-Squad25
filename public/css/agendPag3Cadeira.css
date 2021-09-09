@@ -93,18 +93,30 @@
 }
 
 .c1 {
-    background-color: #D03800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     cursor: pointer;
 }
 
 .checkmark {
-    width: 100%;
+    position: absolute;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 500;
+    width: 100%;
+    background-color: #D03800;
+    border: solid 1px #FEBBA2;
+    border-radius: 4px;
+}
+
+.c1 input:checked  ~ .checkmark{
+    background-color: #FEBBA2;
+    border: solid 3px #D03800;
+}
+
+strong {
+	position: absolute;
+	z-index: 4;
 }
 
 .btnc {
