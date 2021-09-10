@@ -190,4 +190,21 @@ class ReservaController extends Controller
         return redirect()->route('reserva');
     }
 
+    public function visualizarReserva()
+    {
+        $id_consultor = Auth::id();
+        $reservas = Reserva::all();
+
+        $reserva = $reservas->where('id_consultor', $id_consultor);
+
+        return view ('agendamento.agendPagVisualizar', compact('reserva'));
+    }
+
+    public function destroy(Request $request)
+    {
+        Reserva::destroy($request->id);
+
+        return redirect('testeVisualizar');
+    }
+
 }

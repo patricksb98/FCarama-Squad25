@@ -31,6 +31,8 @@ Route::get('reserva4', 'App\Http\Controllers\ReservaController@revisarReserva')-
 Route::post('reserva4', 'App\Http\Controllers\ReservaController@confirmarReserva')->name('reserva4')->middleware('auth');
 Route::get('confirmada', 'App\Http\Controllers\ReservaController@reservaConfirmada')->name('confirmada')->middleware('auth');
 Route::post('confirmada', 'App\Http\Controllers\ReservaController@confirmarReserva')->name('confirmada')->middleware('auth');
+Route::get('testeVisualizar', 'App\Http\Controllers\ReservaController@visualizarReserva')->name('visualizar');
+Route::post('/reserva/remover/{id}', 'App\Http\Controllers\ReservaController@destroy');
 
 
 Route::get('/visualizando-email', function (){
