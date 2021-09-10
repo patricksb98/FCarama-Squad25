@@ -1,0 +1,39 @@
+@media screen and (max-width: 740px) {
+    header  {
+        justify-content: center
+    }
+}
+
+@media screen and (max-width: 550px){
+    .footerBase {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 440px){
+    header {
+        height: 7vh;
+    }
+    
+    .footerBase{
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 330px){
+    header {
+        display: none;
+    }
+    
+    .footerBase{
+        margin: 0;
+    }
+
+    .box {
+        margin-top: .5rem;
+    }
+
+    .box a i {
+        display: none;
+    }
+}
