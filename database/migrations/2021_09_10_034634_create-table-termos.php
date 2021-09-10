@@ -19,7 +19,7 @@ class CreateTableTermos extends Migration
             $table->boolean('aceitou');
         });
 
-        Schema::table('reservas', function (Blueprint $table) {
+        Schema::table('protocoloHigienizacao', function (Blueprint $table) {
             $table->foreign('id_consultor')->references('id')->on('consultores');
         });
     }
