@@ -10,6 +10,7 @@ body {
 .containerSaudacao, .containerLogin {
     width: 50%;
     height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-family:'Roboto', sans-serif;
@@ -90,7 +91,7 @@ body {
     height: 5vh;
     margin-top: 0.3rem;
     border: #FE662E solid 1px;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .bntLogin {

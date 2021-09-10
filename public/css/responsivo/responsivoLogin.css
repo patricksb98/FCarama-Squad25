@@ -1,0 +1,146 @@
+@media screen and (max-width: 1024px) {
+    body {
+        flex-direction: column;
+    }
+
+    .containerSaudacao, .containerLogin {
+        width: 100vw;
+    }
+
+    .containerSaudacao {
+        height: 15vh;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .containerLogin {
+        height: 80vh;
+    }
+
+    .box1 .imgSaudacao, .box1 h2 {
+        display: none;
+    }
+    
+    .box1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .logoInicial img {
+        width: 30%;
+        height: 30%;
+    }
+
+    .box2 h3 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }   
+
+    .senhaLogin, .emailLogin {
+        width: 60vw;
+        height: 7vh;
+    }
+
+    .containerForm label, .containerForm input {
+        font-size: 1.5rem;
+    }
+
+    .bntLogin {
+        width: 30vw;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    
+    .linkEsqueci {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+
+    .bntLogin {
+        width: 40vw;
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+
+    .bntLogin {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .box1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .logoInicial img {
+        width: 20%;
+        height: 20%;
+    }
+    
+    .box2 h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }  
+
+    
+    .senhaLogin, .emailLogin {
+        width: 90vw;
+        height: 7vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .containerForm label, .containerForm input {
+        font-size: 1rem;
+    }
+
+    .bntLogin {
+        width: 40vw;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .linkEsqueci {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .bntLogin {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 330px){
+    
+    
+    .bntLogin{
+        width: 60vw;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+    .linkEsqueci {
+        font-size: .8rem;
+    }
+
+    .box1 h1 {
+        font-size: 1.25rem;
+        line-height: 1.7rem;
+        margin-top: 2rem;
+    }
+
+    .box2 h3 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 4rem;
+    }  
+
+
+}

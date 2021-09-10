@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../.." type="text/css">
+    <link href="../../../public/css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../public/css/responsivo/responsivoLogin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Login</title>
 </head>
 <body>
     <article class="containerSaudacao">
         <section class="box1">
-            <h1>Bem vindo ao <BR> <p> ENCONTRO DOS LARANJAS </p></h1>
+            <h1>Bem vindo ao <BR> <p> ENCONTRO DOS LARANJAS</p></h1>
             <div class="imgSaudacao"><img src="" alt=""></div>
             <h2>Estamos felizes em reabir nossos escritórios! </h2>
         </section>
@@ -18,21 +20,25 @@
     </article>
     <article class="containerLogin">
         <section class="logoInicial">
-            <img src="../../img/Logo_-_Paginas_internas.svg" alt="logo da FCamara" class="imglogo">
+            <img src="../../../public/img/Logo_-_Paginas_internas.svg" alt="logo da FCamara" class="imglogo">
             <div class="box2">
-                <h3>Faça o login e reserve sua mesa de maneira <p>simples e segura</p></h3>
+                <h3> <strong> Faça o login e </strong> <strong> reserve sua mesa </strong> <strong> de maneira </strong> <strong>simples e segura</strong></h3>
             </div>
         </section>
         <section class="formLogin">
             <form action="" method="POST">
-
-                <label for="emailLogin">E-mail</label>
-                <input type="email" name="email" id="emailLogin" placeholder="Digite seu e-mail">
-                <label for="senhaLogin">Senha</label>
-                <input type="password" name="password" id="senhaLogin" placeholder="Digite sua senha">
-                <button type="submit">Entrar</button>
+            
+                <div class="containerForm">
+                    <label for="emailLogin">E-mail</label>
+                    <input type="email" name="email" id="emailLogin" class="emailLogin" placeholder=" Digite seu e-mail">
+                </div>
+                <div class="containerForm">
+                    <label for="senhaLogin">Senha</label>
+                    <input type="password" name="password" id="senhaLogin" class="senhaLogin" placeholder=" Digite sua senha">
+                </div>
+                <button type="submit t1" class="bntLogin">VAMOS COMEÇAR</button>
             </form>
-            <a href="#">Esqueci minha senha</a>
+            <a href="#" class="linkEsqueci t1">Esqueci minha senha</a>
         </section>
     </article>
 </body>
