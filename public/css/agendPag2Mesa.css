@@ -125,3 +125,38 @@
 .footerBase {
     justify-content: flex-end;
 }
+
+.alert {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    top: 20%;
+    right: 35%;
+    background-color: #FE662E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 3px #D03800;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.alert p {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.btnok {
+    width: 4rem;
+    font-weight: bold;
+    height: 2rem;
+    border: solid 1px #D03800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
