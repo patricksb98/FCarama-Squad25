@@ -40,7 +40,7 @@
                             <div class="containerBox">
                                 <div class="box2"><p>ÁREA DE LAZER</p></div>
                                 <div class="boxMesa">
-         
+
                                     @if($local == "São Paulo 1º Andar")
                                         @for($i = 1; $i <= 30; $i++)
                                             @if(count($reservas->where('dia', $data)->where('local', $local)) >= 240)
@@ -117,7 +117,6 @@
                         </div>
                     </div>
                     <!--<input type="text" name="id_mesa">-->
-
                 </section>
                 <section class="footerBase">
                     <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
@@ -127,10 +126,12 @@
         </article>
     </main>
     <footer></footer>
-    <div class="alerta"id="alerta"> 
+    @if(isset($erro))
+    <div class="alerta"id="alerta">
         <p> Alguém foi mais rápido que você! <br> Por favor, faça a sua reserva novamente. </p>
         <div class="btnok t1" id="btnok">OK</div>
-    </div> 
+    </div>
+    @endif
     <script src="{{ asset('js/agendPag2mesa.js') }}"></script>
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>

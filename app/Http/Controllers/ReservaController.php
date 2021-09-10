@@ -47,6 +47,12 @@ class ReservaController extends Controller
             return redirect()->route('reserva');
         }
 
+        $data = session('data');
+        $reservas = Reserva::all();
+        $numero = count($reservas->where('dia', $data)->where('id_mesa', 1));
+
+        $local = session('local');
+
         $erro = session('erro');
         $errorMessage = [];
 
@@ -55,12 +61,6 @@ class ReservaController extends Controller
                 'erro' => $erro
             ];
         }
-
-        $data = session('data');
-        $reservas = Reserva::all();
-        $numero = count($reservas->where('dia', $data)->where('id_mesa', 1));
-
-        $local = session('local');
 
         return view('agendamento.agendPag2Mesa', compact('local', 'numero', 'reservas', 'data'), $errorMessage);
     }
