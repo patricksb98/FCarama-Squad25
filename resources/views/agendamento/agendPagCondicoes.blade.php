@@ -44,7 +44,10 @@
     <footer class="footerBase">
 
         <a href="/sair" class="btnDisc t1">DISCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
-        <a href="/reserva" class="btnCont t1">CONCORDO<i class="fas fa-long-arrow-alt-right"></i></a>
+        <form method="post">
+            @csrf
+            <button type="submit" class="btnCont t1" name="aceitou" value="1">CONCORDO<i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
         <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
 
 

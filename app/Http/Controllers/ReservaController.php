@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Reserva;
+use App\Models\Termos;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -11,11 +12,27 @@ class ReservaController extends Controller
 {
     public function verTermos()
     {
-        return view('agendamento.agendPagCondicoes');
+        $id_consultor = Auth::id();
+        $termos = Termos::all();
+        $aceitou = count($termos->where('id_consultor', $id_consultor)->where('aceitou', 1));
+
+        if($aceitou >= 1){
+            return redirect()->route('reserva');
+        }else{
+            return view('agendamento.agendPagCondicoes');
+        }
+
     }
 
-    public function concordarTermos()
+    public function concordarTermos(Request $request)
     {
+        $id_consultor = Auth::id();
+        $aceitou = new Termos();
+
+        $aceitou->id_consultor = $id_consultor;
+        $aceitou->aceitou = 1;
+        $aceitou->save();
+
         return redirect()->route('reserva');
     }
 

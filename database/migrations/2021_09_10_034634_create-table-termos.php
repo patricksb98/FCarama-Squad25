@@ -17,6 +17,7 @@ class CreateTableTermos extends Migration
             $table->id();
             $table->unsignedBigInteger('id_consultor');
             $table->boolean('aceitou');
+            $table->timestamps();
         });
 
         Schema::table('protocoloHigienizacao', function (Blueprint $table) {
