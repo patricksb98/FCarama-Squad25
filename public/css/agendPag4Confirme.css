@@ -20,6 +20,8 @@
     border: solid 1px #FE885C;
     border-radius: 8px;
     background-color: #F3F1F0;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .box {

@@ -13,22 +13,24 @@ class LogarController extends Controller
             return redirect()->route('termos');
         };
         $erro = session('erro');
-        $datas = [];
+        $errorMessage = [];
 
         if(!empty($erro)){
-            $datas = [
+            $errorMessage = [
                 'erro' => $erro
             ];
         }
 
-        return view('login.login', $datas);
+        $arroz = 0;
+
+        return view('login.login', compact('arroz'), $errorMessage);
     }
 
     public function logar(Request $request)
     {
         if (!Auth::attempt($request->only(['email', 'password']))){
             session()->flash('erro', 'Usuário e/ou senha incorretos.');
-            return redirect()->route('loginn');
+            return redirect()->route('login');
         };
 
         return redirect()->route('termos');

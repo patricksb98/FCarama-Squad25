@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('login', 'App\Http\Controllers\LogarController@index')->name('loginn');
+Route::get('login', 'App\Http\Controllers\LogarController@index')->name('login');
 Route::post('login', 'App\Http\Controllers\LogarController@logar')->name('login');
 Route::get('termos', 'App\Http\Controllers\ReservaController@verTermos')->name('termos');
 Route::post('termos', 'App\Http\Controllers\ReservaController@concordarTermos')->name('termos');

@@ -47,13 +47,22 @@ class ReservaController extends Controller
             return redirect()->route('reserva');
         }
 
+        $erro = session('erro');
+        $errorMessage = [];
+
+        if(!empty($erro)){
+            $errorMessage = [
+                'erro' => $erro
+            ];
+        }
+
         $data = session('data');
         $reservas = Reserva::all();
         $numero = count($reservas->where('dia', $data)->where('id_mesa', 1));
 
         $local = session('local');
 
-        return view('agendamento.agendPag2Mesa', compact('local', 'numero', 'reservas', 'data'));
+        return view('agendamento.agendPag2Mesa', compact('local', 'numero', 'reservas', 'data'), $errorMessage);
     }
 
     public function escolherMesa(Request $request)
@@ -135,7 +144,11 @@ class ReservaController extends Controller
 
         $reservada = count($reservas->where('dia', $data)->where('local', $local)->where('id_cadeira', $cadeira));
 
-        if($reservada == 0){
+        if(!$reservada == 0){
+            session()->flash('erro', 'Alguém foi mais rápido que você! Por favor, faça a sua reserva novamente.');
+            return redirect()->route('reserva2');
+        }else{
+
             $reserva->save();
             session()->forget(['local', 'data', 'id_mesa', 'id_cadeira']);
 
@@ -144,8 +157,6 @@ class ReservaController extends Controller
             \Illuminate\Support\Facades\Mail::to($email_consultor)->send($email);
 
             return redirect()->route('confirmada');
-        }else{
-             echo "Deu certo!";
         }
 
     }

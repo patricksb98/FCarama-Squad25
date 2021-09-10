@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/agendPag1Local.css') }}">
     <title>Agendamento</title>
 </head>
 <body>
@@ -21,23 +22,23 @@
                         <div class="local">
                             <p>Qual sede você deseja utilizar?</p>
                             <div class="container">
-                            <label class="btn t1" id="saoPaulo"> <strong>SÃO PAULO</strong>                               
-                                    <input type="radio" name="local" class="radioButton" value="São Paulo">
+                            <label class="btn t1" id="saoPaulo"> <strong>SÃO PAULO</strong>
+                                    <input type="radio" name="local" class="radioButton" value="São Paulo 1º Andar">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="btn t1" id="santos"><strong>SANTOS</strong>
                                     <input type="radio" name="local" class="radioButton" value="Santos">
                                     <span class="checkmark"></span>
                                 </label>
-                                
+
                             </div>
                             <div class="container" id="andar">
-                                <label class="btn t1">  <strong>1º ANDAR</strong>                                
-                                    <input type="radio" name="andar" class="radioButton" value="1º Andar">
+                                <label class="btn t1">  <strong>1º ANDAR</strong>
+                                    <input type="radio" name="andar" class="radioButton" value="São Paulo 1º Andar">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="btn t1" id="andar2"><strong>2º ANDAR</strong>
-                                    <input type="radio" name="andar" class="radioButton" value="2º Andar">
+                                    <input type="radio" name="andar" class="radioButton" value="São Paulo 2º Andar">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
