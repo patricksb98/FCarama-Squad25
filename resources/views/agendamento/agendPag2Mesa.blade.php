@@ -40,10 +40,7 @@
                             <div class="containerBox">
                                 <div class="box2"><p>ÁREA DE LAZER</p></div>
                                 <div class="boxMesa">
-                                <div class="alert"id="alerta"> 
-                                    <p> Alguém foi mais rápido que você! <br> Por favor, faça a sua reserva novamente. </p>
-                                    <div class="btnok t1" id="btnok">OK</div>
-                                </div>          
+         
                                     @if($local == "São Paulo 1º Andar")
                                         @for($i = 1; $i <= 30; $i++)
                                             @if(count($reservas->where('dia', $data)->where('local', $local)) >= 240)
@@ -130,7 +127,10 @@
         </article>
     </main>
     <footer></footer>
-
+    <div class="alert"id="alerta"> 
+        <p> Alguém foi mais rápido que você! <br> Por favor, faça a sua reserva novamente. </p>
+        <div class="btnok t1" id="btnok">OK</div>
+    </div> 
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
 </html>
