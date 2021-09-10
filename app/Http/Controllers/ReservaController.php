@@ -26,13 +26,32 @@ class ReservaController extends Controller
             return redirect()->route('login');
         }
 
-        return view('agendamento.agendPag1Local');
+        $erro = session('erro');
+        $errorMessage = [];
+
+        if(!empty($erro)){
+            $errorMessage = [
+                'erro' => $erro
+            ];
+        }
+
+        return view('agendamento.agendPag1Local', $errorMessage);
     }
 
     public function store(Request $request)
     {
         $local = $request->local;
         $data = $request->data;
+
+        $id_consultor = Auth::id();
+        $reservas = Reserva::all();
+
+        $consulta = (count($reservas->where('id_consultor', $id_consultor)->where('dia', $data)));
+
+        if($consulta > 0){
+            session()->flash('erro', 'Você já tem uma reserva para esse dia! Cancele sua reserva atual caso queira mudar a data.');
+            return redirect()->route('reserva');
+        }
 
         $request->session()->put('local', $local);
         $request->session()->put('data', $data);

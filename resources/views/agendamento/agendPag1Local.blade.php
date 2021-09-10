@@ -21,6 +21,9 @@
                     <section class="mainBase">
                         <div class="local">
                             <p>Qual sede você deseja utilizar?</p>
+                            @if(isset($erro))
+
+                            @endif
                             <div class="container">
                             <label class="btn t1" id="saoPaulo"> <strong>SÃO PAULO</strong>
                                     <input type="radio" name="local" class="radioButton" value="São Paulo 1º Andar">
