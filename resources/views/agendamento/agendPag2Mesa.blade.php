@@ -127,7 +127,7 @@
         </article>
     </main>
     <footer></footer>
-    <div class="alert"id="alerta"> 
+    <div class="alerta"id="alerta"> 
         <p> Alguém foi mais rápido que você! <br> Por favor, faça a sua reserva novamente. </p>
         <div class="btnok t1" id="btnok">OK</div>
     </div> 

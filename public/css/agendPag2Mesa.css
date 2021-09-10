@@ -126,7 +126,7 @@
     justify-content: flex-end;
 }
 
-.alert {
+.alerta {
     position: absolute;
     width: 30%;
     height: 20%;
@@ -142,7 +142,7 @@
     text-align: center;
 }
 
-.alert p {
+.alerta p {
     font-weight: bold;
     color: white;
     margin-bottom: 1rem;
