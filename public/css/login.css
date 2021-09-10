@@ -67,12 +67,15 @@ body {
     height: 50%;
 }
 
-.box2 {
+.box2 h3{
+    font-weight:300;
     font-size: 1.5rem;
     margin-top: 2.5rem;
+    width: 20vw;
+    
 }
 
-.box2 p {
+.box2 h3 strong:last-child {
     font-weight: 700;
 }
 

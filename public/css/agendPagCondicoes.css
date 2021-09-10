@@ -12,6 +12,11 @@
     height: fit-content;
 }
 
+.compromisso p {
+    text-align: center;
+    display: none;
+}
+
 .container {
     display: flex;
     justify-content: space-around;

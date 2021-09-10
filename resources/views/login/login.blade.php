@@ -21,7 +21,7 @@
         <section class="logoInicial">
             <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="logo da FCamara" class="imglogo">
             <div class="box2">
-                <h3>Faça o login e <br> reserve sua mesa <br> de maneira <br> <p>simples e segura</p></h3>
+            <h3> <strong> Faça o login e </strong> <strong> reserve sua mesa </strong> <strong> de maneira </strong> <strong>simples e segura</strong></h3>
             </div>
         </section>
         <section class="formLogin">

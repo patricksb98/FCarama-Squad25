@@ -1,0 +1,120 @@
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .box {
+
+        height: 30vh;
+        margin: 0 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .boxImg {
+        height: auto;
+    }
+
+    .boxImg img {
+        width: 100%;
+    }
+
+    .boxText {
+
+    }
+
+
+}
+
+@media screen and (max-width:1023px ) {
+    .boxImg {
+        display: none;
+    }
+
+    .mainBase {
+        justify-content: center;
+    }
+    .container {
+        flex-wrap: nowrap;
+        flex-direction: column;  
+        height: fit-content;
+        margin-bottom: 10rem;
+    }
+
+    .text {
+        margin-bottom: 6rem;
+        width: 70vw;
+    }
+
+    .box {
+        width: 50vw;
+        height: fit-content;
+
+    }
+
+    .boxText {
+        text-align: start;
+    }
+
+
+}
+
+
+@media screen and (max-width:600px ){
+    
+    .compromisso {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .compromisso p {
+        display: inline;
+        font-size: 1.8rem;
+        color: #FE4400;
+        margin-bottom: .5rem;
+    
+    }
+
+    .compromisso img {
+        width: 50vw;
+    }
+
+    .box{
+        width: 80vw;
+        text-decoration: underline;
+    }
+    .text {
+        margin-bottom: 4rem;
+        width: 100vw;
+    }
+
+}
+
+@media screen and (max-width:540px ){
+    
+    .logo {
+        visibility: hidden;
+    }
+
+    .container {
+        margin: 0;
+    } 
+
+}
+
+@media screen and (max-width:400px) {
+    .text {
+        margin-bottom: 1rem;
+    }
+
+} 
+
+@media screen and (max-width:400px){
+    .text {
+        font-size: 1.4rem;
+    }
+
+    .boxText {
+        font-size: .8rem;
+    }
+    
+}
