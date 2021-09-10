@@ -140,6 +140,7 @@
     border: solid 3px #D03800;
     border-radius: 6px;
     text-align: center;
+    z-index: 10;
 }
 
 .alerta p {
