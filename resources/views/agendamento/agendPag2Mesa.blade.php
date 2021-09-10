@@ -131,6 +131,7 @@
         <p> Alguém foi mais rápido que você! <br> Por favor, faça a sua reserva novamente. </p>
         <div class="btnok t1" id="btnok">OK</div>
     </div> 
+    <script src="{{ asset('js/agendPag2mesa.js') }}"></script>
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
 </html>
