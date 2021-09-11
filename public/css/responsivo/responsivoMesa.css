@@ -1,0 +1,66 @@
+@media screen and (max-width: 800px) {
+    .containerForm {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .master {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .master {
+        flex-direction: column-reverse;
+    }
+
+    .containerLegenda {
+        flex-direction: row;
+    }
+
+    .containerLegenda div {
+        margin: .5rem .5rem 0 0;
+    }
+
+    .compromisso {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .compromisso p {
+        display: inline;
+        font-size: 1.8rem;
+        color: #FE4400;
+        margin-bottom: .5rem;
+    
+    }
+
+    .compromisso img {
+        width: 50vw;
+    }
+
+    .logo {
+        visibility: hidden;
+    }
+
+    .containerBox {
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .containerLegenda {
+        flex-direction: column;
+    }
+
+    .compromisso p {
+        font-size: 1.3rem;
+    }
+
+    .box1 label {
+        font-size: 1.3rem;
+    }
+
+}

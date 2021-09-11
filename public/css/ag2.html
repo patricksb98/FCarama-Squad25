@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="agendBase.css">
     <link rel="stylesheet" href="agendPag2Mesa.css">
+    <link rel="stylesheet" href="responsivo/responsivoMesa.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <a href="agendPag1Local.html"><i class="far fa-arrow-alt-circle-left"></i></a>
-        <img src="../img/Barra_de_progresso_2.svg" alt="">
-        <img src="../img/Logo_-_Paginas_internas.svg" alt="">
+        <div class="compromisso">
+            <p>Escolha sua mesa</p>
+            <img src="../img/Barra_de_progresso_3.svg" alt="">
+        </div>
+        <img src="../img/Logo_-_Paginas_internas.svg"  class="logo" alt="">
     </header>
 
     <main>
@@ -30,9 +34,6 @@
                                 </div>
                                 <div class="legenda">
                                     <div class="legenda2"></div><p>Reservada</p>
-                                </div>
-                                <div class="legenda">
-                                    <div class="legenda3"></div><p>Desativada</p>
                                 </div>
                             </div>
                         
@@ -56,7 +57,7 @@
                 </section>
                 <section class="footerBase">
                     <a href="/sair" class="btnSair" ><i class="fas fa-sign-out-alt"></i></a>
-                    <div class="alert"id="alerta"> 
+                    <div class="alerta"id="alerta"> 
                         <p> Alguém foi mais rápido que você! <br> Por favor, faça a sua reserva novamente. </p>
                         <div class="btnok t1" id="btnok">OK</div>
                     </div>

@@ -18,14 +18,14 @@
             <form action="">
                 @csrf
                 <div class="box">
-                    <div>LOCAL</div>
+                    <div class="localAndar">LOCAL</div>
                     <div>DATA</div>
                     <div>MESA</div>
                     <div>CADEIRA</div>
                 </div>
                 @foreach($reserva as $reserv)
                 <div class="box">
-                    <div> {{$reserv->local}}</div>
+                    <div class="localAndar"> {{$reserv->local}}</div>
                     <div>{{$reserv->data}}</div>
                     <div>{{$reserv->id_mesa}}</div>
                     <div>{{$reserv->id_cadeira}}</div>
