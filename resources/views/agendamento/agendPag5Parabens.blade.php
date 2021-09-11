@@ -21,7 +21,7 @@
     </main>
     <footer class="footerBase">
 
-        <a href="/sair" class="t1">SAIR <i class="fas fa-long-arrow-alt-right"></i></a>
+        <a href="/initial" class="t1">SAIR <i class="fas fa-long-arrow-alt-right"></i></a>
         <div class="box t1"><a href="/reserva">FAZER OUTRA RESERVA <i class="fas fa-long-arrow-alt-right"></i> </a></div>
 
     </footer>

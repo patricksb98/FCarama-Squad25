@@ -19,8 +19,9 @@ Route::get('/', function () {
 
 Route::get('login', 'App\Http\Controllers\LogarController@index')->name('login');
 Route::post('login', 'App\Http\Controllers\LogarController@logar')->name('login');
-Route::get('termos', 'App\Http\Controllers\ReservaController@verTermos')->name('termos');
-Route::post('termos', 'App\Http\Controllers\ReservaController@concordarTermos')->name('termos');
+Route::get('termos', 'App\Http\Controllers\ReservaController@verTermos')->name('termos')->middleware('auth');
+Route::post('termos', 'App\Http\Controllers\ReservaController@concordarTermos')->name('termos')->middleware('auth');
+Route::get('initial', 'App\Http\Controllers\ReservaController@initialView')->name('initial')->middleware('auth');
 Route::get('reserva', 'App\Http\Controllers\ReservaController@index')->name('reserva')->middleware('auth');
 Route::post('reserva', 'App\Http\Controllers\ReservaController@store')->name('reserva')->middleware('auth');
 Route::get('reserva2', 'App\Http\Controllers\ReservaController@mostrarMesas')->name('reserva2')->middleware('auth');
@@ -31,7 +32,7 @@ Route::get('reserva4', 'App\Http\Controllers\ReservaController@revisarReserva')-
 Route::post('reserva4', 'App\Http\Controllers\ReservaController@confirmarReserva')->name('reserva4')->middleware('auth');
 Route::get('confirmada', 'App\Http\Controllers\ReservaController@reservaConfirmada')->name('confirmada')->middleware('auth');
 Route::post('confirmada', 'App\Http\Controllers\ReservaController@confirmarReserva')->name('confirmada')->middleware('auth');
-Route::get('testeVisualizar', 'App\Http\Controllers\ReservaController@visualizarReserva')->name('visualizar');
+Route::get('view/reservations', 'App\Http\Controllers\ReservaController@visualizarReserva')->name('visualizar')->middleware('auth');
 Route::post('/reserva/remover/{id}', 'App\Http\Controllers\ReservaController@destroy');
 
 Route::get('/teste', 'App\Http\Controllers\DataController@mes');

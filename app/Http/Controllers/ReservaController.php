@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Reserva;
 use App\Models\Termos;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -17,7 +18,7 @@ class ReservaController extends Controller
         $aceitou = count($termos->where('id_consultor', $id_consultor)->where('aceitou', 1));
 
         if($aceitou >= 1){
-            return redirect()->route('reserva');
+            return redirect()->route('initial');
         }else{
             return view('agendamento.agendPagCondicoes');
         }
@@ -33,12 +34,12 @@ class ReservaController extends Controller
         $aceitou->aceitou = 1;
         $aceitou->save();
 
-        return redirect()->route('reserva');
+        return redirect()->route('initial');
     }
 
-    public function user()
+    public function initialView()
     {
-        
+        return view('agendamento.AgendPagInicial');
     }
 
 
@@ -222,8 +223,9 @@ class ReservaController extends Controller
     {
         $id_consultor = Auth::id();
         $reservas = Reserva::all();
+        $dia = Carbon::now('GMT-3');
 
-        $reserva = $reservas->where('id_consultor', $id_consultor);
+        $reserva = $reservas->where('id_consultor', $id_consultor)->where('dia', '>', $dia->toDateString())->sortBy('dia');
 
         return view ('agendamento.agendPagVisualizar', compact('reserva'));
     }
@@ -232,7 +234,7 @@ class ReservaController extends Controller
     {
         Reserva::destroy($request->id);
 
-        return redirect('testeVisualizar');
+        return redirect('view/reservations');
     }
 
 }

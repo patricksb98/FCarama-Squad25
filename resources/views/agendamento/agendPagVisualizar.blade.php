@@ -1,25 +1,44 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/visualizar.css">
+    <title>Minhas Reservas</title>
 </head>
 <body>
-
-<ul class="list-group">
-    @foreach($reserva as $reserv)
-        <li class="list-group-item">Local: {{$reserv->local}} Data: {{$reserv->data}} Mesa: {{$reserv->id_mesa}} Cadeira: {{$reserv->id_cadeira}}</li>
-        <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')">
+<header>
+    <a href="/initial" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+    <a href="/sair" class="t1"><i class="fas fa-sign-out-alt"></i></a>
+</header>
+<main>
+    <P>MINHAS RESERVAS</P>
+    <div class="containerMaster">
             @csrf
-            <button class="btn btn-danger">Excluir</button>
-        </form>
-    @endforeach
-</ul>
+            <div class="box">
+                <div class="localAndar">LOCAL</div>
+                <div>DATA</div>
+                <div>MESA</div>
+                <div>CADEIRA</div>
+            </div>
+            @foreach($reserva as $reserv)
+                <div class="box">
+                    <div class="localAndar">{{$reserv->local}}</div>
+                    <div>{{$reserv->dia}}</div>
+                    <div>{{$reserv->id_mesa}}</div>
+                    <div>{{$reserv->id_cadeira}}</div>
+                    <form method="post" action="/reserva/remover/{{$reserv->id}}">
+                        @csrf
+                        <button class="canc">Excluir</button>
+                    </form>
+                </div>
+            @endforeach
+    </div>
+</main>
+<footer>
 
+</footer>
+<script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
 </html>
