@@ -36,16 +36,16 @@
                             </div>
                             <div class="mesaCadeira">
                                 <!-- Aqui entra o numnero da mesa e cadeira-->
-                                <p>Mesa: <?=$mesa?> </p>
-                                <p>Cadeira: <?=$cadeira?></p>
+                                <p>MESA 0<?=$mesa?> </p>
+                                <p>CADEIRA 0<?=$cadeira?></p>
                             </div>
                         </div>
                         <div class="data">
                             <!--Aqui aparece a data reservada-->
-                            <div class="datain d1">SEGUNDA</div>
-                            <div class="datain d2">13</div>
-                            <div class="datain d3">SETEMBRO</div>
-                            <div class="datain d4">2021</div>
+                            <div class="datain d1">{{$diaSemana}}</div>
+                            <div class="datain d2">{{$dia}}</div>
+                            <div class="datain d3">{{$mes}}</div>
+                            <div class="datain d4">{{$ano}}</div>
                         </div>
                     </div>
                 </div>

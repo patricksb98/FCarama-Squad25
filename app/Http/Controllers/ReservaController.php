@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Reserva;
 use App\Models\Termos;
 use Carbon\Carbon;
+use Carbon\Traits\Date;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -69,12 +70,13 @@ class ReservaController extends Controller
         $id_consultor = Auth::id();
         $reservas = Reserva::all();
 
-        $consulta = (count($reservas->where('id_consultor', $id_consultor)->where('dia', $data)));
+        /*$consulta = (count($reservas->where('id_consultor', $id_consultor)->where('dia', $data)));
 
         if($consulta > 0){
             session()->flash('erro', 'Você já tem uma reserva para esse dia! Cancele sua reserva atual caso queira mudar a data.');
             return redirect()->route('reserva');
         }
+        */
 
         $request->session()->put('local', $local);
         $request->session()->put('data', $data);
@@ -90,10 +92,16 @@ class ReservaController extends Controller
         }
 
         $data = session('data');
-        $reservas = Reserva::all();
-        $numero = count($reservas->where('dia', $data)->where('id_mesa', 1));
-
         $local = session('local');
+        $reservas = Reserva::all();
+        $numero = $reservas->where('dia', $data)->where('local', $local)->toArray();
+        $blockedTables = [];
+
+        foreach ($numero as $n){
+            $blockedTables[$n['id_mesa']] = array_key_exists($n['id_mesa'], $blockedTables)? $blockedTables[$n['id_mesa']] + 1 : 1;
+        }
+
+        $parametros = ['blockedTables' => $blockedTables];
 
         $erro = session('erro');
         $errorMessage = [];
@@ -104,7 +112,14 @@ class ReservaController extends Controller
             ];
         }
 
-        return view('agendamento.agendPag2Mesa', compact('local', 'numero', 'reservas', 'data'), $errorMessage);
+        $errorMessage['blockedTables'] = $blockedTables;
+
+        $reservasSP1 = count($reservas->where('dia', $data)->where('local', 'São Paulo 1º Andar'));
+        $reservasSP2 = count($reservas->where('dia', $data)->where('local', 'São Paulo 2º Andar'));
+        $reservasSP = $reservasSP1 + $reservasSP2;
+        $reservasSantos = count($reservas->where('dia', $data)->where('local', 'Santos'));
+
+        return view('agendamento.agendPag2Mesa', compact('local', 'numero', 'reservas', 'data', 'reservasSP', 'reservasSantos'), $errorMessage);
     }
 
     public function escolherMesa(Request $request)
@@ -165,6 +180,13 @@ class ReservaController extends Controller
         $dia = date('d', strtotime($data));
         $mes = $dataController->mes(date('m', strtotime($data)));
         $ano = date('Y', strtotime($data));
+
+
+        /*setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+        date_default_timezone_set('America/Sao_Paulo');
+        $teste = strftime('%A, %d de %B de %Y', strtotime('tuesday'));
+        //echo ucfirst(current(explode('-', $teste)));
+        echo date('w', strtotime('saturday'));*/
 
         return view('agendamento.agendPag4Confirme', compact(['local', 'mesa', 'cadeira', 'data', 'diaSemana', 'dia', 'mes', 'ano']));
     }

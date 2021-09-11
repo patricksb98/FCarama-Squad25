@@ -21,9 +21,7 @@ class LogarController extends Controller
             ];
         }
 
-        $arroz = 0;
-
-        return view('login.login', compact('arroz'), $errorMessage);
+        return view('login.login', $errorMessage);
     }
 
     public function logar(Request $request)

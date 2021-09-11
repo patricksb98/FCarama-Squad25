@@ -46,14 +46,14 @@
 
                                     @if($local == "São Paulo 1º Andar")
                                         @for($i = 1; $i <= 30; $i++)
-                                            @if(count($reservas->where('dia', $data)->where('local', $local)) >= 240)
+                                            @if($reservasSP >= 240)
                                         <label class="containerMesa" style="background: #FEBBA2">
                                             <strong>{{$i}}</strong>
                                             <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
                                             <span class="checkmark"></span>
                                         </label>
-                                            @elseif(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
-                                                <label class="containerMesa" style="background: #FEBBA2">
+                                            @elseif(array_key_exists($i, $blockedTables) && $blockedTables[$i] > 4)
+                                                <label class="containerMesa" style="background-color: #FEBBA2">
                                                     <strong>{{$i}}</strong>
                                                     <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
                                                     <span class="checkmark"></span>
@@ -69,13 +69,13 @@
 
                                     @elseif($local == "São Paulo 2º Andar")
                                             @for($i = 31; $i <= 60; $i++)
-                                                @if(count($reservas->where('dia', $data)->where('local', $local)) >= 240)
+                                                @if($reservasSP >= 240)
                                                     <label class="containerMesa" style="background: #FEBBA2">
                                                         <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
                                                         <span class="checkmark"></span>
                                                     </label>
-                                                @elseif(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
+                                                @elseif(array_key_exists($i, $blockedTables) && $blockedTables[$i] > 4)
                                                     <label class="containerMesa" style="background: #FEBBA2">
                                                         <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
@@ -92,13 +92,13 @@
 
                                     @elseif($local == "Santos")
                                             @for($i = 1; $i <= 10; $i++)
-                                                @if(count($reservas->where('dia', $data)) >= 40)
+                                                @if($reservasSP >= 40)
                                                     <label class="containerMesa" style="background: #FEBBA2">
                                                     <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
                                                         <span class="checkmark"></span>
                                                     </label>
-                                                @elseif(count($reservas->where('dia', $data)->where('id_mesa', $i)->where('local', $local)) == 5)
+                                                    @elseif(array_key_exists($i, $blockedTables) && $blockedTables[$i] > 4)
                                                     <label class="containerMesa" style="background: #FEBBA2">
                                                     <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>

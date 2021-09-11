@@ -26,7 +26,7 @@
                             @endif
                             <div class="container">
                             <label class="btn t1" id="saoPaulo"> <strong>SÃO PAULO</strong>
-                                    <input type="radio" name="local" class="radioButton" value="São Paulo 1º Andar">
+                                    <input type="radio" name="local" class="radioButton" value="São Paulo 2º Andar">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="btn t1" id="santos"><strong>SANTOS</strong>
