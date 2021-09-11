@@ -2,6 +2,7 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; font-weight: 400; text-decoration: none;}
 
+
 header {
     height: 15vh;
     display: flex;
@@ -9,6 +10,12 @@ header {
     justify-content: space-between;
     margin: 0 10%;
 }
+
+.t1 {
+    font-size: 2.25rem;
+    color: #FE662E;
+}
+
 
 main {
     height: 75vh;
@@ -18,35 +25,32 @@ main {
     align-items: center;
 }
 
-.btn {
-    border: solid 1px black;
-    width: 10rem;
-    height: 4rem;
+.containerMaster, form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
-    border-radius: 5px;
-    cursor: pointer;
+
 }
 
-.t1 {
-    font-size: 2.25rem;
-    color: #FE662E;
+.box div {
+    border: solid 1px #FE662E;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn:active, .t1:active {
-
-    transform: scale(.9, .9);
-    transition: .1s;
-    opacity: .9;
-}
-
-.btn a {
-    text-decoration: none;
-    color: black;
-}
-
-footer {
-    height: 10vh;
+.canc {
+    border-radius:3px;
+    font-weight: bold;
+    background-color: blanchedalmond;
+    margin-left: .5rem
 }
