@@ -34,6 +34,8 @@ Route::post('confirmada', 'App\Http\Controllers\ReservaController@confirmarReser
 Route::get('testeVisualizar', 'App\Http\Controllers\ReservaController@visualizarReserva')->name('visualizar');
 Route::post('/reserva/remover/{id}', 'App\Http\Controllers\ReservaController@destroy');
 
+Route::get('/teste', 'App\Http\Controllers\DataController@mes');
+
 
 Route::get('/visualizando-email', function (){
     return new \App\Mail\Confirmacao('Patrick', '2021-09-08', 'São Paulo', '3', '14');

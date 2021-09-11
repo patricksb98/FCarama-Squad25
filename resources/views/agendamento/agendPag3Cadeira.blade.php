@@ -35,7 +35,7 @@
                             <div class="legenda">
                                 <div class="legenda3"></div><p>Desativada</p>
                             </div>
-                           
+
                         </div>
                         <fieldset class="containerMesa">
 
@@ -129,5 +129,6 @@
         </article>
     </main>
     <footer></footer>
+    <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
 </html>

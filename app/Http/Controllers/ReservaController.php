@@ -36,6 +36,11 @@ class ReservaController extends Controller
         return redirect()->route('reserva');
     }
 
+    public function user()
+    {
+        
+    }
+
 
     public function index()
     {
@@ -148,13 +153,19 @@ class ReservaController extends Controller
         if(!session('id_cadeira')){
             return redirect()->route('reserva3');
         }
+        $dataController = new DataController();
 
         $local = session(('local'));
         $mesa = session(('id_mesa'));
         $cadeira = session(('id_cadeira'));
         $data = session(('data'));
 
-        return view('agendamento.agendPag4Confirme', compact(['local', 'mesa', 'cadeira', 'data']));
+        $diaSemana = $dataController->semana(date('D', strtotime($data)));
+        $dia = date('d', strtotime($data));
+        $mes = $dataController->mes(date('m', strtotime($data)));
+        $ano = date('Y', strtotime($data));
+
+        return view('agendamento.agendPag4Confirme', compact(['local', 'mesa', 'cadeira', 'data', 'diaSemana', 'dia', 'mes', 'ano']));
     }
 
     public function confirmarReserva()
