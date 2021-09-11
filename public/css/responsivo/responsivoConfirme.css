@@ -1,0 +1,91 @@
+@media screen and (max-width: 900px){
+    .container {
+        width: 90%;
+    }
+
+    .logo {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .compromisso {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .compromisso p {
+        display: inline;
+        font-size: 1.8rem;
+        color: #FE4400;
+        margin-bottom: .5rem;
+    
+    }
+
+    .compromisso img {
+        width: 50vw;
+    }
+
+    .subTitulo {
+        margin: 1rem 0;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+    .mainBase {
+        width: 100vw;
+        height: 50vh;
+        align-items: center;
+    }
+    .compromisso p{
+        font-size: 1.6rem;
+    }
+    .containerMaster {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        padding: .5rem;
+    }
+
+    .footerBase {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subTitulo {
+        font-size: 1.4rem;
+        margin: 1.5rem 0;
+    }
+
+    .mesaCadeira{
+        font-size: 1.2rem;
+    }
+
+    .datain {
+        margin: .2rem 0;
+    }
+
+    .d2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .subTitulo {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+}

@@ -58,6 +58,10 @@ header {
     margin-left: 1.1rem;
 }
 
+.compromisso p {
+    display: none;
+}
+
 .t1:active {
     transform: scale(.9, .9);
     transition: .1s;

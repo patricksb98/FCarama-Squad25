@@ -51,9 +51,22 @@
 }
 .data {
     width: 35%;
-    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
 }
 
+.datain {
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.d2 {
+    font-size: 2.5rem;
+}
 .footerBase a {
     color: #FE4400;
 }

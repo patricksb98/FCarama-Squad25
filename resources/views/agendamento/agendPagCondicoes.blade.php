@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/agendBase.css">
     <link rel="stylesheet" href="css/agendPagCondicoes.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/responsivo/responsivoCondicoes.css">
+    <title>Condições</title>
 </head>
 <body>
     <header class="headerBase">

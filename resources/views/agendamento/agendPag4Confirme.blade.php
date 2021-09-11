@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/agendBase.css">
     <link rel="stylesheet" href="css/agendPag4Confirme.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/responsivo/responsivoConfirme.css">
+    <title>Confirmação</title>
 </head>
 <body>
 
     <header>
         <a href="/reserva3" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
+        <div class="compromisso">
+            <p>Confirmação</p>
+            <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
+        </div>
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
     <main>
@@ -37,7 +42,10 @@
                         </div>
                         <div class="data">
                             <!--Aqui aparece a data reservada-->
-                            <p>Data: <?=$data?></p>
+                            <div class="datain d1">SEGUNDA</div>
+                            <div class="datain d2">13</div>
+                            <div class="datain d3">SETEMBRO</div>
+                            <div class="datain d4">2021</div>
                         </div>
                     </div>
                 </div>
@@ -54,7 +62,6 @@
     </article>
 </main>
 
-    <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </footer>
 <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>

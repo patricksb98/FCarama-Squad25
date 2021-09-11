@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
     <link rel="stylesheet" href="{{ asset('css/agendPag2Mesa.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <link rel="stylesheet" href="{{ asset('css/responsivo/responsivoMesa.css') }}">
     <title>Document</title>
 </head>
 <body>
     <header>
         <a href="/reserva" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
-        <img src="{{ asset('img/Barra_de_progresso_3.svg') }}" alt="">
+        <div class="compromisso">
+            <p>Escolha sua mesa</p>
+            <img src="{{ asset('img/Barra_de_progresso_3.svg') }}" alt="">
+        </div>
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>
 
