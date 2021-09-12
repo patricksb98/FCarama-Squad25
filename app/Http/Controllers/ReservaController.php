@@ -74,7 +74,7 @@ class ReservaController extends Controller
 
         if($consulta > 0){
             session()->flash('erro', 'Você já tem uma reserva para esse dia! Cancele sua reserva atual caso queira mudar a data.');
-            return redirect()->route('reserva');
+            return redirect()->route('reserva/etapa1');
         }
 
 
