@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-    <a href="/initial" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+    <a href="/inicio" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
     <a href="/sair" class="t1"><i class="fas fa-sign-out-alt"></i></a>
 </header>
 <main>
@@ -29,7 +29,8 @@
                     <div>{{$reserv->id_mesa}}</div>
                     <div>{{$reserv->id_cadeira}}</div>
                     <form method="post" action="/reserva/remover/{{$reserv->id}}">
-                        @csrf
+                        {{method_field('DELETE')}}
+                        {!! csrf_field() !!}
                         <button class="canc">Excluir</button>
                     </form>
                 </div>

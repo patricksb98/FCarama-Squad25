@@ -13,8 +13,8 @@
     <a href="/sair" class="t1"><i class="fas fa-sign-out-alt"></i></a>
 </header>
 <main>
-    <div class="btn"> <a href="/reserva" >Reservar</a></div>
-    <div class="btn"> <a href="/view/reservations">Minhas Reservas</a> </div>
+    <div class="btn"> <a href="/reserva/etapa1" >Reservar</a></div>
+    <div class="btn"> <a href="/visualizar/reservas">Minhas Reservas</a> </div>
 </main>
 <footer>
 

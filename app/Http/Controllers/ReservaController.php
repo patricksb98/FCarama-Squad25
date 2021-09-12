@@ -35,7 +35,7 @@ class ReservaController extends Controller
         $aceitou->aceitou = 1;
         $aceitou->save();
 
-        return redirect()->route('initial');
+        return redirect()->route('inicio');
     }
 
     public function initialView()
@@ -81,14 +81,14 @@ class ReservaController extends Controller
         $request->session()->put('local', $local);
         $request->session()->put('data', $data);
 
-        return redirect()->route('reserva2');
+        return redirect()->route('reserva/etapa2');
 
     }
 
     public function mostrarMesas()
     {
         if(!session('local') || !session('data')){
-            return redirect()->route('reserva');
+            return redirect()->route('reserva/etapa1');
         }
 
         $data = session('data');
@@ -128,14 +128,14 @@ class ReservaController extends Controller
 
         $request->session()->put('id_mesa', $mesa);
 
-        return redirect()->route('reserva3');
+        return redirect()->route('reserva/etapa3');
 
     }
 
     public function mostrarCadeiras()
     {
         if(!session('id_mesa')){
-            return redirect()->route('reserva2');
+            return redirect()->route('reserva/etapa2');
         }
 
         $mesa = session('id_mesa');
@@ -160,14 +160,14 @@ class ReservaController extends Controller
 
         $request->session()->put('id_cadeira', $cadeira);
 
-        return redirect()->route('reserva4');
+        return redirect()->route('reserva/etapa4');
 
     }
 
     public function revisarReserva()
     {
         if(!session('id_cadeira')){
-            return redirect()->route('reserva3');
+            return redirect()->route('reserva/etapa3');
         }
         $dataController = new DataController();
 
@@ -216,7 +216,7 @@ class ReservaController extends Controller
 
         if(!$reservada == 0){
             session()->flash('erro', 'Alguém foi mais rápido que você! Por favor, faça a sua reserva novamente.');
-            return redirect()->route('reserva2');
+            return redirect()->route('reserva/etapa2');
         }else{
 
             $reserva->save();
@@ -226,7 +226,7 @@ class ReservaController extends Controller
             $email->subject = 'Confirmação de Reserva!';
             \Illuminate\Support\Facades\Mail::to($email_consultor)->send($email);
 
-            return redirect()->route('confirmada');
+            return redirect()->route('reserva/confirmada');
         }
 
     }
@@ -238,7 +238,7 @@ class ReservaController extends Controller
 
     public function reservarNovamente()
     {
-        return redirect()->route('reserva');
+        return redirect()->route('reserva/etapa1');
     }
 
     public function visualizarReserva()
@@ -256,7 +256,7 @@ class ReservaController extends Controller
     {
         Reserva::destroy($request->id);
 
-        return redirect('view/reservations');
+        return redirect('visualizar/reservas');
     }
 
 }

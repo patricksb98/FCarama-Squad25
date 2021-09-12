@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <a href="/reserva" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <a href="/reserva/etapa1" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
         <div class="compromisso">
             <p>Escolha sua mesa</p>
             <img src="{{ asset('img/Barra_de_progresso_3.svg') }}" alt="">

@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/agendBase.css">
-    <link rel="stylesheet" href="css/agendPag4Confirme.css">
-    <link rel="stylesheet" href="css/responsivo/responsivoConfirme.css">
+    <link rel="stylesheet" href={{asset("css/agendBase.css")}}>
+    <link rel="stylesheet" href={{asset("css/agendPag4Confirme.css")}}>
+    <link rel="stylesheet" href={{asset("css/responsivo/responsivoConfirme.css")}}>
     <title>Confirmação</title>
 </head>
 <body>
 
     <header>
-        <a href="/reserva3" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
-        <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
+        <a href="/reserva/etapa3" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
         <div class="compromisso">
             <p>Confirmação</p>
             <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
@@ -51,7 +50,7 @@
                 </div>
             </section>
             <section class="footerBase">
-                <a href="/reserva" class="t1">Alterar dados da reserva</a>
+                <a href="/reserva/etapa1" class="t1">Alterar dados da reserva</a>
                 <button type="submit" class="btnCont t1">CONFIRMAR <i class="fas fa-long-arrow-alt-right"></i></button>
                 <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
 

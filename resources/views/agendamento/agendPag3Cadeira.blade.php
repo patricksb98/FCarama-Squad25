@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <a href="/reserva2" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <a href="/reserva/etapa2" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="{{ asset('img/Barra_de_progresso_4.svg') }}" alt="">
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
     </header>

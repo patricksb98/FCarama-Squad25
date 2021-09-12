@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/agendBase.css">
-    <link rel="stylesheet" href="css/agendPag5Parabens.css">
-    <link rel="stylesheet" href="css/responsivo/responsivoPag5.css">
+    <link rel="stylesheet" href={{asset("css/agendBase.css")}}>
+    <link rel="stylesheet" href={{asset("css/agendPag5Parabens.css")}}>
+    <link rel="stylesheet" href={{asset("css/responsivo/responsivoParabens.css")}}>
 
     <title>PARABÉNS</title>
 </head>
@@ -22,8 +22,8 @@
     </main>
     <footer class="footerBase">
 
-        <a href="/initial" class="t1">SAIR <i class="fas fa-long-arrow-alt-right"></i></a>
-        <div class="box t1"><a href="/reserva">FAZER OUTRA RESERVA <i class="fas fa-long-arrow-alt-right"></i> </a></div>
+        <a href="/inicio" class="t1">INICIO <i class="fas fa-long-arrow-alt-right"></i></a>
+        <div class="box t1"><a href="/reserva/etapa1">FAZER OUTRA RESERVA <i class="fas fa-long-arrow-alt-right"></i> </a></div>
 
     </footer>
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>

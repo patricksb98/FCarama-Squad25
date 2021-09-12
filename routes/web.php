@@ -21,19 +21,19 @@ Route::get('login', 'App\Http\Controllers\LogarController@index')->name('login')
 Route::post('login', 'App\Http\Controllers\LogarController@logar')->name('login');
 Route::get('termos', 'App\Http\Controllers\ReservaController@verTermos')->name('termos')->middleware('auth');
 Route::post('termos', 'App\Http\Controllers\ReservaController@concordarTermos')->name('termos')->middleware('auth');
-Route::get('initial', 'App\Http\Controllers\ReservaController@initialView')->name('initial')->middleware('auth');
-Route::get('reserva', 'App\Http\Controllers\ReservaController@index')->name('reserva')->middleware('auth');
-Route::post('reserva', 'App\Http\Controllers\ReservaController@store')->name('reserva')->middleware('auth');
-Route::get('reserva2', 'App\Http\Controllers\ReservaController@mostrarMesas')->name('reserva2')->middleware('auth');
-Route::post('reserva2', 'App\Http\Controllers\ReservaController@escolherMesa')->name('reserva2')->middleware('auth');
-Route::get('reserva3', 'App\Http\Controllers\ReservaController@mostrarCadeiras')->name('reserva3')->middleware('auth');
-Route::post('reserva3', 'App\Http\Controllers\ReservaController@escolherCadeira')->name('reserva3')->middleware('auth');
-Route::get('reserva4', 'App\Http\Controllers\ReservaController@revisarReserva')->name('reserva4')->middleware('auth');
-Route::post('reserva4', 'App\Http\Controllers\ReservaController@confirmarReserva')->name('reserva4')->middleware('auth');
-Route::get('confirmada', 'App\Http\Controllers\ReservaController@reservaConfirmada')->name('confirmada')->middleware('auth');
-Route::post('confirmada', 'App\Http\Controllers\ReservaController@confirmarReserva')->name('confirmada')->middleware('auth');
-Route::get('view/reservations', 'App\Http\Controllers\ReservaController@visualizarReserva')->name('visualizar')->middleware('auth');
-Route::post('/reserva/remover/{id}', 'App\Http\Controllers\ReservaController@destroy');
+Route::get('inicio', 'App\Http\Controllers\ReservaController@initialView')->name('initial')->middleware('auth');
+Route::get('reserva/etapa1', 'App\Http\Controllers\ReservaController@index')->name('reserva/etapa1')->middleware('auth');
+Route::post('reserva/etapa1', 'App\Http\Controllers\ReservaController@store')->name('reserva/etapa1')->middleware('auth');
+Route::get('reserva/etapa2', 'App\Http\Controllers\ReservaController@mostrarMesas')->name('reserva/etapa2')->middleware('auth');
+Route::post('reserva/etapa2', 'App\Http\Controllers\ReservaController@escolherMesa')->name('reserva/etapa2')->middleware('auth');
+Route::get('reserva/etapa3', 'App\Http\Controllers\ReservaController@mostrarCadeiras')->name('reserva/etapa3')->middleware('auth');
+Route::post('reserva/etapa3', 'App\Http\Controllers\ReservaController@escolherCadeira')->name('reserva/etapa3')->middleware('auth');
+Route::get('reserva/etapa4', 'App\Http\Controllers\ReservaController@revisarReserva')->name('reserva/etapa4')->middleware('auth');
+Route::post('reserva/etapa4', 'App\Http\Controllers\ReservaController@confirmarReserva')->name('reserva/etapa4')->middleware('auth');
+Route::get('reserva/confirmada', 'App\Http\Controllers\ReservaController@reservaConfirmada')->name('reserva/confirmada')->middleware('auth');
+Route::post('reserva/confirmada', 'App\Http\Controllers\ReservaController@confirmarReserva')->name('reserva/confirmada')->middleware('auth');
+Route::get('visualizar/reservas', 'App\Http\Controllers\ReservaController@visualizarReserva')->name('visualizar')->middleware('auth');
+Route::delete('reserva/remover/{id}', 'App\Http\Controllers\ReservaController@destroy');
 
 Route::get('/teste', 'App\Http\Controllers\DataController@mes');
 
