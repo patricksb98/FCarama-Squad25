@@ -70,13 +70,13 @@ class ReservaController extends Controller
         $id_consultor = Auth::id();
         $reservas = Reserva::all();
 
-        /*$consulta = (count($reservas->where('id_consultor', $id_consultor)->where('dia', $data)));
+        $consulta = (count($reservas->where('id_consultor', $id_consultor)->where('dia', $data)));
 
         if($consulta > 0){
             session()->flash('erro', 'Você já tem uma reserva para esse dia! Cancele sua reserva atual caso queira mudar a data.');
             return redirect()->route('reserva');
         }
-        */
+
 
         $request->session()->put('local', $local);
         $request->session()->put('data', $data);
@@ -180,13 +180,6 @@ class ReservaController extends Controller
         $dia = date('d', strtotime($data));
         $mes = $dataController->mes(date('m', strtotime($data)));
         $ano = date('Y', strtotime($data));
-
-
-        /*setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
-        date_default_timezone_set('America/Sao_Paulo');
-        $teste = strftime('%A, %d de %B de %Y', strtotime('tuesday'));
-        //echo ucfirst(current(explode('-', $teste)));
-        echo date('w', strtotime('saturday'));*/
 
         return view('agendamento.agendPag4Confirme', compact(['local', 'mesa', 'cadeira', 'data', 'diaSemana', 'dia', 'mes', 'ano']));
     }
