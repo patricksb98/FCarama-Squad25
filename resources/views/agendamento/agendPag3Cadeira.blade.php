@@ -12,8 +12,11 @@
 <body>
     <header>
         <a href="/reserva/etapa2" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
-        <img src="{{ asset('img/Barra_de_progresso_4.svg') }}" alt="">
-        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
+        <div class="compromisso">
+            <p>Escolha sua estação</p>
+            <img src="{{ asset('img/Barra_de_progresso_4.svg') }}" alt="">
+        </div>
+        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" class="logo" alt="">
     </header>
     <main>
         <article>

@@ -1,0 +1,150 @@
+@media screen and (max-width: 1024px) {
+
+    body {
+        width: 100%;
+    }
+
+    .compromisso {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .compromisso p {
+        display: inline;
+        font-size: 1.8rem;
+        color: #FE4400;
+        margin-bottom: .5rem;
+    
+    }
+
+    .containerMaster {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .legendaMesa {
+        flex-direction: row;
+    }
+
+    .containerMesa {
+        margin-bottom: 2rem;
+    }
+
+    .mesa {
+        height: 50vh;
+        width: 80vw;
+        
+    }
+
+    .legenda {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    header {
+        height: 10vh;
+    }
+
+    .logo {
+        visibility: hidden;
+    }
+    
+    .mesa {
+        width: 90vw;
+    }
+
+    .footerBase {
+        height: 8vh;
+        align-items: center;
+    }
+
+
+}
+
+@media screen and (max-width: 900px){
+    .compromisso img {
+        width: 50vw;
+    }
+}
+
+
+@media screen and (max-width: 730px) {
+    .mainBase {
+        height: 100%;
+        
+    }
+
+    .legendaMesa {
+        flex-direction: column;
+    }
+
+    .legenda {
+        margin-bottom: .5rem;
+    }
+
+    .texto1 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .containerMesa {
+        margin-top: 6rem;
+    }
+    .mesaCentro {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .fa-arrow-alt-circle-left {
+        font-size: 1.5rem;
+    }
+   
+    .containerMaster {
+        height: 65vh;
+        justify-content: flex-start;
+    }
+
+    .containerMesa{
+        margin: 0;
+    }
+   
+    .mesaCentro {
+        height: 50%;
+    }
+
+    .cadeirasModal {
+        height: 20%;
+    }
+    
+
+    .mesa {
+        height: 35vh;
+    }
+
+    .legendaMesa {
+        margin: 0 1rem 0 0;
+    }
+
+    .btnCont {
+
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .compromisso p, .texto1  {
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media screen and (max-width: 300px){
+    .legendaMesa {
+        margin-right: 4rem;
+    }
+}

@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="agendBase.css">
     <link rel="stylesheet" href="agendPag3Cadeira.css">
+    <link rel="stylesheet" href="responsivo/responsivoCadeira.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <a href="agendPag2Mesa.html"><i class="far fa-arrow-alt-circle-left"></i></a>
-        <img src="../img/Barra_de_progresso_4.svg" alt="">
-        <img src="../img/Logo_-_Paginas_internas.svg" alt="">
+        <div class="compromisso">
+            <p>Escolha sua estação</p>
+            <img src="../img/Barra_de_progresso_4.svg" alt="">
+        </div>
+        <img src="../img/Logo_-_Paginas_internas.svg" class="logo" alt="">
     </header>
     <main>
         <article>
@@ -73,7 +77,7 @@
                     </div>
                 </section>
                 <section class="footerBase">
-                    <button class="btnSair"><a href="/sair">Sair</a></button>
+                    <a href="/sair" class="btnSair" ><i class="fas fa-sign-out-alt"></i></a>
                     <button type="submit" class="btnCont">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
                 </section>
             </form>
