@@ -1,0 +1,53 @@
+@media screen and (max-width: 540px) {
+    .box {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .box {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    main {
+        padding: 0;
+        align-items: center;
+    }
+    
+    .box {
+        font-size: .9rem;
+        width: 97vw;
+    }
+
+    .box div {
+        margin-left: .2rem;
+    }
+
+    .box div:first-child {
+        padding-left: .5rem;
+    }
+
+    footer a {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .box {
+        width: 25rem;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .box {
+        font-size: .8rem;
+    }
+
+    footer, header {
+     
+    }
+}
