@@ -2,32 +2,86 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; font-weight: 400; text-decoration: none;}
 
+body {
+    position: relative;
+}
+
+.btnSair {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    color: #FE662E;
+    font-size: 1.5rem;
+}
+
 header {
     height: 15vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 0 10%;
+    justify-content: center;
+}
+
+.containerLogo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    height: 5vh;
+    margin-bottom: .4rem;
+}
+
+.text {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #FE662E;
 }
 
 main {
-    height: 75vh;
+    height: 85vh;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 15rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2.5rem 10%;
+}
+
+
+.titulo {
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkInter {
+    width: 48%;
+    height: 100%;
+    border-radius: 10px;
+    border: #FE662E solid 2px;
+}
+
+.link1 {
+    background-image: url(../img/Card_-_Nova_Reserva.svg);
+    background-size: 100% 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.link2 {
+    background-image: url(../img/Card_-_Ver_reservas.svg);
+    background-size:110% 100%;
+    background-position: center;
 }
 
 .btn {
-    border: solid 1px black;
-    width: 10rem;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    border-radius: 5px;
-    cursor: pointer;
+    display: none;
 }
 
 .t1 {
@@ -42,11 +96,4 @@ main {
     opacity: .9;
 }
 
-.btn a {
-    text-decoration: none;
-    color: black;
-}
 
-footer {
-    height: 10vh;
-}
