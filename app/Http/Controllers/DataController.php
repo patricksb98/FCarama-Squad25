@@ -28,6 +28,11 @@ class DataController extends Controller
             case "Fri":
                 $dataSemana = "Sexta";
                 break;
+            case "Sat":
+                $dataSemana = "Sábado";
+                break;
+            case "Sun":
+                $dataSemana = "Domingo";
         }
 
         return $dataSemana;

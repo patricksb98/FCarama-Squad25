@@ -157,7 +157,6 @@ class ReservaController extends Controller
     public function escolherCadeira(Request $request)
     {
         $cadeira = $request->cadeira;
-
         $request->session()->put('id_cadeira', $cadeira);
 
         return redirect()->route('reserva/etapa4');
