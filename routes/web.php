@@ -12,11 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('login', 'App\Http\Controllers\LogarController@index')->name('login');
 Route::post('login', 'App\Http\Controllers\LogarController@logar')->name('login');
 Route::get('termos', 'App\Http\Controllers\ReservaController@verTermos')->name('termos')->middleware('auth');
@@ -35,18 +30,7 @@ Route::post('reserva/confirmada', 'App\Http\Controllers\ReservaController@confir
 Route::get('visualizar/reservas', 'App\Http\Controllers\ReservaController@visualizarReserva')->name('visualizar')->middleware('auth');
 Route::delete('reserva/remover/{id}', 'App\Http\Controllers\ReservaController@cancelarReserva')->name('cancelar')->middleware('auth');
 
-Route::get('/teste', 'App\Http\Controllers\DataController@mes');
-
-
-Route::get('/visualizando-email', function (){
-    return new \App\Mail\Confirmacao('Patrick', '2021-09-08', 'São Paulo', '3', '14');
-});
-
 Route::get('/sair', function (){
     \Illuminate\Support\Facades\Auth::logout();
     return redirect('/login');
 });
-
-//Auth::routes();
-
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
