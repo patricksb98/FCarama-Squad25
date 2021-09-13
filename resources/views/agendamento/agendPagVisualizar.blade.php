@@ -28,10 +28,10 @@
                     <div>{{$reserv->dia}}</div>
                     <div>{{$reserv->id_mesa}}</div>
                     <div>{{$reserv->id_cadeira}}</div>
-                    <form method="post" action="/reserva/remover/{{$reserv->id}}">
+                    <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')">
                         {{method_field('DELETE')}}
                         {!! csrf_field() !!}
-                        <button class="canc">Excluir</button>
+                        <button class="canc" >Excluir</button>
                     </form>
                 </div>
             @endforeach
