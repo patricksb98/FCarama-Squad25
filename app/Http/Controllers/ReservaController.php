@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\Confirmacao;
 use App\Models\Reserva;
 use App\Models\Termos;
 use Carbon\Carbon;
@@ -9,6 +10,7 @@ use Carbon\Traits\Date;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class ReservaController extends Controller
 {
@@ -214,9 +216,9 @@ class ReservaController extends Controller
             $reserva->save();
             session()->forget(['local', 'data', 'id_mesa', 'id_cadeira']);
 
-            $email =  new \App\Mail\Confirmacao($name_consultor, $data, $local , $mesa, $cadeira);
+            $email =  new Confirmacao($name_consultor, $data, $local , $mesa, $cadeira);
             $email->subject = 'Confirmação de Reserva!';
-            \Illuminate\Support\Facades\Mail::to($email_consultor)->send($email);
+            Mail::to($email_consultor)->send($email);
 
             return redirect()->route('reserva/confirmada');
         }
