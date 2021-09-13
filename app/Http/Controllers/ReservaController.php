@@ -19,7 +19,7 @@ class ReservaController extends Controller
         $aceitou = count($termos->where('id_consultor', $id_consultor)->where('aceitou', 1));
 
         if($aceitou >= 1){
-            return redirect()->route('initial');
+            return redirect()->route('inicio');
         }else{
             return view('agendamento.agendPagCondicoes');
         }
