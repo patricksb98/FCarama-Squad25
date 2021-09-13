@@ -38,13 +38,13 @@ class ReservaController extends Controller
         return redirect()->route('inicio');
     }
 
-    public function initialView()
+    public function inicio()
     {
         return view('agendamento.AgendPagInicial');
     }
 
 
-    public function index()
+    public function mostrarLocaisEDias()
     {
         if(!Auth::check()){
             return redirect()->route('login');
@@ -62,7 +62,7 @@ class ReservaController extends Controller
         return view('agendamento.agendPag1Local', $errorMessage);
     }
 
-    public function store(Request $request)
+    public function escolherLocalEDia(Request $request)
     {
         $local = $request->local;
         $data = $request->data;
@@ -245,7 +245,7 @@ class ReservaController extends Controller
         return view ('agendamento.agendPagVisualizar', compact('reserva'));
     }
 
-    public function destroy(Request $request)
+    public function cancelarReserva(Request $request)
     {
         Reserva::destroy($request->id);
 
