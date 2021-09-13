@@ -33,7 +33,7 @@ Route::post('reserva/etapa4', 'App\Http\Controllers\ReservaController@confirmarR
 Route::get('reserva/confirmada', 'App\Http\Controllers\ReservaController@reservaConfirmada')->name('reserva/confirmada')->middleware('auth');
 Route::post('reserva/confirmada', 'App\Http\Controllers\ReservaController@confirmarReserva')->name('reserva/confirmada')->middleware('auth');
 Route::get('visualizar/reservas', 'App\Http\Controllers\ReservaController@visualizarReserva')->name('visualizar')->middleware('auth');
-Route::delete('reserva/remover/{id}', 'App\Http\Controllers\ReservaController@cancelarReserva');
+Route::delete('reserva/remover/{id}', 'App\Http\Controllers\ReservaController@cancelarReserva')->name('cancelar')->middleware('auth');
 
 Route::get('/teste', 'App\Http\Controllers\DataController@mes');
 
