@@ -29,7 +29,7 @@ Projeto desenvolvido durante o **PROGRAMA DE FORMAÇÃO SEASON 2** oferecido pel
 - [x] Visualizar reservas ativas
 - [x] Cancelar reservas ativas
 ---
-## Como executar
+:books: ## Como executar
 
 ### Pré-requisitos
 
