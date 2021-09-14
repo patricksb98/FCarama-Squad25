@@ -5,40 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/visualizar.css">
+    <link rel="stylesheet" href="../css/responsivo/responsivoVisualizar.css">
     <title>Minhas Reservas</title>
 </head>
 <body>
 <header>
-    <a href="/inicio" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
-    <a href="/sair" class="t1"><i class="fas fa-sign-out-alt"></i></a>
+    <img src="../img/Logo_-_Paginas_internas.svg" class="logo" alt="">
 </header>
 <main>
-    <P>MINHAS RESERVAS</P>
+    <P>Minhas reservas</P>
     <div class="containerMaster">
-            @csrf
-            <div class="box">
-                <div class="localAndar">LOCAL</div>
-                <div>DATA</div>
-                <div>MESA</div>
-                <div>CADEIRA</div>
+
+
+            <div class="box b1">
+                <div class="tab">LOCAL</div>
+                <div class="tab" >DATA</div>
+                <div class="tab">MESA</div>
+                <div class="tab">CADEIRA</div>
             </div>
+
             @foreach($reserva as $reserv)
-                <div class="box">
-                    <div class="localAndar">{{$reserv->local}}</div>
-                    <div>{{$reserv->dia}}</div>
-                    <div>{{$reserv->id_mesa}}</div>
-                    <div>{{$reserv->id_cadeira}}</div>
-                    <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')">
-                        {{method_field('DELETE')}}
-                        {!! csrf_field() !!}
-                        <button class="canc" >Excluir</button>
-                    </form>
-                </div>
+                <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')" >
+                    {{method_field('DELETE')}}
+                    {!! csrf_field() !!}
+                        <div class="box b2">
+                        <div>{{$reserv->local}}</div>
+                        <div>{{$reserv->dia}}</div>
+                        <div>{{$reserv->id_mesa}}</div>
+                        <div>{{$reserv->id_cadeira}}</div>
+                         <div class="canc"> <button class="btncanc">Cancelar</button></div>
+                    </div>
+                </form>
             @endforeach
     </div>
 </main>
 <footer>
-
+    <a href="">FAZER UMA NOVA RESERVA   <i class="fas fa-long-arrow-alt-right"></i></a>
 </footer>
 <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
