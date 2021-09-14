@@ -12,7 +12,7 @@
 
 ---
 
-## Sobre o projeto
+## :computer: Sobre o projeto
 
 Com o ínicio da pandemia, muitas empresas tiveram que adotar o sistema de home office, e não foi diferente na FCamara. 
 
@@ -23,13 +23,13 @@ O Encontro dos Laranjas é uma aplicação web que vai auxiliar os consultores a
 Projeto desenvolvido durante o **PROGRAMA DE FORMAÇÃO SEASON 2** oferecido pelo Grupo FCamara.
 
 ---
-## Features
+## :white_check_mark: Features
 - [x] Login de usuário
 - [x] Reservar uma estação de trabalho
 - [x] Visualizar reservas ativas
 - [x] Cancelar reservas ativas
 ---
-:books: ## Como executar
+## :books: Como executar
 
 ### Pré-requisitos
 
