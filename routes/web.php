@@ -30,6 +30,10 @@ Route::post('reserva/confirmada', 'App\Http\Controllers\ReservaController@confir
 Route::get('visualizar/reservas', 'App\Http\Controllers\ReservaController@visualizarReserva')->name('visualizar')->middleware('auth');
 Route::delete('reserva/remover/{id}', 'App\Http\Controllers\ReservaController@cancelarReserva')->name('cancelar')->middleware('auth');
 
+Route::get('/email', function (){
+    return view('mail.confirmacao.confirmacao');
+});
+
 Route::get('/sair', function (){
     \Illuminate\Support\Facades\Auth::logout();
     return redirect('/login');

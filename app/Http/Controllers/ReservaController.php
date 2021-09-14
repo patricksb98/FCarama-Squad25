@@ -196,6 +196,7 @@ class ReservaController extends Controller
         $data = session(('data'));
         $mesa = session(('id_mesa'));
 
+
         $reserva = new Reserva();
 
         $reserva->id_consultor = $id_consultor;
@@ -212,11 +213,12 @@ class ReservaController extends Controller
             session()->flash('erro', 'Alguém foi mais rápido que você! Por favor, faça a sua reserva novamente.');
             return redirect()->route('reserva/etapa2');
         }else{
-
-            $reserva->save();
+            $dataController = new DataController();
+            $dia = date('d', strtotime($data));
+            $mes = $dataController->mes(date('m', strtotime($data)));
             session()->forget(['local', 'data', 'id_mesa', 'id_cadeira']);
 
-            $email =  new Confirmacao($name_consultor, $data, $local , $mesa, $cadeira);
+            $email =  new Confirmacao($name_consultor, $dia, $mes, $local , $mesa, $cadeira);
             $email->subject = 'Confirmação de Reserva!';
             Mail::to($email_consultor)->send($email);
 

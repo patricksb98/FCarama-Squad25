@@ -12,7 +12,8 @@ class Confirmacao extends Mailable
     use Queueable, SerializesModels;
 
     public $nome_consultor;
-    public $data;
+    public $dia;
+    public $mes;
     public $local;
     public $id_mesa;
     public $id_cadeira;
@@ -22,10 +23,11 @@ class Confirmacao extends Mailable
      *
      * @return void
      */
-    public function __construct($nome_consultor, $data, $local, $id_mesa, $id_cadeira)
+    public function __construct($nome_consultor, $dia, $mes, $local, $id_mesa, $id_cadeira)
     {
         $this->nome_consultor = $nome_consultor;
-        $this->data = $data;
+        $this->dia = $dia;
+        $this->mes = $mes;
         $this->local = $local;
         $this->id_mesa = $id_mesa;
         $this->id_cadeira = $id_cadeira;
