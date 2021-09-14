@@ -3,7 +3,7 @@
 <p align="center">Aplicação web desenvolvida para oferecer de forma simples o angendamento para usar os escritórios da FCarama. </p>
 
 <p align="center">
-  <a href="#blush">Porquê?</a> •
+  <a href="#blush-porque">Porquê?</a> •
   <a href="#computer-tecnologias">Tecnologias</a> •
   <a href="#rocket-comoexecutar">Como executar</a> •
   <a href="#handshake-autores">Autores</a> •
@@ -22,5 +22,7 @@ O Encontro dos Laranjas é uma aplicação web que vai auxiliar os consultores a
 Projeto desenvolvido durante o **PROGRAMA DE FORMAÇÃO SEASON 2** oferecido pelo Grupo FCamara.
 
 ---
+
+## **Tecnologias**
 
 
