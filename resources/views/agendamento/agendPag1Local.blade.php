@@ -63,6 +63,8 @@
                                 minDate: Number(0),
 
                             });
+
+                            $.datepicker.parseDate( "yy-mm-dd" );
                             </script>
                         </div>
                     </section>
