@@ -1,4 +1,4 @@
-<h1 align="center">Encontro Dos Laranjas</h1>
+<h1 align="center"><img src="public/img/Group_25.png"></h1>
 
 <p align="center">Aplicação web desenvolvida para oferecer de forma simples o angendamento para usar os escritórios da FCarama. </p>
 
