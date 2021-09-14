@@ -71,7 +71,8 @@ DB_DATABASE=fcamara ("Nome do Schema criado")
 DB_USERNAME=root ("Seu usuário)
 DB_PASSWORD= ??? ("Sua senha)
 
-# Ainda no arquivo .env colar o bloco abaixo naconfiguração de e-mail (para poder testar nosso sistemade envio de email de confirmação).
+# Ainda no arquivo .env colar o bloco abaixo naconfiguração de e-mail (para poder testar nosso sistema de 
+envio de email de confirmação).
 
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.gmail.com
@@ -82,11 +83,13 @@ MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS=teste@teste.com
 MAIL_FROM_NAME=EncontroDosLaranjas
 
-# Nós seguimos do principio que estamos desenvolvendo uma aplicação para a FCamara, então não criamos um cadastro de usuários, visto que os consultores
-provavelmente já tem os seus dados de acesso para os sistemas da FCamara. Então para meios de teste, favor ir no diretório database/seeders e abrir o arquivo
-ConsultorSeeder.php e trocar os dados para os seus dados pessoais (principalmente o e-mail para testar o sistema de envio de e-mails)
+# Nós seguimos do principio que estamos desenvolvendo uma aplicação para a FCamara, então não criamos um 
+cadastro de usuários, visto que os consultoresprovavelmente já tem os seus dados de acesso para os sistemas
+da FCamara. Então para meios de teste, favor ir no diretório database/seeders e abrir o arquivo ConsultorSeeder.php
+e trocar os dados para os seus dados pessoais (principalmente o e-mail para testar o sistema de envio de e-mails)
 
-# Após seguir todos os passos acima, digitar o seguinte comando no terminal (para criar as tabelas e relacionamentos do DB)
+# Após seguir todos os passos acima, digitar o seguinte comando no terminal (para criar as tabelas e
+ relacionamentos do DB)
 $ php artisan migrate
 
 # Digitar no terminal (para popular as tabelas)
