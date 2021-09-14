@@ -14,7 +14,7 @@
         <section class="box1">
             <h1>Bem vindo ao <BR> <p> ENCONTRO DOS LARANJAS</p></h1>
             <div class="imgSaudacao"><img src="" alt=""></div>
-            <h2>Estamos felizes em reabir nossos escritórios! </h2>
+            <h2>Estamos felizes em reabrir nossos escritórios! </h2>
         </section>
 
     </article>

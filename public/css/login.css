@@ -93,9 +93,11 @@ body {
     width: 20vw;
     height: 5vh;
     margin-top: 0.3rem;
-    border: #FE662E solid 1px;
+    border: #FE885C solid 1px;
     border-radius: 8px;
+    background-color: #F3F1F0;
 }
+
 
 .bntLogin {
     background-color: #FE662E;
@@ -106,6 +108,10 @@ body {
     border-radius: 8px;
     margin: 1.5rem 0 2rem 0;
     cursor: pointer;
+}
+
+.bntLogin:hover {
+    background-color: #FE4400;
 }
 
 .t1:active {

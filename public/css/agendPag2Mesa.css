@@ -42,15 +42,11 @@
 }
 
 .legenda1 {
-    background-color: #D03800;
+    background-color: #F3F1F0;
 }
 
 .legenda2 {
     background-color: #FEBBA2;
-}
-
-.legenda3 {
-    background-color: #F3F1F0;
 }
 
 
@@ -99,7 +95,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #D03800;
+    background-color: #F3F1F0;
     border: solid 1px #FE662E;
     border-radius: 3px;
 }

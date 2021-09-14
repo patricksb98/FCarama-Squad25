@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
     <link rel="stylesheet" href="{{ asset('css/agendPag1Local.css') }}">
-
-    <title>Agendamento</title>
+    <link rel="stylesheet" href="{{ asset('css/responsivo/responsivoLocal.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}">
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
+    <title>Local e Data</title>
 </head>
 <body>
     <header>
         <a href="/inicio" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
-        <img src="{{ asset('img/Barra_de_progresso_2.svg') }}" alt="">
-        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
+        <div class="compromisso">
+            <p>Onde e Quando?</p>
+            <img src="{{ asset('img/Barra_de_progresso_2.svg') }}" alt="">
+        </div>        
+        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" class="logo" alt="">
     </header>
     <main>
         <article>
@@ -36,12 +42,12 @@
                                 </label>
 
                             </div>
-                            <div class="container" id="andar">
-                                <label class="btn t1">  <strong>1º ANDAR</strong>
+                            <div class="container andar" id="andar">
+                                <label class="btn btnAndar t1">  <strong>1º ANDAR</strong>
                                     <input type="radio" name="local" class="radioButton" value="São Paulo 1º Andar">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="btn t1" id="andar2"><strong>2º ANDAR</strong>
+                                <label class="btn btnAndar t1" id="andar2"><strong>2º ANDAR</strong>
                                     <input type="radio" name="local" class="radioButton" value="São Paulo 2º Andar">
                                     <span class="checkmark"></span>
                                 </label>
@@ -49,7 +55,15 @@
                         </div>
                         <div class="data">
                             <p>Quando você vem ao escritório?</p>
-                            <input type="date" name="data" id="data">
+                            <div id="datepicker"></div>
+                            <script>
+                            $( "#datepicker" ).datepicker({ 
+                                autoSize: true,
+                                maxDate: "+1m",
+                                minDate: Number(0),
+
+                            });
+                            </script>
                         </div>
                     </section>
                     <section class="footerBase">

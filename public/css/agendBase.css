@@ -53,6 +53,10 @@ header {
     font-size: 1.2rem;
 }
 
+.btnCont:hover {
+    background-color: #FE4400;
+} 
+
 .fa-long-arrow-alt-right {
     font-size: 1rem;
     margin-left: 1.1rem;

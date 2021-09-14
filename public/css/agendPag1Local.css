@@ -34,6 +34,7 @@ p {
     width: 10rem;
     height: 2.7rem;
     margin: 2rem 1rem 0 0;
+    color: #1E120E;
 }
 
 .btnAndar {
@@ -53,7 +54,7 @@ p {
 
 
 .container input:checked  ~ .checkmark{
-    background-color: #FEBBA2;
+    background-color: #FE885C;
     border: solid 3px #FE662E;
 }
 

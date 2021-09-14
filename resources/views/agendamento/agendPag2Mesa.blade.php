@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
     <link rel="stylesheet" href="{{ asset('css/agendPag2Mesa.css') }}">
-   <link rel="stylesheet" href="{{ asset('css/responsivo/responsivoMesa.css') }}">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('css/responsivo/responsivoMesa.css') }}">
+    <title>Escolha sua mesa</title>
 </head>
 <body>
     <header>
@@ -16,7 +16,7 @@
             <p>Escolha sua mesa</p>
             <img src="{{ asset('img/Barra_de_progresso_3.svg') }}" alt="">
         </div>
-        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
+        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" class="logo" alt="">
     </header>
 
     <main>
@@ -36,9 +36,6 @@
                                 <div class="legenda">
                                     <div class="legenda2"></div><p>Reservada</p>
                                 </div>
-                                <div class="legenda">
-                                    <div class="legenda3"></div><p>Desativada</p>
-                                </div>
                             </div>
                             <div class="containerBox">
                                 <div class="box2"><p>ÁREA DE LAZER</p></div>
@@ -47,16 +44,16 @@
                                     @if($local == "São Paulo 1º Andar")
                                         @for($i = 1; $i <= 30; $i++)
                                             @if($reservasSP >= 240)
-                                        <label class="containerMesa" style="background: #FEBBA2">
+                                        <label class="containerMesa">
                                             <strong>{{$i}}</strong>
                                             <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                            <span class="checkmark"></span>
+                                            <span class="checkmark" style="background: #FEBBA2"></span>
                                         </label>
                                             @elseif(array_key_exists($i, $blockedTables) && $blockedTables[$i] > 4)
-                                                <label class="containerMesa" style="background-color: #FEBBA2">
+                                                <label class="containerMesa">
                                                     <strong>{{$i}}</strong>
                                                     <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                                    <span class="checkmark"></span>
+                                                    <span class="checkmark" style="background: #FEBBA2"></span>
                                                 </label>
                                             @else
                                                 <label class="containerMesa t1">
@@ -70,16 +67,16 @@
                                     @elseif($local == "São Paulo 2º Andar")
                                             @for($i = 31; $i <= 60; $i++)
                                                 @if($reservasSP >= 240)
-                                                    <label class="containerMesa" style="background: #FEBBA2">
+                                                    <label class="containerMesa">
                                                         <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                                        <span class="checkmark"></span>
+                                                        <span class="checkmark" style="background: #FEBBA2"></span>
                                                     </label>
                                                 @elseif(array_key_exists($i, $blockedTables) && $blockedTables[$i] > 4)
-                                                    <label class="containerMesa" style="background: #FEBBA2">
+                                                    <label class="containerMesa">
                                                         <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                                        <span class="checkmark"></span>
+                                                        <span class="checkmark" style="background: #FEBBA2"></span>
                                                     </label>
                                                 @else
                                                     <label class="containerMesa t1">
@@ -93,16 +90,16 @@
                                     @elseif($local == "Santos")
                                             @for($i = 1; $i <= 10; $i++)
                                                 @if($reservasSP >= 40)
-                                                    <label class="containerMesa" style="background: #FEBBA2">
+                                                    <label class="containerMesa">
                                                     <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                                        <span class="checkmark"></span>
+                                                        <span class="checkmark" style="background: #FEBBA2"></span>
                                                     </label>
                                                     @elseif(array_key_exists($i, $blockedTables) && $blockedTables[$i] > 4)
-                                                    <label class="containerMesa" style="background: #FEBBA2">
+                                                    <label class="containerMesa">
                                                     <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
-                                                        <span class="checkmark"></span>
+                                                        <span class="checkmark" style="background: #FEBBA2"></span>
                                                     </label>
                                                 @else
                                                     <label class="containerMesa t1">
@@ -119,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--<input type="text" name="id_mesa">-->
+                   
                 </section>
                 <section class="footerBase">
                     <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
