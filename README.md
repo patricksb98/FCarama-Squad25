@@ -4,9 +4,9 @@
 
 <p align="center">
   <a href="#computer-sobre-o-projeto">Sobre o Projeto</a> •
-  <a href="#Features">Features</a> •
-  <a href="#Tecnologias">Como executar</a> •
-  <a href="#Como-executar">Tecnologias</a> •
+  <a href="#white_check_mark-features">Features</a> •
+  <a href="#books-como-executar">Como executar</a> •
+  <a href="#tecnologias">Tecnologias</a> •
   <a href="#Equipe">Equipe</a> •
 </p>
 
