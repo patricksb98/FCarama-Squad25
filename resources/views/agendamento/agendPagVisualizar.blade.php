@@ -40,7 +40,7 @@
     </div>
 </main>
 <footer>
-    <a href="">FAZER UMA NOVA RESERVA   <i class="fas fa-long-arrow-alt-right"></i></a>
+    <a href="/reserva/etapa1">FAZER UMA NOVA RESERVA   <i class="fas fa-long-arrow-alt-right"></i></a>
 </footer>
 <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
