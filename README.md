@@ -3,15 +3,15 @@
 <p align="center">Aplicação web desenvolvida para oferecer de forma simples o angendamento para usar os escritórios da FCarama. </p>
 
 <p align="center">
-  <a href="#-Sobre">Porquê?</a> •
-  <a href="#computer-tecnologias">Tecnologias</a> •
+  <a href="#Sobre-o-projeto">Sobre o Projeto</a> •
+  <a href="#tecnologias">Tecnologias</a> •
   <a href="#rocket-comoexecutar">Como executar</a> •
   <a href="#handshake-autores">Autores</a> •
 </p>
 
 ---
 
-## Sobre
+## Sobre o projeto
 
 Com o ínicio da pandemia, muitas empresas tiveram que adotar o sistema de home office, e não foi diferente na FCamara. 
 
@@ -23,6 +23,6 @@ Projeto desenvolvido durante o **PROGRAMA DE FORMAÇÃO SEASON 2** oferecido pel
 
 ---
 
-## **Tecnologias**
+## Tecnologias
 
 
