@@ -4,9 +4,9 @@
 
 <p align="center">
   <a href="#Sobre-o-projeto">Sobre o Projeto</a> •
-  <a href="#tecnologias">Tecnologias</a> •
-  <a href="#rocket-comoexecutar">Como executar</a> •
-  <a href="#handshake-autores">Autores</a> •
+  <a href="#Tecnologias">Tecnologias</a> •
+  <a href="#Como-executar">Como executar</a> •
+  <a href="#Equipe">Equipe</a> •
 </p>
 
 ---
@@ -24,5 +24,22 @@ Projeto desenvolvido durante o **PROGRAMA DE FORMAÇÃO SEASON 2** oferecido pel
 ---
 
 ## Tecnologias
+
+- PHP
+- Laravel
+- HTML5
+- CSS3
+- JavaScript
+
+-------
+
+## Como executar
+
+```
+
+```
+----
+## Equipe
+
 
 
