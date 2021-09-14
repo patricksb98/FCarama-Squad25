@@ -69,7 +69,7 @@ main {
 
 .link1 {
     background-image: url(../img/Card_-_Nova_Reserva.svg);
-    background-size: 100% 120%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }

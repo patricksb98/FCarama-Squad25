@@ -24,6 +24,12 @@
 }
 
 @media screen and (max-width: 560px){
+    .link a {
+        width: 80%;
+        height: 50%;
+        background-size: cover;
+    }
+    
     .linkInter {
         margin: 0.5rem;
     }
