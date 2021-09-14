@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginaInicial.css">
     <link rel="stylesheet" href="../css/responsivo/responsivoPagInicial.css">
-    <title>FCamara</title>
+    <title>ENCONTRO DOS LARANJAS</title>
 </head>
 <body>
     <header>

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href={{asset("css/agendBase.css")}}>
     <link rel="stylesheet" href={{asset("css/agendPag4Confirme.css")}}>
     <link rel="stylesheet" href={{asset("css/responsivo/responsivoConfirme.css")}}>
-    <title>Confirmação</title>
+    <title>CONFIRMAÇÃO</title>
 </head>
 <body>
 

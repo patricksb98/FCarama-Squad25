@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/agendBase.css">
     <link rel="stylesheet" href="css/agendPagCondicoes.css">
     <link rel="stylesheet" href="css/responsivo/responsivoCondicoes.css">
-    <title>Condições</title>
+    <title>COMPROMISSO</title>
 </head>
 <body>
     <header class="headerBase">

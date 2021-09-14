@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css') }}">
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
-    <title>Local e Data</title>
+    <title>ONDE E QUANDO?</title>
 </head>
 <body>
     <header>

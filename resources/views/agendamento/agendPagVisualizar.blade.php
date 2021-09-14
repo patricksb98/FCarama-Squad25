@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/visualizar.css">
     <link rel="stylesheet" href="../css/responsivo/responsivoVisualizar.css">
-    <title>Minhas Reservas</title>
+    <title>MINHAS RESERVAS</title>
 </head>
 <body>
 <header>

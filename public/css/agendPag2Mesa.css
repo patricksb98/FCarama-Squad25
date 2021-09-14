@@ -124,11 +124,12 @@
 
 .alerta {
     position: absolute;
-    width: 30%;
-    height: 20%;
-    top: 20%;
-    right: 35%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
     background-color: #FE662E;
+    opacity: .8;
     display: flex;
     justify-content: center;
     align-items: center;
