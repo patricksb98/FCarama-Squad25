@@ -4,8 +4,8 @@
 
 <p align="center">
   <a href="#Sobre-o-projeto">Sobre o Projeto</a> •
-  <a href="#Tecnologias">Tecnologias</a> •
-  <a href="#Como-executar">Como executar</a> •
+  <a href="#Tecnologias">Como executar</a> •
+  <a href="#Como-executar">Tecnologias</a> •
   <a href="#Equipe">Equipe</a> •
 </p>
 
@@ -22,18 +22,6 @@ O Encontro dos Laranjas é uma aplicação web que vai auxiliar os consultores a
 Projeto desenvolvido durante o **PROGRAMA DE FORMAÇÃO SEASON 2** oferecido pelo Grupo FCamara.
 
 ---
-
-## 🛠 Tecnologias
-
-As seguintes ferramentas foram usadas na construção do projeto:
-
-- [PHP](https://www.php.net)
-- [Laravel](https://laravel.com)
-- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
--------
-
 ## Como executar
 
 ### Pré-requisitos
@@ -84,7 +72,7 @@ MAIL_FROM_ADDRESS=teste@teste.com
 MAIL_FROM_NAME=EncontroDosLaranjas
 
 # Nós seguimos do principio que estamos desenvolvendo uma aplicação para a FCamara, então não criamos um 
-cadastro de usuários, visto que os consultoresprovavelmente já tem os seus dados de acesso para os sistemas
+cadastro de usuários, visto que os consultores provavelmente já tem os seus dados de acesso para os sistemas
 da FCamara. Então para meios de teste, favor ir no diretório database/seeders e abrir o arquivo
 ConsultorSeeder.php e trocar os dados para os seus dados pessoais (principalmente o e-mail para testar o 
 sistema de envio de e-mails)
@@ -101,7 +89,17 @@ $ php artisan serve
 
 # O servidor iniciará na porta:8000 - acesse http://localhost:8000
 ```
+---
+## 🛠 Tecnologias
 
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [PHP](https://www.php.net)
+- [Laravel](https://laravel.com)
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+-------
 
 
 
