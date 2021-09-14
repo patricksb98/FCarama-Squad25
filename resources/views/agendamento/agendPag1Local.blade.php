@@ -64,7 +64,7 @@
 
                             });
 
-                            $.datepicker.parseDate( "yy-mm-dd" );
+                            $.datepicker.formatDate( "yy-mm-dd" );
                             </script>
                         </div>
                     </section>
