@@ -55,7 +55,7 @@
                         </div>
                         <div class="data">
                             <p>Quando você vem ao escritório?</p>
-                            <div id="datepicker"></div>
+                            <input id="datepicker"></input>
                             <script>
                             $( "#datepicker" ).datepicker({ 
                                 autoSize: true,
