@@ -18,7 +18,7 @@
         <div class="compromisso">
             <p>Onde e Quando?</p>
             <img src="{{ asset('img/Barra_de_progresso_2.svg') }}" alt="">
-        </div>        
+        </div>
         <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" class="logo" alt="">
     </header>
     <main>
@@ -57,14 +57,13 @@
                             <p>Quando você vem ao escritório?</p>
                             <input id="datepicker"></input>
                             <script>
-                            $( "#datepicker" ).datepicker({ 
+                            $( "#datepicker" ).datepicker({
                                 autoSize: true,
                                 maxDate: "+1m",
                                 minDate: Number(0),
-
+                                dateFormat: 'yy-mm-dd'
                             });
 
-                            $.datepicker.formatDate( "yy-mm-dd" );
                             </script>
                         </div>
                     </section>
