@@ -21,6 +21,10 @@ p {
  
 }
 
+.andar {
+    flex-direction: column;
+}
+
 .btn {
     display: flex;
     justify-content: center;
@@ -30,6 +34,11 @@ p {
     width: 10rem;
     height: 2.7rem;
     margin: 2rem 1rem 0 0;
+}
+
+.btnAndar {
+    height: 2rem;
+    margin: 1rem 0 0 0;
 }
 
 .checkmark {

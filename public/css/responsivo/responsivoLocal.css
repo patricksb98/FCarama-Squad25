@@ -1,0 +1,68 @@
+@media screen and (max-width: 600px){
+    .compromisso {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .compromisso p {
+        display: inline;
+        font-size: 1.8rem;
+        color: #FE4400;
+        margin-bottom: .5rem;
+    
+    }
+
+    .compromisso img {
+        width: 50vw;
+    }
+
+    .logo {
+        visibility: hidden;
+    }
+
+    .mainBase {
+        justify-content: center;
+        
+    }
+
+    .local, .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .local p, .data p {
+        font-size: 1.5rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 430px){
+    .btn {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 400px){
+     .fa-arrow-alt-circle-left {
+        font-size: 1.6rem;
+    }
+   
+    .compromisso p {
+         font-size: 1.4rem;
+         margin-bottom: .5rem;
+    
+    }
+
+    .local p, .data p {
+        font-size: 1.2rem;
+    }
+
+    .mainBase {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
