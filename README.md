@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="#Sobre-o-projeto">Sobre o Projeto</a> •
+  <a href="#Features">Features</a> •
   <a href="#Tecnologias">Como executar</a> •
   <a href="#Como-executar">Tecnologias</a> •
   <a href="#Equipe">Equipe</a> •
@@ -21,6 +22,12 @@ O Encontro dos Laranjas é uma aplicação web que vai auxiliar os consultores a
 
 Projeto desenvolvido durante o **PROGRAMA DE FORMAÇÃO SEASON 2** oferecido pelo Grupo FCamara.
 
+---
+## Features
+- [x] Login de usuário
+- [x] Reservar uma estação de trabalho
+- [x] Visualizar reservas ativas
+- [x] Cancelar reservas ativas
 ---
 ## Como executar
 
