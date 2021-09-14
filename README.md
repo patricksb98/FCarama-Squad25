@@ -31,7 +31,7 @@ Projeto desenvolvido durante o **PROGRAMA DE FORMAÇÃO SEASON 2** oferecido pel
 ---
 ## :books: Como executar
 
-### Pré-requisitos
+### :memo: Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [PHP](https://www.php.net), [MySQL](https://www.mysql.com) (Você pode instalar os dois juntos
