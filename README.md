@@ -3,7 +3,7 @@
 <p align="center">Aplicação web desenvolvida para oferecer de forma simples o angendamento para usar os escritórios da FCarama. </p>
 
 <p align="center">
-  <a href="#Sobre-o-projeto">Sobre o Projeto</a> •
+  <a href="#computer-sobre-o-projeto">Sobre o Projeto</a> •
   <a href="#Features">Features</a> •
   <a href="#Tecnologias">Como executar</a> •
   <a href="#Como-executar">Tecnologias</a> •
