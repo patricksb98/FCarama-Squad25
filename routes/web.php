@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function (){
+    return redirect('login');
+});
+
 Route::get('login', 'App\Http\Controllers\LogarController@index')->name('login');
 Route::post('login', 'App\Http\Controllers\LogarController@logar')->name('login');
 Route::get('termos', 'App\Http\Controllers\ReservaController@verTermos')->name('termos')->middleware('auth');
