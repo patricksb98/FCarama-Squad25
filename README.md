@@ -121,7 +121,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ---
 ## &#x1F4C4; Licença
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/patricksb98/FCarama-Squad25/blob/master/LICENSE)
 
 
 
