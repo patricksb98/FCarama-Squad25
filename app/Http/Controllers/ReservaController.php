@@ -266,6 +266,11 @@ class ReservaController extends Controller
         $dia = Carbon::now('GMT-3');
 
         $reserva = $reservas->where('id_consultor', $id_consultor)->where('dia', '>=', $dia->toDateString())->sortBy('dia');
+        $vazio = count($reservas->where('id_consultor', $id_consultor)->where('dia', '>=', $dia->toDateString()));
+        
+        if($vazio < 1){
+            return view('agendamento.agendPagEmpty');
+        }
 
         return view ('agendamento.agendPagVisualizar', compact('reserva'));
     }
