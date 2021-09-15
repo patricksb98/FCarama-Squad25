@@ -118,7 +118,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 </tr>
 </table>
 
+---
+## &#x1F4C4; Licença
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 
