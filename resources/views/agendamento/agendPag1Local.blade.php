@@ -53,16 +53,19 @@
                         </div>
                         <div class="data">
                             <p>Quando você vem ao escritório?</p>
-                            <span id="datepicker" name="data" required></span>
-                            <script>
-                            $( "#datepicker" ).datepicker({
-                                autoSize: true,
-                                maxDate: "+1m",
-                                minDate: Number(0),
-                                dateFormat: 'yy-mm-dd',
-                            });
+                            <label for="">
+                                <input type="hidden" name="data" required></input>
+                                <span id="datepicker"></span>
+                                <script>
+                                $( "#datepicker" ).datepicker({
+                                    autoSize: true,
+                                    maxDate: "+1m",
+                                    minDate: Number(0),
+                                    dateFormat: 'yy-mm-dd',
+                                });
 
-                            </script>
+                                </script>
+                            </label>
                         </div>
                     </section>
                     <section class="footerBase">
