@@ -33,11 +33,11 @@
                         <div class="alert alert-danger text-center">{{$erro}}</div>
                     @endif
                     <label for="emailLogin">E-mail</label>
-                    <input type="email" name="email" id="emailLogin" class="emailLogin" placeholder=" Digite seu e-mail">
+                    <input type="email" name="email" id="emailLogin" class="emailLogin" placeholder=" Digite seu e-mail" required>
                 </div>
                 <div class="containerForm">
                     <label for="senhaLogin">Senha</label>
-                    <input type="password" name="password" id="senhaLogin" class="senhaLogin" placeholder=" Digite sua senha">
+                    <input type="password" name="password" id="senhaLogin" class="senhaLogin" placeholder=" Digite sua senha" required>
                 </div>
                 <button type="submit" class="bntLogin t1">VAMOS COMEÇAR</button>
             </form>

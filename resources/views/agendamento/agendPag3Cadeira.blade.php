@@ -54,7 +54,7 @@
                                     @else
                                         <label class="cadeiras c1 t1">
                                             <strong><?=$cadeira[0]?></strong>
-                                            <input type="radio" name="cadeira" class="btnc" id="ws1" value="<?=$cadeira[0]?>">
+                                            <input type="radio" name="cadeira" class="btnc" id="ws1" value="<?=$cadeira[0]?>" required>
                                             <span class="checkmark"></span>
                                         </label>
                                     @endif
@@ -68,7 +68,7 @@
                                         @else
                                             <label class="cadeiras c1 t1" id="we2">
                                                 <strong><?=$cadeira[1]?></strong>
-                                                <input type="radio" name="cadeira" class="btnc" id="ws2" value="<?=$cadeira[1]?>">
+                                                <input type="radio" name="cadeira" class="btnc" id="ws2" value="<?=$cadeira[1]?>" required>
                                                 <span class="checkmark"></span>
                                             </label>
                                         @endif
@@ -82,7 +82,7 @@
                                         @else
                                             <label class="cadeiras c1 t1">
                                                 <strong><?=$cadeira[2]?></strong>
-                                                <input type="radio" name="cadeira" class="btnc" id="ws3" value="<?=$cadeira[2]?>">
+                                                <input type="radio" name="cadeira" class="btnc" id="ws3" value="<?=$cadeira[2]?>" required>
                                                 <span class="checkmark"></span>
                                             </label>
                                         @endif
@@ -99,7 +99,7 @@
                                     @else
                                         <label class="cadeiras c1 t1">
                                         <strong><?=$cadeira[3]?></strong>
-                                            <input type="radio" name="cadeira" class="btnc" id="ws4" value="<?=$cadeira[3]?>">
+                                            <input type="radio" name="cadeira" class="btnc" id="ws4" value="<?=$cadeira[3]?>" required>
                                             <span class="checkmark"></span>
                                         </label>
                                     @endif
@@ -113,7 +113,7 @@
                                     @else
                                         <label class="cadeiras c1 t1">
                                             <strong><?=$cadeira[4]?></strong>
-                                            <input type="radio" name="cadeira" class="btnc" id="ws5" value="<?=$cadeira[4]?>">
+                                            <input type="radio" name="cadeira" class="btnc" id="ws5" value="<?=$cadeira[4]?>" required>
                                             <span class="checkmark"></span>
                                         </label>
                                     @endif

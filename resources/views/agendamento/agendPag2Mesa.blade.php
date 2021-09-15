@@ -58,7 +58,7 @@
                                             @else
                                                 <label class="containerMesa t1">
                                                     <strong>{{$i}}</strong>
-                                                    <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
+                                                    <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" required>
                                                     <span class="checkmark"></span>
                                                 </label>
                                             @endif
@@ -81,7 +81,7 @@
                                                 @else
                                                     <label class="containerMesa t1">
                                                         <strong>{{$i}}</strong>
-                                                        <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
+                                                        <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" required>
                                                         <span class="checkmark"></span>
                                                     </label>
                                                 @endif
@@ -104,7 +104,7 @@
                                                 @else
                                                     <label class="containerMesa mesaSantos t1">
                                                         <strong>{{$i}}</strong>
-                                                        <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
+                                                        <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" required>
                                                         <span class="checkmark"></span>
                                                     </label>
                                                 @endif

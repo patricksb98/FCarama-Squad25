@@ -40,6 +40,36 @@
                 </form>
             @endforeach
     </div>
+
+
+            
+    @foreach($reserva as $reserv)
+    @php($dia = date('d-m-Y', strtotime($reserv->dia)))
+    <div class="containerResponsivo">
+        <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')" >
+            {{method_field('DELETE')}}
+            {!! csrf_field() !!}
+
+            <div class="boxResponsivo">
+                <div class="localResponsivo">
+                    <p>{{$reserv->local}}</p>
+                </div>
+                <div class="mesaCadeira">
+                    <p>Mesa: {{$reserv->id_mesa}} </p>
+                    <p>Cadeira: {{$reserv->id_cadeira}}</p>
+                </div>
+            </div>
+            <div class="data"> 
+                <div class="datain d1">SEGUNDA</div>
+                <div class="datain d2">13</div>
+                <div class="datain d3">SETEMBRO</div>
+                <div class="datain d4">2021</div>
+            </div>
+            <div class="cancResponsivo"> <button class="btncancResponsivo">Excluir</button></div>
+        
+        </form>
+    </div>
+    @endforeach
 </main>
 <footer>
     <a href="/reserva/etapa1">FAZER UMA NOVA RESERVA   <i class="fas fa-long-arrow-alt-right"></i></a>
