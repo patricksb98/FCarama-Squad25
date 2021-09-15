@@ -64,7 +64,12 @@
                                     dateFormat: 'yy-mm-dd',
                                 });
 
-                                $("#data").datepicker( 'getDate' );
+                                $("#data").datepicker({
+                                    onSelect: function(dateText, inst) { 
+                                        var dateAsString = dateText;
+                                        var dateAsObject = $(this).datepicker( 'getDate' );
+                                }
+                                });
                                 </script>
                             </label>
                         </div>
