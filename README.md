@@ -107,6 +107,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 -------
+## Equipe
+
+## 👨‍💻 Autores
+<table>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/patrick-barbosa-7b1505137/"><img style="border-radius: 50%;" src="public\image\equipe\patrick.jpg" width="100px;" alt=""/><br /><sub><b>Patrick Barbosa</b></sub></a><br /><a href="https://www.linkedin.com/in/patrick-barbosa-7b1505137/" title="Patrick"></a></td>
+</tr>
+</table>
 
 
 
