@@ -43,6 +43,7 @@
 
     @foreach($reserva as $reserv)
 
+
         <div class="containerResponsivo">
         <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')" >
             {{method_field('DELETE')}}
