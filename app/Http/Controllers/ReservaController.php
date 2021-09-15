@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Mail;
 
 class ReservaController extends Controller
 {
+    
+    public function inicio()
+    {
+        return view('agendamento.AgendPagInicial');
+    }
+
     public function verTermos()
     {
         $id_consultor = Auth::id();
@@ -21,7 +27,7 @@ class ReservaController extends Controller
         $aceitou = count($termos->where('id_consultor', $id_consultor)->where('aceitou', 1));
 
         if($aceitou >= 1){
-            return redirect()->route('inicio');
+            return redirect()->route('reserva/etapa1');
         }else{
             return view('agendamento.agendPagCondicoes');
         }
@@ -37,12 +43,7 @@ class ReservaController extends Controller
         $aceitou->aceitou = 1;
         $aceitou->save();
 
-        return redirect()->route('inicio');
-    }
-
-    public function inicio()
-    {
-        return view('agendamento.AgendPagInicial');
+        return redirect()->route('reserva/etapa1');
     }
 
 
@@ -213,6 +214,7 @@ class ReservaController extends Controller
             session()->flash('erro', 'Alguém foi mais rápido que você! Por favor, faça a sua reserva novamente.');
             return redirect()->route('reserva/etapa2');
         }else{
+            $reserva->save();
             $dataController = new DataController();
             $dia = date('d', strtotime($data));
             $mes = $dataController->mes(date('m', strtotime($data)));

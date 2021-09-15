@@ -28,9 +28,7 @@
                     <section class="mainBase">
                         <div class="local">
                             <p>Qual sede você deseja utilizar?</p>
-                            @if(isset($erro))
 
-                            @endif
                             <div class="container">
                             <label class="btn t1" id="saoPaulo"> <strong>SÃO PAULO</strong>
                                     <input type="radio" name="local" class="radioButton" value="São Paulo 2º Andar">
@@ -55,13 +53,13 @@
                         </div>
                         <div class="data">
                             <p>Quando você vem ao escritório?</p>
-                            <input id="datepicker"></input>
+                            <input id="datepicker" name="data"></input>
                             <script>
                             $( "#datepicker" ).datepicker({
                                 autoSize: true,
                                 maxDate: "+1m",
                                 minDate: Number(0),
-                                dateFormat: 'yy-mm-dd'
+                                dateFormat: 'yy-mm-dd',
                             });
 
                             </script>
@@ -75,10 +73,12 @@
         </article>
     </main>
     <footer>
-                <div class="alerta"id="alerta"> 
-                    <p> Alguém foi mais rápido que você! <br> Por favor, faça a sua reserva novamente. </p>
-                    <div class="btnok t1" id="btnok">OK</div>
-                </div>
+        @if(isset($erro))
+            <div class="alerta"id="alerta">
+                <p>Você já tem uma reserva para esse dia! <br> Cancele sua reserva atual caso queira mudar a data.</p>
+                <div class="btnok t1" id="btnok">OK</div>
+            </div>
+        @endif
     </footer>
     <script src="{{ asset('js/agendPag1Local.js') }}"></script>
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>

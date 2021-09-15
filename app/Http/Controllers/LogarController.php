@@ -10,7 +10,7 @@ class LogarController extends Controller
     public function index()
     {
         if(Auth::check()){
-            return redirect()->route('termos');
+            return redirect()->route('inicio');
         };
         $erro = session('erro');
         $errorMessage = [];
@@ -31,7 +31,7 @@ class LogarController extends Controller
             return redirect()->route('login');
         };
 
-        return redirect()->route('termos');
+        return redirect()->route('inicio');
     }
 }
 
