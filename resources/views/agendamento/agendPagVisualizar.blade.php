@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <a href="agendPag1Local.html"><i class="far fa-arrow-alt-circle-left"></i></
+    <a href="/inicio"><i class="far fa-arrow-alt-circle-left"></i></a>
     <img src="../img/Logo_-_Paginas_internas.svg" class="logo" alt="">
 </header>
 <main>
@@ -43,7 +43,11 @@
     </div>
 
     @foreach($reserva as $reserv)
-
+        @php($dataController = new \App\Http\Controllers\DataController())
+        @php($diaSemana = $dataController->semana(date('D', strtotime($reserv->dia))))
+        @php($dia = date('d', strtotime($reserv->dia)))
+        @php($mes = $dataController->mes(date('m', strtotime($reserv->dia))))
+        @php($ano = date('Y', strtotime($reserv->dia)))
 
         <div class="containerResponsivo">
         <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')" >
@@ -60,10 +64,10 @@
                 </div>
             </div>
             <div class="data">
-                <div class="datain d1"></div>
-                <div class="datain d2"></div>
-                <div class="datain d3"></div>
-                <div class="datain d4"></div>
+                <div class="datain d1">{{$diaSemana}}</div>
+                <div class="datain d2">{{$dia}}</div>
+                <div class="datain d3">{{$mes}}</div>
+                <div class="datain d4">{{$ano}}</div>
             </div>
             <div class="cancResponsivo"> <button class="btncancResponsivo">Excluir</button></div>
 
@@ -72,7 +76,7 @@
     @endforeach
 </main>
 <footer>
-    <a href="/reserva/etapa1">FAZER UMA NOVA RESERVA   <i class="fas fa-long-arrow-alt-right"></i></a>
+    <a href="/reserva/etapa1">FAZER UMA NOVA RESERVA<i class="fas fa-long-arrow-alt-right"></i></a>
 </footer>
 <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
