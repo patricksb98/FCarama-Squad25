@@ -6,6 +6,10 @@ santos.addEventListener('click', function() {
     andar.style.display = 'none';
   });
 
+  btnok.addEventListener('click', function() {
+    alerta.style.display = 'none';
+  });
+
 //DATEPICKER
 
 var dayNamesMin = $( "#datepicker" ).datepicker( "option", "dayNamesMin" );
