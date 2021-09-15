@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a href="agendPag1Local.html"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <a href="/inicio"><i class="far fa-arrow-alt-circle-left"></i></a>
         <img src="../img/Logo_-_Paginas_internas.svg" class="logo" alt="">
     </header>
     <main>

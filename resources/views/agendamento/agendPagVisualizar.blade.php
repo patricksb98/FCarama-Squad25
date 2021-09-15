@@ -41,11 +41,9 @@
             @endforeach
     </div>
 
-
-            
     @foreach($reserva as $reserv)
-    @php($dia = date('d-m-Y', strtotime($reserv->dia)))
-    <div class="containerResponsivo">
+
+        <div class="containerResponsivo">
         <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')" >
             {{method_field('DELETE')}}
             {!! csrf_field() !!}
@@ -59,14 +57,14 @@
                     <p>Cadeira: {{$reserv->id_cadeira}}</p>
                 </div>
             </div>
-            <div class="data"> 
-                <div class="datain d1">SEGUNDA</div>
-                <div class="datain d2">13</div>
-                <div class="datain d3">SETEMBRO</div>
-                <div class="datain d4">2021</div>
+            <div class="data">
+                <div class="datain d1"></div>
+                <div class="datain d2"></div>
+                <div class="datain d3"></div>
+                <div class="datain d4"></div>
             </div>
             <div class="cancResponsivo"> <button class="btncancResponsivo">Excluir</button></div>
-        
+
         </form>
     </div>
     @endforeach

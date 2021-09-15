@@ -74,7 +74,7 @@ class ReservaController extends Controller
     public function escolherLocalEDia(Request $request)
     {
         $local = $request->local;
-        $data = $request->data;
+        $data = \date('Y-m-d', strtotime($request->data));
         $id_consultor = Auth::id();
         $reservas = Reserva::all();
 
@@ -267,7 +267,7 @@ class ReservaController extends Controller
 
         $reserva = $reservas->where('id_consultor', $id_consultor)->where('dia', '>=', $dia->toDateString())->sortBy('dia');
         $vazio = count($reservas->where('id_consultor', $id_consultor)->where('dia', '>=', $dia->toDateString()));
-        
+
         if($vazio < 1){
             return view('agendamento.agendPagEmpty');
         }
