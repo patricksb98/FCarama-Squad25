@@ -17,4 +17,5 @@ class Mesa extends Model
     {
         return $this->hasMany(Cadeira::class);
     }
+
 }

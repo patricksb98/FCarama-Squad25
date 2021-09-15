@@ -17,4 +17,14 @@ class Cadeira extends Model
         return $this->belongsTo(Mesa::class, 'id_mesa');
     }
 
+    public static function limiteReservaSP()
+    {
+        return 600 * 0.4;
+    }
+
+    public static function limiteReservaSantos()
+    {
+        return 100 * 0.4;
+    }
+
 }

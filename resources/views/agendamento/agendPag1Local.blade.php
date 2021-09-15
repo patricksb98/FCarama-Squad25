@@ -73,12 +73,21 @@
         </article>
     </main>
     <footer>
+
         @if(isset($erro))
             <div class="alerta"id="alerta">
                 <p>Você já tem uma reserva para esse dia! <br> Cancele sua reserva atual caso queira mudar a data.</p>
                 <div class="btnok t1" id="btnok">OK</div>
             </div>
         @endif
+
+        @if(isset($erroLimite))
+        <div class="alerta"id="alerta">
+            <p>Não há mais vagas para o dia escolhido nesse local! <br> Favor escolher outro dia ou local.</p>
+            <div class="btnok t1" id="btnok">OK</div>
+        </div>
+        @endif
+
     </footer>
     <script src="{{ asset('js/agendPag1Local.js') }}"></script>
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>

@@ -43,7 +43,7 @@
 
                                     @if($local == "São Paulo 1º Andar")
                                         @for($i = 1; $i <= 30; $i++)
-                                            @if($reservasSP >= 240)
+                                            @if($reservasSP >= $limiteSP)
                                         <label class="containerMesa">
                                             <strong>{{$i}}</strong>
                                             <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
@@ -66,7 +66,7 @@
 
                                     @elseif($local == "São Paulo 2º Andar")
                                             @for($i = 31; $i <= 60; $i++)
-                                                @if($reservasSP >= 240)
+                                                @if($reservasSP >= $limiteSP)
                                                     <label class="containerMesa">
                                                         <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
@@ -89,7 +89,7 @@
 
                                     @elseif($local == "Santos")
                                             @for($i = 1; $i <= 10; $i++)
-                                                @if($reservasSP >= 40)
+                                                @if($reservasSantos >= $limiteSantos)
                                                     <label class="containerMesa">
                                                     <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                 </section>
                 <section class="footerBase">
                     <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>

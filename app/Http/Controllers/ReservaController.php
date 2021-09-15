@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\Confirmacao;
 use App\Models\Reserva;
 use App\Models\Termos;
+use App\Models\Cadeira;
 use Carbon\Carbon;
 use Carbon\Traits\Date;
 use Illuminate\Http\Request;
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Mail;
 
 class ReservaController extends Controller
 {
-    
+
     public function inicio()
     {
         return view('agendamento.AgendPagInicial');
@@ -53,12 +54,17 @@ class ReservaController extends Controller
             return redirect()->route('login');
         }
 
+        $erroLimite = session('erroLimite');
         $erro = session('erro');
         $errorMessage = [];
 
         if(!empty($erro)){
             $errorMessage = [
                 'erro' => $erro
+            ];
+        }elseif (!empty($erroLimite)){
+            $errorMessage = [
+                'erroLimite' => $erroLimite
             ];
         }
 
@@ -69,13 +75,12 @@ class ReservaController extends Controller
     {
         $local = $request->local;
         $data = $request->data;
-
         $id_consultor = Auth::id();
         $reservas = Reserva::all();
 
-        $consulta = (count($reservas->where('id_consultor', $id_consultor)->where('dia', $data)));
+        $reservasNoDia = (count($reservas->where('id_consultor', $id_consultor)->where('dia', $data)));
 
-        if($consulta > 0){
+        if($reservasNoDia > 0){
             session()->flash('erro', 'Você já tem uma reserva para esse dia! Cancele sua reserva atual caso queira mudar a data.');
             return redirect()->route('reserva/etapa1');
         }
@@ -97,10 +102,10 @@ class ReservaController extends Controller
         $data = session('data');
         $local = session('local');
         $reservas = Reserva::all();
-        $numero = $reservas->where('dia', $data)->where('local', $local)->toArray();
+        $reservasDiaELocal = $reservas->where('dia', $data)->where('local', $local)->toArray();
         $blockedTables = [];
 
-        foreach ($numero as $n){
+        foreach ($reservasDiaELocal as $n){
             $blockedTables[$n['id_mesa']] = array_key_exists($n['id_mesa'], $blockedTables)? $blockedTables[$n['id_mesa']] + 1 : 1;
         }
 
@@ -122,7 +127,23 @@ class ReservaController extends Controller
         $reservasSP = $reservasSP1 + $reservasSP2;
         $reservasSantos = count($reservas->where('dia', $data)->where('local', 'Santos'));
 
-        return view('agendamento.agendPag2Mesa', compact('local', 'numero', 'reservas', 'data', 'reservasSP', 'reservasSantos'), $errorMessage);
+        $limiteSP = Cadeira::limiteReservaSP();
+        $limiteSantos = Cadeira::limiteReservaSantos();
+
+        if($local === 'São Paulo 1º Andar' && $reservasSP >= $limiteSP){
+            session()->flash('erroLimite', 'Não existe mais estações disponíveis para esse dia no local escolhido! Favor escolher outro dia ou local!');
+            return redirect()->route('reserva/etapa1');
+        }
+        elseif($local === 'São Paulo 2º Andar' && $reservasSP >= $limiteSP){
+            session()->flash('erroLimite', 'Não existe mais estações disponíveis para esse dia no local escolhido! Favor escolher outro dia ou local!');
+            return redirect()->route('reserva/etapa1');
+        }
+        elseif($local === 'Santos' && $reservasSantos >= $limiteSantos){
+            session()->flash('erroLimite', 'Não existe mais estações disponíveis para esse dia no local escolhido! Favor escolher outro dia ou local!');
+            return redirect()->route('reserva/etapa1');
+        }
+
+        return view('agendamento.agendPag2Mesa', compact('local', 'reservasDiaELocal', 'reservas', 'data', 'reservasSP', 'reservasSantos', 'limiteSP', 'limiteSantos'), $errorMessage);
     }
 
     public function escolherMesa(Request $request)
@@ -163,7 +184,6 @@ class ReservaController extends Controller
         $request->session()->put('id_cadeira', $cadeira);
 
         return redirect()->route('reserva/etapa4');
-
     }
 
     public function revisarReserva()
@@ -245,7 +265,7 @@ class ReservaController extends Controller
         $reservas = Reserva::all();
         $dia = Carbon::now('GMT-3');
 
-        $reserva = $reservas->where('id_consultor', $id_consultor)->where('dia', '>', $dia->toDateString())->sortBy('dia');
+        $reserva = $reservas->where('id_consultor', $id_consultor)->where('dia', '>=', $dia->toDateString())->sortBy('dia');
 
         return view ('agendamento.agendPagVisualizar', compact('reserva'));
     }
