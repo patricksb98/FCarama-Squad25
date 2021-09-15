@@ -90,19 +90,19 @@
                                     @elseif($local == "Santos")
                                             @for($i = 1; $i <= 10; $i++)
                                                 @if($reservasSantos >= $limiteSantos)
-                                                    <label class="containerMesa">
+                                                    <label class="containerMesa mesaSantos">
                                                     <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
                                                         <span class="checkmark" style="background: #FEBBA2"></span>
                                                     </label>
                                                     @elseif(array_key_exists($i, $blockedTables) && $blockedTables[$i] > 4)
-                                                    <label class="containerMesa">
+                                                    <label class="containerMesa mesaSantos">
                                                     <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}" disabled>
                                                         <span class="checkmark" style="background: #FEBBA2"></span>
                                                     </label>
                                                 @else
-                                                    <label class="containerMesa t1">
+                                                    <label class="containerMesa mesaSantos t1">
                                                         <strong>{{$i}}</strong>
                                                         <input type="radio" name="id_mesa" class="radioButton" value="{{$i}}">
                                                         <span class="checkmark"></span>

@@ -91,6 +91,11 @@
     position: relative;
 }
 
+.mesaSantos {
+    width: 19%;
+    height: 16%;
+}
+
 .checkmark {
     position: absolute;
     height: 100%;

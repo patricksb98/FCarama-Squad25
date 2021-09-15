@@ -124,13 +124,12 @@ strong {
 }
 
 .mesaCentro {
-    background-color: #FE885C;
+    background-color: #F3F1F0;
     height: 70%;
     border-radius: 6px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: white;
+    align-items: center;;
     font-weight: 500;
 }
 
