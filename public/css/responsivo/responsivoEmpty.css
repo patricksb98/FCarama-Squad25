@@ -1,0 +1,46 @@
+@media screen and (max-width: 600px) {
+    main p {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 440px){
+    .logo {
+        visibility: hidden;
+    }
+
+    .btnSair {
+        top: 5%;
+        right: 15%;
+    }
+
+    .fa-arrow-alt-circle-left {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: 1.3rem;
+    }
+
+    .imgBack {
+        height: 50vh;
+        width: 70vw;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 440px) {
+    main p {
+        font-size: 1rem;
+    }
+    
+    footer a {
+        font-size: .7rem;
+    }
+}
