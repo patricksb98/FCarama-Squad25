@@ -54,7 +54,7 @@
                         <div class="data">
                             <p>Quando você vem ao escritório?</p>
                             <label >
-                                <input type="hidden" name="data" required></input>
+                                <input type="hidden" id="data" name="data" required></input>
                                 <span id="datepicker"></span>
                                 <script>
                                 $( "#datepicker" ).datepicker({
@@ -64,6 +64,7 @@
                                     dateFormat: 'yy-mm-dd',
                                 });
 
+                                $("#data").datepicker( 'getDate' );
                                 </script>
                             </label>
                         </div>
