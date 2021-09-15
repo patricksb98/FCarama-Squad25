@@ -19,3 +19,4 @@ var monthNames = $( "#datepicker" ).datepicker( "option", "monthNames" );
 $( "#datepicker" ).datepicker( "option", "dayNamesMin", [ "D", "S", "T", "Q", "Q", "S", "S" ] );
 
 $( "#datepicker" ).datepicker( "option", "monthNames", [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ] );
+

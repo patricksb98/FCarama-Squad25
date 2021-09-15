@@ -51,18 +51,17 @@
                         </div>
                         <div class="data">
                             <p>Quando você vem ao escritório?</p>
-                            <label >
-                                <input type="hidden" required></input>
-                                <span id="datepicker"></span>
+                            <input id="datepicker" class="datePicker" required></input>
+                                
                                 <script>
                                 $( "#datepicker" ).datepicker({ 
                                     autoSize: true,
                                     maxDate: "+1m",
                                     minDate: Number(0),
-
+                                    dateFormat: 'dd/mm/yy'
                                 });
+
                                 </script>
-                            </label>
                         </div>
                     </section>
                     <section class="footerBase">
@@ -70,10 +69,10 @@
                         <button type="submit" class="btnCont t1">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
                     </section>
                 </form>
-                <div class="alerta"id="alerta"> 
+<!--<div class="alerta"id="alerta"> 
                     <p> Alguém foi mais rápido que você! <br> Por favor, faça a sua reserva novamente. </p>
                     <div class="btnok t1" id="btnok">OK</div>
-                </div>
+                </div>-->
         </article>
     </main>
     <footer></footer>

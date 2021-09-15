@@ -53,9 +53,8 @@
                         </div>
                         <div class="data">
                             <p>Quando você vem ao escritório?</p>
-                            <label >
-                                <input type="hidden" id="data" name="data" required></input>
-                                <span id="datepicker"></span>
+                            
+                            <input id="datepicker" class="datePicker" name="data" required></input>
                                 <script>
                                 $( "#datepicker" ).datepicker({
                                     autoSize: true,
@@ -64,14 +63,8 @@
                                     dateFormat: 'yy-mm-dd',
                                 });
 
-                                $("#data").datepicker({
-                                    onSelect: function(dateText, inst) { 
-                                        var dateAsString = dateText;
-                                        var dateAsObject = $(this).datepicker( 'getDate' );
-                                }
-                                });
                                 </script>
-                            </label>
+                            
                         </div>
                     </section>
                     <section class="footerBase">
