@@ -107,12 +107,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 -------
-## Equipe
 
-## 👨‍💻 Autores
+## 👨‍💻 Equipe
 <table>
   <tr>
-    <td align="center"><a href="https://www.linkedin.com/in/patrick-barbosa-7b1505137/"><img style="border-radius: 50%;" src="public\img\equipe\patrick.jpg" width="100px;" alt=""/><br /><sub><b>Patrick Barbosa</b></sub></a><br /><a href="https://www.linkedin.com/in/patrick-barbosa-7b1505137/" title="Patrick"></a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/patrick-barbosa-7b1505137/"><img style="border-radius: 50%;" src="public\img\equipe\patrick.jpg" width="100px;" alt=""/><br /><sub><b>Patrick Barbosa</b></sub></a><br /><a href="https://www.linkedin.com/in/patrick-barbosa-7b1505137/" title="Patrick">DEV</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/bruno-costa-715959208/"><img style="border-radius: 50%;" src="public\img\equipe\bruno.jpg" width="100px;" alt=""/><br /><sub><b>Bruno Costa</b></sub></a><br /><a href="https://www.linkedin.com/in/bruno-costa-715959208/" title="Bruno">DEV</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/maria-eduarda-santos-0bb373b1/"><img style="border-radius: 50%;" src="public\img\equipe\duda.jpg" width="100px;" alt=""/><br /><sub><b>Maria Eduarda</b></sub></a><br /><a href="https://www.linkedin.com/in/maria-eduarda-santos-0bb373b1/" title="Duda">UX/UI</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/jackeline-tanaka/"><img style="border-radius: 50%;" src="public\img\equipe\jack.jpg" width="100px;" alt=""/><br /><sub><b>Jackeline Tanaka</b></sub></a><br /><a href="https://www.linkedin.com/in/jackeline-tanaka/" title="Jack">UX/UI</a></td>
 </tr>
 </table>
 
