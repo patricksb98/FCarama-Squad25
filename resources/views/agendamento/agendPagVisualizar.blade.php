@@ -25,12 +25,14 @@
             </div>
 
             @foreach($reserva as $reserv)
+                @php($dia = date('d-m-Y', strtotime($reserv->dia)))
+
                 <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')" >
                     {{method_field('DELETE')}}
                     {!! csrf_field() !!}
                         <div class="box b2">
                         <div>{{$reserv->local}}</div>
-                        <div>{{$reserv->dia}}</div>
+                        <div>{{$dia}}</div>
                         <div>{{$reserv->id_mesa}}</div>
                         <div>{{$reserv->id_cadeira}}</div>
                          <div class="canc"> <button class="btncanc">Cancelar</button></div>
