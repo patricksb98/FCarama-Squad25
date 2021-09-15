@@ -16,38 +16,115 @@
         align-items: center;
     }
     
-    .box {
-        font-size: .9rem;
-        width: 97vw;
+    .containerMaster {
+        display: none;
     }
 
-    .box div {
-        margin-left: .2rem;
+    .containerResponsivo, .boxResponsivo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .box div:first-child {
-        padding-left: .5rem;
+    .containerResponsivo{
+        width: 95%;
+        height: 30%;
+        border: solid 1px #FE885C;
+        border-radius: 8px;
+        background-color: #F3F1F0;
+        margin-left: 2.5%;
+    }
+    
+    .boxResponsivo {
+        flex-direction: column;
+        width: 65%;
+        height: 100%;
+    
+    }
+    
+    .mesaCadeira, .localResponsivo, .data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .localResponsivo {
+        height: 34%;
+    }
+    
+    .localResponsivo p {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .mesaCadeira {
+        flex-direction: column;
+        height: 66%;
+    }
+
+    .mesaCadeira p {
+        font-size: 1.2rem;
+    }
+    .data {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    
+    }
+    
+    .datain {
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+    
+    .d2 {
+        font-size: 2rem;
+    }
+
+    .cancResponsivo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+    }
+
+    .btncancResponsivo {
+        color: red;
+        font-weight: bold;
+        margin-right: 1rem;
+        border: none;
+    }
+
+    footer {
+        justify-content: center;
     }
 
     footer a {
         font-size: .7rem;
+
     }
 }
 
 @media screen and (max-width: 400px) {
-    .box {
-        width: 25rem;
-    }
 
     .logo {
         width: 10%;
     }
 
-    .box {
-        font-size: .8rem;
+    .fa-arrow-alt-circle-left {
+        font-size: 1.6rem;
     }
 
-    footer, header {
-     
+    .mesaCadeira p {
+        font-size: 1rem;
+    }
+
+    .datain {
+        font-size: .9rem;
+    }
+
+    .d2 {
+        font-size: 1.5rem;
     }
 }

@@ -18,6 +18,7 @@ header {
 
 main {
     height: 75%;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     padding: 0 10%;
@@ -27,7 +28,7 @@ main {
 main p {
     font-size: 1.6rem ;
     font-weight: 500;
-    margin: 5% 0;
+    margin: 2% 0 4% 0;
 }
 
 .containerMaster, form {
@@ -63,6 +64,10 @@ main p {
 
 .b1 .tab {
     font-weight: bold;
+}
+
+.containerResponsivo {
+    display: none;
 }
 
 .btncanc {
