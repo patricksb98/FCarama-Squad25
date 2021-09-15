@@ -49,30 +49,30 @@
         @php($mes = $dataController->mes(date('m', strtotime($reserv->dia))))
         @php($ano = date('Y', strtotime($reserv->dia)))
 
-        <div class="containerResponsivo">
+        
         <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')" >
             {{method_field('DELETE')}}
             {!! csrf_field() !!}
-
-            <div class="boxResponsivo">
-                <div class="localResponsivo">
-                    <p>{{$reserv->local}}</p>
+            <div class="containerResponsivo">
+                <div class="boxResponsivo">
+                    <div class="localResponsivo">
+                        <p>{{$reserv->local}}</p>
+                    </div>
+                    <div class="mesaCadeira">
+                        <p>Mesa: {{$reserv->id_mesa}} </p>
+                        <p>Cadeira: {{$reserv->id_cadeira}}</p>
+                    </div>
                 </div>
-                <div class="mesaCadeira">
-                    <p>Mesa: {{$reserv->id_mesa}} </p>
-                    <p>Cadeira: {{$reserv->id_cadeira}}</p>
+                <div class="data">
+                    <div class="datain d1">{{$diaSemana}}</div>
+                    <div class="datain d2">{{$dia}}</div>
+                    <div class="datain d3">{{$mes}}</div>
+                    <div class="datain d4">{{$ano}}</div>
                 </div>
+                <div class="cancResponsivo"> <button class="btncancResponsivo">Excluir</button></div>
             </div>
-            <div class="data">
-                <div class="datain d1">{{$diaSemana}}</div>
-                <div class="datain d2">{{$dia}}</div>
-                <div class="datain d3">{{$mes}}</div>
-                <div class="datain d4">{{$ano}}</div>
-            </div>
-            <div class="cancResponsivo"> <button class="btncancResponsivo">Excluir</button></div>
-
         </form>
-    </div>
+
     @endforeach
 </main>
 <footer>
