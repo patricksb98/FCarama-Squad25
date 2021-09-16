@@ -6,9 +6,9 @@
   <a href="#computer-sobre-o-projeto">Sobre o Projeto</a> •
   <a href="#white_check_mark-features">Features</a> •
   <a href="#books-como-executar">Como executar</a> •
-  <a href="#&#128736;-tecnologias">Tecnologias</a> •
-  <a href="#👨‍💻-equipe">Equipe</a> •
-  <a href="#&#x1F4C4;-licença">Licença</a> •
+  <a href="#-Tecnologias">Tecnologias</a> •
+  <a href="#-Equipe">Equipe</a> •
+  <a href="#-licença">Licença</a> •
 </p>
 
 ---
@@ -98,7 +98,7 @@ $ php artisan serve
 # O servidor iniciará na porta:8000 - acesse http://localhost:8000
 ```
 ---
-## &#128736; Tecnologias
+## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
