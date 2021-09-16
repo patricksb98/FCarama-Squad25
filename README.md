@@ -13,8 +13,8 @@
 
 ---
 
-Para testar a aplicação <a href="http://134.209.220.223">clique aqui!</a><br>
-######Emails de acesso de "admin1@admin.com até admin50@admin.com" e senha "123456". (Para testar com a funcionalidade de envio de e-mail, seguir os passos do "Como executar")
+**Para testar a aplicação <a href="http://134.209.220.223">clique aqui!</a><br>**
+Emails de acesso de "admin1@admin.com até admin50@admin.com" e senha "123456". (Para testar com a funcionalidade de envio de e-mail, seguir os passos do "Como executar")
 
 ---
 
