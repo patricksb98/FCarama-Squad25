@@ -108,10 +108,19 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [PHP](https://www.php.net)
 - [Laravel](https://laravel.com)
+- [MySQL]()
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 -------
+
+## Utilitarios
+
+- Protótipo: [Figma](https://www.figma.com/file/icY0MwjPPMd66k2aJWJNTK/Hackathon---FCamara---Squad-25?node-id=94%3A37)
+- Trello: [Trello](https://trello.com/b/BZmX4t4q/squad-25)
+- Documentação Postman (Lembrando que a aplicação não é uma API, mas fui instruído pelos mentores a fazer a documentação mesmo assim, então algumas rotas podem não estar funcionando como estariam em uma API): [Postman](https://documenter.getpostman.com/view/16607104/U16kr5fG?fbclid=IwAR28QC5jsAZTkcF3q7681Kaw0u6C27P9MtL51eapbEQeiBAHFb0n2Q1no2c)
+- Diagrama de Classes UML: [Drive](https://drive.google.com/file/d/1hoG5GH0al0ippMRfUIdJ7rdwLixqsVgL/view?usp=sharing)
+- 
 
 ## 👨‍💻 Equipe
 <table>
