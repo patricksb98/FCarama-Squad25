@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <img src="img/Logo_-_Paginas_internas.svg" alt="">
+        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" class="logo"  alt="">
     </header>
     <main class="mainBase">
         <h1>Parabéns!</h1>
