@@ -31,7 +31,7 @@
 
                             <div class="container">
                             <label class="btn t1" id="saoPaulo"> <strong>SÃO PAULO</strong>
-                                    <input type="radio" name="local" class="radioButton" value="São Paulo 2º Andar" required>
+                                    <input type="radio" name="local" class="radioButton" value="São Paulo 1º Andar" required>
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="btn t1" id="santos"><strong>SANTOS</strong>
@@ -54,7 +54,7 @@
                         <div class="data">
                             <p>Quando você vem ao escritório?</p>
 
-                            <input id="datepicker" class="datePicker" name="data" required></input>
+                            <input id="datepicker" class="datePicker" name="data" required autocomplete="off"></input>
                                 <script>
                                 $( "#datepicker" ).datepicker({
                                     autoSize: true,

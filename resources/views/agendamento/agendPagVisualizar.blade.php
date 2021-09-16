@@ -26,7 +26,7 @@
             </div>
 
             @foreach($reserva as $reserv)
-                @php($dia = date('d-m-Y', strtotime($reserv->dia)))
+                @php($dia = date('d/m/Y', strtotime($reserv->dia)))
 
                 <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')" >
                     {{method_field('DELETE')}}
