@@ -11,7 +11,7 @@ class Termos extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $table = "protocolohigienizacao";
+    protected $table = "protocoloHigienizacao";
 
     protected $fillable = [
         'id_consultor',
