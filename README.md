@@ -7,6 +7,7 @@
   <a href="#white_check_mark-features">Features</a> •
   <a href="#books-como-executar">Como executar</a> •
   <a href="#-Tecnologias">Tecnologias</a> •
+  <a href="#hammer-Utilitários">Utilitários</a> •
   <a href="#-Equipe">Equipe</a> •
   <a href="#-licença">Licença</a>
 </p>
@@ -17,6 +18,9 @@
 Emails de acesso de "admin1@admin.com até admin50@admin.com" e senha "123456". (Para testar com a funcionalidade de envio de e-mail, seguir os passos do "Como executar")
 
 ---
+<h2 align="center">Demonstração de Uso</h2>
+
+![Alt Text](public/gif/flow.gif)
 
 ## :computer: Sobre o projeto
 
@@ -114,12 +118,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 -------
 
-## Utilitarios
+## :hammer: Utilitarios
 
 - Protótipo: [Figma](https://www.figma.com/file/icY0MwjPPMd66k2aJWJNTK/Hackathon---FCamara---Squad-25?node-id=94%3A37)
 - Trello: [Trello](https://trello.com/b/BZmX4t4q/squad-25)
 - Documentação Postman (Lembrando que a aplicação não é uma API, mas fui instruído pelos mentores a fazer a documentação mesmo assim, então algumas rotas podem não estar funcionando como estariam em uma API): [Postman](https://documenter.getpostman.com/view/16607104/U16kr5fG?fbclid=IwAR28QC5jsAZTkcF3q7681Kaw0u6C27P9MtL51eapbEQeiBAHFb0n2Q1no2c)
 - Diagrama de Classes UML: [Drive](https://drive.google.com/file/d/1hoG5GH0al0ippMRfUIdJ7rdwLixqsVgL/view?usp=sharing)
+- Userflow: [Drive](https://drive.google.com/file/d/19FPboYkv2_U175s_1Fv0Jo8se0yd2Pdt/view?usp=sharing)
+- Documentação do Processo de UX: [Medium](https://medium.com/@mdudap2/encontro-dos-laranjas-uma-solu%C3%A7%C3%A3o-simples-e-segura-para-o-retorno-aos-escrit%C3%B3rios-da-fcamara-90f9d369ae29)
 
 ## 👨‍💻 Equipe
 <table>
