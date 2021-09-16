@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
     <link rel="stylesheet" href="{{ asset('css/agendPag3Cadeira.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsivo/responsivoCadeira.css') }}">
-    <title>ESCOLHA SUA ESTAÇÃO</title>
+    <title>EncontroDosLaranjas</title>
 
 </head>
 <body>

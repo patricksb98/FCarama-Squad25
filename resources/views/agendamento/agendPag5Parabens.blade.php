@@ -8,7 +8,7 @@
     <link rel="stylesheet" href={{asset("css/agendPag5Parabens.css")}}>
     <link rel="stylesheet" href={{asset("css/responsivo/responsivoParabens.css")}}>
 
-    <title>PARABÉNS</title>
+    <title>EncontroDosLaranjas</title>
 </head>
 <body>
     <header>

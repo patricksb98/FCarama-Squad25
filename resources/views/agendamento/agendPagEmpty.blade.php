@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/emptyState.css">
     <link rel="stylesheet" href="../css/responsivo/responsivoEmpty.css">
-    <title>Minhas Reservas</title>
+    <title>EncontroDosLaranjas</title>
 </head>
 <body>
     <header>

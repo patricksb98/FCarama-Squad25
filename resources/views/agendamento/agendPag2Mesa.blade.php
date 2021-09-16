@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/agendBase.css') }}">
     <link rel="stylesheet" href="{{ asset('css/agendPag2Mesa.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsivo/responsivoMesa.css') }}">
-    <title>ESCOLHA SUA MESA</title>
+    <title>EncontroDosLaranjas</title>
 </head>
 <body>
     <header>

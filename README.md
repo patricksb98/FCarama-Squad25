@@ -13,6 +13,11 @@
 
 ---
 
+Para testar a aplicação <a href="http://134.209.220.223">clique aqui!</a><br>
+######Emails de acesso de "admin1@admin.com até admin50@admin.com" e senha "123456". (Para testar com a funcionalidade de envio de e-mail, seguir os passos do "Como executar")
+
+---
+
 ## :computer: Sobre o projeto
 
 Com o ínicio da pandemia, muitas empresas tiveram que adotar o sistema de home office, e não foi diferente na FCamara. 
@@ -78,12 +83,11 @@ MAIL_PASSWORD=01015151a
 MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS=teste@teste.com
 MAIL_FROM_NAME=EncontroDosLaranjas
-
-# Nós seguimos do principio que estamos desenvolvendo uma aplicação para a FCamara, então não criamos um 
-cadastro de usuários, visto que os consultores provavelmente já tem os seus dados de acesso para os sistemas
-da FCamara. Então para meios de teste, favor ir no diretório database/seeders e abrir o arquivo
-ConsultorSeeder.php e trocar os dados para os seus dados pessoais (principalmente o e-mail para testar o 
-sistema de envio de e-mails)
+ 
+Como estamos seguindo do princípio de que os consultores da FCamara já possuem os seus acessos para sistemas
+da empresa, não criamos uma tela para registro de consultores.
+PARA MOTIVOS DE TESTE, ENTRAR NO ARQUIVO database/seeders/ConsultorSeeder.php e trocar os dados de acesso.
+Colocar de preferência o seu e-mail pessoal para poder testar o sistema de envio de emails!
 
 # Após seguir todos os passos acima, digitar o seguinte comando no terminal (para criar as tabelas e
  relacionamentos do DB)

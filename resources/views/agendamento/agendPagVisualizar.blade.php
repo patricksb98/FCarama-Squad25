@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/visualizar.css">
     <link rel="stylesheet" href="../css/responsivo/responsivoVisualizar.css">
-    <title>MINHAS RESERVAS</title>
+    <title>EncontroDosLaranjas</title>
 </head>
 <body>
 <header>
@@ -49,7 +49,7 @@
         @php($mes = $dataController->mes(date('m', strtotime($reserv->dia))))
         @php($ano = date('Y', strtotime($reserv->dia)))
 
-        
+
         <form method="post" action="/reserva/remover/{{$reserv->id}}" onsubmit="return confirm('Tem certeza?')" >
             {{method_field('DELETE')}}
             {!! csrf_field() !!}
