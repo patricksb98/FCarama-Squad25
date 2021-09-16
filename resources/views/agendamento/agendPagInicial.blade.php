@@ -17,7 +17,7 @@
 
     </header>
     <main>
-        <div class="titulo">O que você deseja fazer?</div>
+        <div class="titulo">Olá {{$nome_consultor}}! O que você deseja fazer?</div>
         <div class="link">
             <a href="/termos" class="linkInter link1 t1" > <div class="btn" >FAZER UMA NOVA RESERVA <i class="fas fa-long-arrow-alt-right"></i></div> </a>
             <a href="/visualizar/reservas" class="linkInter link2 t1"> <div class="btn" >VER MINHAS RESERVAS <i class="fas fa-long-arrow-alt-right"></i></div> </a>

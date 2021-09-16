@@ -8,7 +8,7 @@
   <a href="#books-como-executar">Como executar</a> •
   <a href="#-Tecnologias">Tecnologias</a> •
   <a href="#-Equipe">Equipe</a> •
-  <a href="#-licença">Licença</a> •
+  <a href="#-licença">Licença</a>
 </p>
 
 ---
@@ -120,7 +120,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Trello: [Trello](https://trello.com/b/BZmX4t4q/squad-25)
 - Documentação Postman (Lembrando que a aplicação não é uma API, mas fui instruído pelos mentores a fazer a documentação mesmo assim, então algumas rotas podem não estar funcionando como estariam em uma API): [Postman](https://documenter.getpostman.com/view/16607104/U16kr5fG?fbclid=IwAR28QC5jsAZTkcF3q7681Kaw0u6C27P9MtL51eapbEQeiBAHFb0n2Q1no2c)
 - Diagrama de Classes UML: [Drive](https://drive.google.com/file/d/1hoG5GH0al0ippMRfUIdJ7rdwLixqsVgL/view?usp=sharing)
-- 
 
 ## 👨‍💻 Equipe
 <table>

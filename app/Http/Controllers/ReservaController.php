@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\Confirmacao;
+use App\Models\Consultor;
 use App\Models\Reserva;
 use App\Models\Termos;
 use App\Models\Cadeira;
@@ -18,7 +19,10 @@ class ReservaController extends Controller
 
     public function inicio()
     {
-        return view('agendamento.agendPagInicial');
+        $user = Auth::user();
+        $nome_consultor = $user->name;
+
+        return view('agendamento.agendPagInicial', compact('nome_consultor'));
     }
 
     public function verTermos()
