@@ -76,7 +76,7 @@ main {
 
 .link2 {
     background-image: url(../img/Card_-_Ver_reservas.svg);
-    background-size:110% 100%;
+    background-size: cover;
     background-position: center;
 }
 
