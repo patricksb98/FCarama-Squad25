@@ -64,7 +64,7 @@ p {
 
 strong {
 	position: absolute;
-	z-index: 4;
+	z-index: 1;
     font-weight: 500;
 }
 
