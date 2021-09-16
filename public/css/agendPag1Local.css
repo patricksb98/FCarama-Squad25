@@ -87,8 +87,8 @@ strong {
     
 }
 
-div #ui-datepicker-div {
-    z-index: 9999999999;
+#ui-datepicker-div {
+    z-index: 9;
 }
 
 .footerBase {
