@@ -244,9 +244,9 @@ class ReservaController extends Controller
             $mes = $dataController->mes(date('m', strtotime($data)));
             session()->forget(['local', 'data', 'id_mesa', 'id_cadeira']);
 
-            //$email =  new Confirmacao($name_consultor, $dia, $mes, $local , $mesa, $cadeira);
-            //$email->subject = 'Confirmação de Reserva!';
-            //Mail::to($email_consultor)->send($email);
+            $email =  new Confirmacao($name_consultor, $dia, $mes, $local , $mesa, $cadeira);
+            $email->subject = 'Confirmação de Reserva!';
+            Mail::to($email_consultor)->send($email);
 
             return redirect()->route('reserva/confirmada');
         }
