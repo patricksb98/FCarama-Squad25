@@ -38,6 +38,7 @@ header {
 .box {
     width: auto;
     height: fit-content;
+    height: -moz-fit-content;
     padding: .3rem .7rem;
     border-radius: 3px;
     background: #FE662E;
