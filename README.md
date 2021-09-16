@@ -47,7 +47,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 $ git clone <https://github.com/patricksb98/FCarama-Squad25>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd Squad25
+$ cd FCarama-Squad25
 
 # Rodar o composer para baixar as dependências do projeto (pode demorar alguns minutos).
 $ composer install

@@ -19,15 +19,12 @@ class ConsultorSeeder extends Seeder
      */
     public function run()
     {
-        for($i = 1; $i < 51; $i++){
             DB::table('consultores')->insert([
-                'name' => "Admin$i",
-                'email' => "admin$i@admin.com",
+                'name' => "Admin",
+                'email' => "admin@admin.com",
                 'password' => Hash::make('123456'),
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ]);
-        }
-
     }
 }
