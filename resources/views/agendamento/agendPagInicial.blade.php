@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginaInicial.css">
     <link rel="stylesheet" href="../css/responsivo/responsivoPagInicial.css">
-    <title>EncontroDosLaranjas</title>
+    <title>Encontro Dos Laranjas</title>
 </head>
 <body>
     <header>
         <div class="containerLogo">
-            <img src="../img/Logo_-_Paginas_internas.svg" alt="" class="logo">
+            <img src="../img/Logo_-_Paginas_internas.svg" alt="Logo FCamara" class="logo">
             <p class="text">ENCONTRO DOS LARANJAS</p>
         </div>
 
@@ -24,7 +24,7 @@
         </div>
     </main>
     <footer>
-        <a href="/sair" class="btnSair" ><i class="fas fa-sign-out-alt"></i></a>
+        <a href="/sair" class="btnSair" title="Sair" ><i class="fas fa-sign-out-alt"></i></a>
     </footer>
     <script src="https://kit.fontawesome.com/1c96bc8c85.js" crossorigin="anonymous"></script>
 </body>
