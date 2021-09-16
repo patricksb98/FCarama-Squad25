@@ -35,8 +35,8 @@
                             </div>
                             <div class="mesaCadeira">
                                 <!-- Aqui entra o numnero da mesa e cadeira-->
-                                <p>MESA 0<?=$mesa?> </p>
-                                <p>CADEIRA 0<?=$cadeira?></p>
+                                <p>MESA <?=$mesa?> </p>
+                                <p>CADEIRA <?=$cadeira?></p>
                             </div>
                         </div>
                         <div class="data">
