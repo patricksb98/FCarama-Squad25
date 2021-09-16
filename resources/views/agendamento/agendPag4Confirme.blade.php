@@ -17,7 +17,7 @@
             <p>Confirmação</p>
             <img src="{{ asset('img/Barra_de_progresso_5.svg') }}" alt="">
         </div>
-        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="">
+        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" class="logo" alt="">
     </header>
     <main>
         <article>
@@ -35,8 +35,8 @@
                             </div>
                             <div class="mesaCadeira">
                                 <!-- Aqui entra o numnero da mesa e cadeira-->
-                                <p>MESA <?=$mesa?> </p>
-                                <p>CADEIRA <?=$cadeira?></p>
+                                <p>Mesa <?=$mesa?> </p>
+                                <p>Cadeira <?=$cadeira?></p>
                             </div>
                         </div>
                         <div class="data">

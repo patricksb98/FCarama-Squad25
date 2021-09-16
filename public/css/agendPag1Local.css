@@ -83,6 +83,9 @@ strong {
     
 }
 
+div #ui-datepicker-div {
+    z-index: 9999999999;
+}
 
 .footerBase {
     justify-content: flex-end;
