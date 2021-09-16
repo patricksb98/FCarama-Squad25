@@ -1,6 +1,6 @@
 <h1 align="center"><img src="public/img/Group_25.png"></h1>
 
-<p align="center">Aplicação web desenvolvida para oferecer de forma simples o angendamento para usar os escritórios da FCarama. </p>
+<p align="center">Aplicação web desenvolvida para oferecer de forma simples o angendamento para usar os escritórios da FCamara. </p>
 
 <p align="center">
   <a href="#computer-sobre-o-projeto">Sobre o Projeto</a> •
