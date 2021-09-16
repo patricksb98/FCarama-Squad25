@@ -18,7 +18,7 @@ class ReservaController extends Controller
 
     public function inicio()
     {
-        return view('agendamento.AgendPagInicial');
+        return view('agendamento.agendPagInicial');
     }
 
     public function verTermos()
