@@ -13,14 +13,14 @@ class CreateTableTermos extends Migration
      */
     public function up()
     {
-        Schema::create('protocoloHigienizacao', function (Blueprint $table){
+        Schema::create('protocolohigienizacao', function (Blueprint $table){
             $table->id();
             $table->unsignedBigInteger('id_consultor');
             $table->boolean('aceitou');
             $table->timestamps();
         });
 
-        Schema::table('protocoloHigienizacao', function (Blueprint $table) {
+        Schema::table('protocolohigienizacao', function (Blueprint $table) {
             $table->foreign('id_consultor')->references('id')->on('consultores');
         });
     }
