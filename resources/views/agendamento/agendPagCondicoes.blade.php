@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="css/agendBase.css">
     <link rel="stylesheet" href="css/agendPagCondicoes.css">
     <link rel="stylesheet" href="css/responsivo/responsivoCondicoes.css">
-    <title>EncontroDosLaranjas</title>
+    <title>Encontro Dos Laranjas</title>
 </head>
 <body>
     <header class="headerBase">
 
-        <a href="agendPag2Mesa.html" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <a href="agendPag2Mesa.html" class="t1" title="Voltar"><i class="far fa-arrow-alt-circle-left"></i></a>
         <div class="compromisso">
             <p>Compromisso</p>
             <img src="img/Barra_de_progresso_1.svg" alt="">
         </div>
-        <img src="img/Logo_-_Paginas_internas.svg" alt="">
+        <img src="img/Logo_-_Paginas_internas.svg" alt="Logo FCamara">
 
     </header>
     <main>
@@ -52,7 +52,7 @@
             @csrf
             <button type="submit" class="btnCont t1" name="aceitou" value="1">CONCORDO<i class="fas fa-long-arrow-alt-right"></i></button>
         </form>
-        <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
+        <a href="/sair" class="btnSair t1" title="Sair"><i class="fas fa-sign-out-alt"></i></a>
 
 
     </footer>

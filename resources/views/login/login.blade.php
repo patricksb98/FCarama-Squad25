@@ -7,20 +7,20 @@
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/responsivo/responsivoLogin.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <title>EncontroDosLaranjas</title>
+    <title>Encontro Dos Laranjas</title>
 </head>
 <body>
     <article class="containerSaudacao">
         <section class="box1">
             <h1>Bem vindo ao <BR> <p> ENCONTRO DOS LARANJAS</p></h1>
-            <div class="imgSaudacao"><img src="" alt=""></div>
+            <div class="imgSaudacao"></div>
             <h2>Estamos felizes em reabrir nossos escritórios! </h2>
         </section>
 
     </article>
     <article class="containerLogin">
         <section class="logoInicial">
-            <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="logo da FCamara" class="imglogo">
+            <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" alt="Logo da FCamara" class="imglogo">
             <div class="box2">
             <h3> <strong> Faça o login e </strong> <strong> reserve sua mesa </strong> <strong> de maneira </strong> <strong>simples e segura</strong></h3>
             </div>

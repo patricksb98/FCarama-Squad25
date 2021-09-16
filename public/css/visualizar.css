@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; font-weight: 400; text-decoration: none;}
-
+body {
+    position: relative;
+}
 
 header {
     height: 15vh;
@@ -100,4 +102,12 @@ footer a {
 
 a i {
     margin-left: 1rem;
+}
+
+.btnSair {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    color: #FE662E;
+    font-size: 1.2rem;
 }

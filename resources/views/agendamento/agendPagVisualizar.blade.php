@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/visualizar.css">
     <link rel="stylesheet" href="../css/responsivo/responsivoVisualizar.css">
-    <title>EncontroDosLaranjas</title>
+    <title>Encontro Dos Laranjas</title>
 </head>
 <body>
 <header>
-    <a href="/inicio"><i class="far fa-arrow-alt-circle-left"></i></a>
-    <img src="../img/Logo_-_Paginas_internas.svg" class="logo" alt="">
+    <a href="/inicio" title="Voltar"><i class="far fa-arrow-alt-circle-left"></i></a>
+    <img src="../img/Logo_-_Paginas_internas.svg" class="logo" alt="Logo FCamara">
 </header>
 <main>
     <P>Minhas reservas</P>
@@ -75,6 +75,7 @@
 
     @endforeach
 </main>
+ <a href="/sair" class="btnSair" title="Sair" ><i class="fas fa-sign-out-alt"></i></a>
 <footer>
     <a href="/reserva/etapa1">FAZER UMA NOVA RESERVA<i class="fas fa-long-arrow-alt-right"></i></a>
 </footer>

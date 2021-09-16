@@ -11,12 +11,12 @@
 </head>
 <body>
     <header>
-        <a href="/reserva/etapa1" class="t1"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <a href="/reserva/etapa1" class="t1" title="Voltar"><i class="far fa-arrow-alt-circle-left"></i></a>
         <div class="compromisso">
             <p>Escolha sua mesa</p>
             <img src="{{ asset('img/Barra_de_progresso_3.svg') }}" alt="">
         </div>
-        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" class="logo" alt="">
+        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" class="logo" alt="Logo FCamara">
     </header>
 
     <main>
@@ -120,7 +120,7 @@
                 </section>
                 <section class="footerBase">
                     <a href="/sair" class="btnSair t1"><i class="fas fa-sign-out-alt"></i></a>
-                    <button type="submit" class="btnCont t1">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button type="submit" class="btnCont t1" title="Sair">CONTINUAR <i class="fas fa-long-arrow-alt-right"></i></button>
                 </section>
             </form>
         </article>

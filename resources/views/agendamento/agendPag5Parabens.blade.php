@@ -8,11 +8,11 @@
     <link rel="stylesheet" href={{asset("css/agendPag5Parabens.css")}}>
     <link rel="stylesheet" href={{asset("css/responsivo/responsivoParabens.css")}}>
 
-    <title>EncontroDosLaranjas</title>
+    <title>Encontro Dos Laranjas</title>
 </head>
 <body>
     <header>
-        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" class="logo"  alt="">
+        <img src="{{ asset('img/Logo_-_Paginas_internas.svg') }}" class="logo"  alt="Logo FCamara">
     </header>
     <main class="mainBase">
         <h1>Parabéns!</h1>
