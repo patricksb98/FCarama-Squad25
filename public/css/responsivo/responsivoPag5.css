@@ -10,6 +10,13 @@
     }
 }
 
+@media screen and (max-width: 400px){
+    .fa-arrow-alt-circle-left {
+       font-size: 1.6rem;
+   }
+
+}
+
 @media screen and (max-width: 440px){
     header {
         height: 7vh;

@@ -45,6 +45,8 @@
 }
 
 @media screen and (max-width: 450px){
+    
+    
     .titulo {
         font-size: 1.5rem;
         text-align: center;
@@ -54,6 +56,14 @@
         font-size: 1.2rem;
         top: .5rem;
     }
+}
+
+
+@media screen and (max-width: 400px){
+    .fa-arrow-alt-circle-left {
+       font-size: 1.6rem;
+   }
+
 }
 
 @media screen and (max-width: 350px){
