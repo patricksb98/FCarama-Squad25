@@ -6,8 +6,8 @@
   <a href="#computer-sobre-o-projeto">Sobre o Projeto</a> •
   <a href="#white_check_mark-features">Features</a> •
   <a href="#books-como-executar">Como executar</a> •
-  <a href="#tecnologias">Tecnologias</a> •
-  <a href="#Equipe">Equipe</a> •
+  <a href="#🛠-tecnologias">Tecnologias</a> •
+  <a href="#👨‍💻-equipe">Equipe</a> •
 </p>
 
 ---
