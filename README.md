@@ -53,7 +53,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/patricksb98/FCarama-Squad25>
+$ git clone https://github.com/patricksb98/FCarama-Squad25
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd FCarama-Squad25
@@ -75,18 +75,6 @@ DB_PORT=3306 ("Porta usada para o banco de dados")
 DB_DATABASE=fcamara ("Nome do Schema criado")
 DB_USERNAME=root ("Seu usuário)
 DB_PASSWORD= ??? ("Sua senha)
-
-# Ainda no arquivo .env colar o bloco abaixo na configuração de e-mail (para poder testar nosso sistema de 
-envio de email de confirmação).
-
-MAIL_MAILER=smtp
-MAIL_HOST=smtp.gmail.com
-MAIL_PORT=587
-MAIL_USERNAME=encontrodoslaranjas@gmail.com
-MAIL_PASSWORD=01015151a
-MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS=teste@teste.com
-MAIL_FROM_NAME=EncontroDosLaranjas
  
 Como estamos seguindo do princípio de que os consultores da FCamara já possuem os seus acessos para sistemas
 da empresa, não criamos uma tela para registro de consultores.
